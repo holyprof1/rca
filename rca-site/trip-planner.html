@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan Your Trip — Rex Clarke Adventures | Africa, In Full.</title>
+<meta name="description" content="Plan your African adventure with Rex Clarke Adventures — 54 nations, expert editorial, and destination guides.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#1a6b38;--green-dk:#0f5c2e;--green-deep:#082d16;--green-lt:#e8f2ec;--gold:#F5C400;--gold-lt:#fdf5cc;--terra:#c8793a;--terra-lt:#f8ece0;--white:#ffffff;--paper:#f6f3ed;--ink:#1c1a14;--ink2:#3d3a2e;--ink3:#7a7668;--bdr:rgba(26,107,56,.10);--bdr2:rgba(26,107,56,.20);--ff:'Poppins',sans-serif;--ff-serif:'Playfair Display',Georgia,serif;--max:1240px}
+html{scroll-behavior:smooth}body{font-family:var(--ff);background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}
+.masthead{background:var(--white);position:sticky;top:0;z-index:100;box-shadow:0 2px 18px rgba(30,128,65,.09)}
+.mast-top{border-bottom:1px solid var(--bdr)}
+.mast-top-inner{max-width:var(--max);margin:0 auto;padding:0 24px;height:52px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;flex-shrink:0}.logo img{height:36px;width:auto}
+.mast-tagline{display:flex;align-items:center;gap:14px;margin-left:20px;flex-shrink:0}
+.mast-tagline-bar{width:3px;height:26px;background:var(--gold);border-radius:2px}
+.mast-tagline-text{font-family:var(--ff-serif);font-size:20px;font-weight:800;font-style:italic;color:var(--ink);letter-spacing:-.02em;line-height:1;white-space:nowrap}
+.mast-tagline-text .gold{color:var(--gold)}
+.mast-utils{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.btn-wwu{background:var(--green);color:var(--white);font-size:12px;font-weight:600;padding:8px 16px;border-radius:4px;white-space:nowrap;transition:background .15s}
+.btn-wwu:hover{background:var(--green-dk)}
+.mast-nav-bar{background:var(--green);border-bottom:3px solid var(--gold)}
+.mast-nav-inner{max-width:var(--max);margin:0 auto;padding:0 24px;height:40px;display:flex;align-items:center;justify-content:space-between}
+.nav{display:flex;list-style:none;height:40px;align-items:center}
+.nav>li>a{font-size:12px;font-weight:600;color:rgba(255,255,255,.82);padding:0 14px;height:40px;display:flex;align-items:center;transition:color .15s}
+.nav>li>a:hover{color:var(--gold)}
+.nav-plan-cta{background:var(--gold);color:var(--ink);font-size:11px;font-weight:700;padding:8px 16px;text-transform:uppercase}
+.page-hero{background:var(--green-deep);padding:72px 24px 60px}
+.page-hero-inner{max-width:var(--max);margin:0 auto}
+.page-hero-kicker{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:14px}
+.page-hero-h{font-family:var(--ff-serif);font-size:clamp(32px,5vw,54px);font-weight:800;color:var(--white);line-height:1.12;margin-bottom:16px}
+.page-hero-h span{color:var(--gold);font-style:italic}
+.page-hero-sub{font-size:16px;color:rgba(255,255,255,.6);max-width:640px;line-height:1.75;font-weight:300}
+.trip-wrap{max-width:var(--max);margin:0 auto;padding:64px 24px}
+.region-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:48px}
+.rcard{background:var(--white);border:1px solid var(--bdr);border-radius:8px;overflow:hidden;transition:box-shadow .2s,transform .15s}
+.rcard:hover{box-shadow:0 8px 32px rgba(0,0,0,.09);transform:translateY(-3px)}
+.rcard-top{height:120px;background:var(--green-deep);position:relative;display:flex;align-items:flex-end;padding:14px}
+.rcard-emoji{font-size:48px;position:absolute;top:50%;left:50%;transform:translate(-50%,-60%);opacity:.3}
+.rcard-name{font-family:var(--ff-serif);font-size:20px;font-weight:800;color:var(--white);position:relative}
+.rcard-sub{font-size:10px;color:var(--gold);font-weight:700;letter-spacing:.06em;text-transform:uppercase;position:relative}
+.rcard-body{padding:16px}
+.rcard-desc{font-size:13px;color:var(--ink2);line-height:1.6;margin-bottom:12px;font-weight:300}
+.rcard-btn{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:var(--terra);border-bottom:1px solid var(--terra-lt);padding-bottom:1px;transition:border-color .15s}
+.rcard-btn:hover{border-color:var(--terra)}
+.intro{font-family:var(--ff-serif);font-size:18px;color:var(--ink);line-height:1.6;max-width:780px;margin-bottom:40px;padding-bottom:32px;border-bottom:2px solid var(--bdr)}
+.section-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:8px}
+.section-h{font-family:var(--ff-serif);font-size:28px;font-weight:800;color:var(--ink);margin-bottom:24px}
+.footer{background:var(--gold);padding:32px 24px 20px}
+.foot-inner{max-width:var(--max);margin:0 auto}
+.foot-btm{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#000;flex-wrap:wrap;gap:8px}
+.foot-btm a{color:#000;margin-left:14px}
+.foot-btm a:hover{text-decoration:underline}
+@media(max-width:900px){.region-cards{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.region-cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="mast-top">
+    <div class="mast-top-inner">
+      <a href="index.html" class="logo">
+        <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/logo_rex_clarke_adv.png" alt="Rex Clarke Adventures" onerror="this.style.display='none'">
+      </a>
+      <div class="mast-tagline">
+        <div class="mast-tagline-bar"></div>
+        <div class="mast-tagline-text">Africa, <span class="gold">In Full.</span></div>
+      </div>
+      <div class="mast-utils">
+        <a href="work-with-us.html" class="btn-wwu">Work With Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="mast-nav-bar">
+    <div class="mast-nav-inner">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://rexclarkeadventures.com/destinations/">Destinations</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="trip-planner.html" class="nav-plan-cta">Plan Your Trip →</a>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-kicker">Plan Your African Adventure</div>
+    <h1 class="page-hero-h">Start your journey.<br><span>54 nations await.</span></h1>
+    <p class="page-hero-sub">Use our region guides, destination editorial, and correspondent coverage to plan a trip built on real knowledge — not a brochure.</p>
+  </div>
+</div>
+
+<div class="trip-wrap">
+  <p class="intro">Africa is not one destination — it is 54 countries across five geographic regions and seven island nations. Start by choosing a region, then drill into specific destinations using RCA's editorial guides.</p>
+  
+  <div class="section-label">Explore by region</div>
+  <h2 class="section-h">Where in Africa?</h2>
+  
+  <div class="region-cards">
+    <a href="https://rexclarkeadventures.com/west-africa/" class="rcard">
+      <div class="rcard-top" style="background:linear-gradient(135deg,#3a1a05,#8a3a08)">
+        <div class="rcard-emoji">🌍</div>
+        <div><div class="rcard-name">West Africa</div><div class="rcard-sub">16 nations</div></div>
+      </div>
+      <div class="rcard-body">
+        <p class="rcard-desc">Nigeria, Ghana, Senegal, Cameroon and 12 more. The continent's most populous region — the source of Afrobeats, Kente cloth, and ancient Mali empires.</p>
+        <span class="rcard-btn">Explore West Africa →</span>
+      </div>
+    </a>
+    <a href="https://rexclarkeadventures.com/east-africa/" class="rcard">
+      <div class="rcard-top" style="background:linear-gradient(135deg,#082d16,#1a6b38)">
+        <div class="rcard-emoji">🦁</div>
+        <div><div class="rcard-name">East Africa</div><div class="rcard-sub">20 nations</div></div>
+      </div>
+      <div class="rcard-body">
+        <p class="rcard-desc">Kenya, Tanzania, Ethiopia, Uganda, Rwanda and 15 more. Serengeti migrations, mountain gorillas, Kilimanjaro, and the world's best safari circuit.</p>
+        <span class="rcard-btn">Explore East Africa →</span>
+      </div>
+    </a>
+    <a href="https://rexclarkeadventures.com/north-africa/" class="rcard">
+      <div class="rcard-top" style="background:linear-gradient(135deg,#3a1a05,#b8920a)">
+        <div class="rcard-emoji">🕌</div>
+        <div><div class="rcard-name">North Africa</div><div class="rcard-sub">6 nations</div></div>
+      </div>
+      <div class="rcard-body">
+        <p class="rcard-desc">Morocco, Egypt, Tunisia, Algeria, Libya, Sudan. Ancient civilisations, Saharan landscapes, Mediterranean coasts, and growing MICE tourism.</p>
+        <span class="rcard-btn">Explore North Africa →</span>
+      </div>
+    </a>
+    <a href="https://rexclarkeadventures.com/central-africa/" class="rcard">
+      <div class="rcard-top" style="background:linear-gradient(135deg,#0a2a10,#1a5a20)">
+        <div class="rcard-emoji">🌴</div>
+        <div><div class="rcard-name">Central Africa</div><div class="rcard-sub">9 nations</div></div>
+      </div>
+      <div class="rcard-body">
+        <p class="rcard-desc">Gabon, Congo, DRC, Cameroon and 5 more. The Congo Basin — the world's second lung. Gabon's 13 national parks. Africa's eco-tourism frontier.</p>
+        <span class="rcard-btn">Explore Central Africa →</span>
+      </div>
+    </a>
+    <a href="https://rexclarkeadventures.com/southern-africa/" class="rcard">
+      <div class="rcard-top" style="background:linear-gradient(135deg,#082d16,#0f5c2e)">
+        <div class="rcard-emoji">🏔</div>
+        <div><div class="rcard-name">Southern Africa</div><div class="rcard-sub">6 nations</div></div>
+      </div>
+      <div class="rcard-body">
+        <p class="rcard-desc">South Africa, Zambia, Zimbabwe, Botswana, Mozambique, Namibia. Cape Town, Kruger, Victoria Falls, the Okavango — Africa's iconic southern circuit.</p>
+        <span class="rcard-btn">Explore Southern Africa →</span>
+      </div>
+    </a>
+    <a href="https://rexclarkeadventures.com/african-islands/" class="rcard">
+      <div class="rcard-top" style="background:linear-gradient(135deg,#0a1a3a,#1a3a6a)">
+        <div class="rcard-emoji">🌊</div>
+        <div><div class="rcard-name">African Islands</div><div class="rcard-sub">7 nations</div></div>
+      </div>
+      <div class="rcard-body">
+        <p class="rcard-desc">Madagascar, Seychelles, Mauritius, Comoros, Cape Verde, São Tomé and Príncipe. 90% of Madagascar's species exist nowhere else on Earth.</p>
+        <span class="rcard-btn">Explore the Islands →</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="foot-inner">
+    <div class="foot-btm">
+      <span>Africa, In Full. © 2026 Rex Clarke Adventures. All Rights Reserved.</span>
+      <div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="work-with-us.html">Partnerships</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
