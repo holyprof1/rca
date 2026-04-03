@@ -1,62 +1,936 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- SEO META -->
-<title>Eswatini Records 16.3% Surge in International Tourist Arrivals as Regional Tourism Booms — Rex Clarke Adventures</title>
-<meta name="description" content="Eswatini recorded 84,744 international arrivals in February 2026, a 16.3% increase. Malawi led growth at 210.3%. Full analysis from RCA.">
-<meta name="author" content="Familugba Victor">
-<link rel="canonical" href="https://rexclarkeadventures.com/eswatini-tourism-boom/">
-
-<!-- Open Graph -->
-<meta property="og:type" content="article">
-<meta property="og:title" content="Eswatini Records 16.3% Surge in International Tourist Arrivals">
-<meta property="og:description" content="Eswatini recorded 84,744 international arrivals in February 2026 — a 16.3% increase. Malawi led growth at 210.3%. Full RCA analysis.">
-<meta property="og:image" content="https://rexclarkeadventures.com/wp-content/uploads/2026/03/eswatini-tourism.jpg">
-<meta property="og:url" content="https://rexclarkeadventures.com/eswatini-tourism-boom/">
-<meta property="article:author" content="Familugba Victor">
-<meta property="article:published_time" content="2026-03-27T09:00:00+01:00">
-<meta property="article:section" content="Africa Tourism News">
-
-<!-- Schema.org Article markup -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "NewsArticle",
-  "headline": "Eswatini Records 16.3% Surge in International Tourist Arrivals as Regional Tourism Booms",
-  "description": "Eswatini recorded 84,744 international arrivals in February 2026, a 16.3% increase year-on-year. Malawi led growth at 210.3%.",
-  "author": { "@type": "Person", "name": "Familugba Victor", "url": "https://rexclarkeadventures.com/author/victor/" },
-  "publisher": { "@type": "Organization", "name": "Rex Clarke Adventures", "url": "https://rexclarkeadventures.com", "logo": { "@type": "ImageObject", "url": "https://rexclarkeadventures.com/wp-content/uploads/2025/10/logo_rex_clarke_adv.png" } },
-  "datePublished": "2026-03-27T09:00:00+01:00",
-  "dateModified": "2026-03-27T09:00:00+01:00",
-  "articleSection": "Africa Tourism News",
-  "keywords": ["Eswatini tourism", "African travel", "Southern Africa", "intra-African travel"],
-  "mainEntityOfPage": "https://rexclarkeadventures.com/eswatini-tourism-boom/"
-}
-</script>
-
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "How many international visitors did Eswatini receive in February 2026?", "acceptedAnswer": { "@type": "Answer", "text": "Eswatini recorded 84,744 international visitor arrivals in February 2026, representing a 16.3% increase compared to February 2025." } },
-    { "@type": "Question", "name": "Which country recorded the highest growth in arrivals to Eswatini?", "acceptedAnswer": { "@type": "Answer", "text": "Malawi recorded the highest growth rate, with arrivals increasing by 210.3%, making it the fastest-growing source market for the month." } },
-    { "@type": "Question", "name": "Why did arrivals from Europe and the Americas decline?", "acceptedAnswer": { "@type": "Answer", "text": "The Ministry of Tourism attributes the decline to rising airfare costs, flight disruptions, and a growing preference for shorter, more affordable destinations closer to home." } },
-    { "@type": "Question", "name": "What milestone did Eswatini reach in 2025?", "acceptedAnswer": { "@type": "Answer", "text": "Eswatini surpassed one million international arrivals in 2025, recording 7.5% year-on-year growth." } },
-    { "@type": "Question", "name": "What is the government's strategy to grow Eswatini's tourism sector?", "acceptedAnswer": { "@type": "Answer", "text": "The government's strategy includes improving competitiveness, strengthening tourism data systems, expanding community-based tourism, and deepening public-private sector collaboration." } }
-  ]
-}
-</script>
-
+<title>Eswatini Records 16.3% Surge in International Tourist Arrivals | Rex Clarke Adventures</title>
+<meta name="description" content="Eswatini recorded 84,744 international arrivals in February 2026, a 16.3% increase year-on-year as regional African tourism booms.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
 <style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* ── PRIMARY: Forest green — warmer, shifted toward savanna depth ── */
+  --green:      #1a6b38;   /* was #1E8041 — 5° warmer, deeper, less generic */
+  --green-dk:   #0f5c2e;   /* deeper anchor — Bwindi forest floor */
+  --green-deep: #082d16;   /* near-black green — editorial dark backgrounds */
+  --green-lt:   #e8f2ec;   /* barely-there tint for hover states */
+  --green-md:   #a8ccb8;   /* mid-tone for borders, muted UI */
+
+  /* ── PRIMARY: Gold — retained, slightly deepened for richness ── */
+  --gold:       #F5C400;   /* warmer than #F7C502 — closer to Saharan sun */
+  --gold-dk:    #b8920a;   /* deep gold for text on light — passes WCAG AA */
+  --gold-lt:    #fdf5cc;   /* pale gold for footer, hover fills */
+
+  /* ── SECONDARY: Terracotta / warm earth — NEW ── */
+  --terra:      #c8793a;   /* laterite soil, savanna dust, Marrakech walls */
+  --terra-dk:   #9a5520;   /* deep terracotta — West African mud cloth */
+  --terra-lt:   #f8ece0;   /* pale terracotta — warm surface tint */
+
+  /* ── NEUTRALS: Warm ink — not cold digital black ── */
+  --white:      #ffffff;
+  --paper:      #f6f3ed;   /* warmer off-white — aged editorial paper */
+  --ink:        #1c1a14;   /* warm dark — organic, not digital black */
+  --ink2:       #3d3a2e;   /* body text — warm dark brown */
+  --ink3:       #7a7668;   /* muted — captions, meta, labels */
+
+  /* ── BORDERS: keyed to warmer green ── */
+  --bdr:        rgba(26,107,56,.10);
+  --bdr2:       rgba(26,107,56,.20);
+
+  /* ── TYPOGRAPHY ── */
+  --ff:         'Poppins', sans-serif;
+  --ff-serif:   'Playfair Display', Georgia, serif;
+  --max:        1240px;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--ff); background: var(--paper); color: var(--ink); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; height: 100%; object-fit: cover; }
+
+/* ── TICKER ── */
+.ticker { background: var(--green-deep); height: 34px; display: flex; align-items: center; overflow: hidden; }
+.ticker-lbl { background: var(--gold); color: var(--ink); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 0 16px; height: 100%; display: flex; align-items: center; white-space: nowrap; flex-shrink: 0; }
+.ticker-track { flex: 1; overflow: hidden; height: 100%; display: flex; align-items: center; }
+.ticker-scroll { display: flex; white-space: nowrap; animation: scroll 36s linear infinite; }
+.ticker-scroll span { font-size: 12px; color: rgba(255,255,255,.78); padding: 0 36px; }
+.ticker-scroll span::after { content: '·'; padding-left: 36px; opacity: .3; }
+@keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ── MASTHEAD — two-row: brand bar + nav bar ── */
+.masthead { background: var(--white); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 18px rgba(30,128,65,.09); }
+
+/* TOP ROW — logo + tagline + utility buttons */
+.mast-top { border-bottom: 1px solid var(--bdr); }
+.mast-top-inner { max-width: var(--max); margin: 0 auto; padding: 0 24px; height: 52px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+
+/* Logo */
+.logo { display: flex; align-items: center; gap: 0; flex-shrink: 0; }
+.logo img { height: 36px; width: auto; }
+
+/* TAGLINE — large, unmissable, serif italic, gold accent */
+.mast-tagline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+.mast-tagline-bar {
+  width: 3px; height: 26px;
+  background: var(--gold);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.mast-tagline-text {
+  font-family: var(--ff-serif);
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--ink);
+  letter-spacing: -.02em;
+  line-height: 1;
+  white-space: nowrap;
+}
+.mast-tagline-text .gold { color: var(--gold); }
+
+/* Utility buttons row */
+.mast-utils { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+
+/* BOTTOM ROW — destination-first navigation (Rough Guides / Go2Africa pattern) */
+.mast-nav-bar { background: var(--green); border-bottom: 3px solid var(--gold); }
+.mast-nav-inner { max-width: var(--max); margin: 0 auto; padding: 0 24px; height: 40px; display: flex; align-items: center; justify-content: space-between; }
+.nav { display: flex; list-style: none; height: 40px; align-items: center; }
+.nav > li { position: relative; height: 100%; display: flex; align-items: center; }
+.nav > li > a { font-size: 12px; font-weight: 600; color: #ffffff; padding: 0 14px; height: 100%; display: flex; align-items: center; letter-spacing: .02em; transition: color .15s, background .15s; white-space: nowrap; }
+.nav > li > a:hover { color: var(--gold); background: rgba(255,255,255,.07); }
+.nav > li.active > a { color: var(--gold); }
+.nav > li.nav-highlight > a { color: #ffffff; font-weight: 700; }
+.arr { width: 9px; height: 5px; margin-left: 3px; opacity: .5; }
+
+/* Mega-dropdown — rich region menu (Go2Africa / andBeyond pattern) */
+.drop-menu { position: absolute; top: 100%; left: 0; background: var(--white); border: none; border-top: 3px solid var(--gold); box-shadow: 0 12px 40px rgba(0,0,0,.14); min-width: 560px; display: none; padding: 0; z-index: 200; }
+.drop:hover .drop-menu { display: block; }
+/* Aviation dropdown aligns right when near the right edge of the nav */
+.drop:last-of-type .drop-menu,
+.drop.align-right .drop-menu { left: auto; right: 0; }
+.drop-menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.drop-col { padding: 18px 0; }
+.drop-col + .drop-col { border-left: 1px solid var(--bdr); }
+.drop-col-head { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink3); padding: 0 18px 8px; border-bottom: 1px solid var(--bdr); margin-bottom: 4px; }
+.drop-menu a { display: flex; align-items: center; gap: 10px; padding: 8px 18px; font-size: 13px; color: var(--ink2); transition: background .1s, color .1s; font-weight: 400; }
+.drop-menu a:hover { background: var(--green-lt); color: var(--green); }
+.drop-menu a .dm-flag { font-size: 16px; flex-shrink: 0; }
+.drop-menu a .dm-text { line-height: 1.2; }
+.drop-menu a .dm-sub { font-size: 10px; color: var(--ink3); display: block; }
+
+/* Simple dropdowns (non-mega) */
+.drop-simple { min-width: 180px; grid-template-columns: 1fr; }
+.drop-simple .drop-col { padding: 6px 0; }
+.drop-simple .drop-col-head { display: none; }
+
+/* Nav strip right — search + plan trip CTA */
+.nav-strip-right { display: flex; align-items: center; gap: 0; }
+.nav-plan-cta { background: var(--gold); color: var(--ink); font-size: 11px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 8px 16px; white-space: nowrap; transition: filter .15s; }
+.nav-plan-cta:hover { filter: brightness(1.06); }
+
+.mast-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.btn-search { display: flex; align-items: center; gap: 5px; background: var(--paper); border: 1px solid var(--bdr2); border-radius: 4px; padding: 6px 11px; font-size: 12px; font-family: var(--ff); color: var(--ink3); cursor: pointer; transition: border-color .15s; }
+.btn-search:hover { border-color: var(--green); color: var(--green); }
+.btn-wwu { background: var(--green); color: var(--white); font-size: 12px; font-weight: 600; padding: 8px 16px; border-radius: 4px; white-space: nowrap; transition: background .15s; }
+.btn-wwu:hover { background: var(--green-dk); }
+
+.burger { display: none; flex-direction: column; gap: 4px; cursor: pointer; padding: 4px; }
+.burger span { display: block; width: 21px; height: 2px; background: var(--ink); border-radius: 2px; }
+
+/* ── MOBILE NAV ── */
+.mob-nav { display: none; position: fixed; inset: 0; background: var(--white); z-index: 300; overflow-y: auto; transform: translateX(-100%); transition: transform .3s cubic-bezier(.4,0,.2,1); }
+.mob-nav.open { transform: translateX(0); }
+.mob-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 299; opacity: 0; transition: opacity .3s ease; }
+.mob-overlay.open { opacity: 1; }
+.mob-top { background: var(--green); padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; }
+.mob-tagline-strip { background: var(--green-dk); padding: 10px 18px; font-family: var(--ff-serif); font-size: 15px; font-weight: 700; color: var(--white); border-bottom: 1px solid rgba(255,255,255,.1); display: flex; align-items: center; justify-content: space-between; }
+.mob-tagline-strip span { font-size: 10px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.45); }
+.mob-top img { height: 30px; filter: brightness(0) invert(1); }
+.mob-close { color: var(--white); font-size: 24px; cursor: pointer; line-height: 1; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background .15s; }
+.mob-close:hover { background: rgba(255,255,255,.15); }
+/* Nav links */
+.mob-links { list-style: none; padding-bottom: 80px; }
+.mob-links > li { border-bottom: 1px solid var(--bdr); }
+/* Accordion trigger rows */
+.mob-accordion-btn {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 18px; font-size: 15px; font-weight: 600;
+  color: var(--ink); cursor: pointer; width: 100%;
+  background: none; border: none; font-family: var(--ff);
+  text-align: left; transition: color .15s, background .15s;
+}
+.mob-accordion-btn:hover { color: var(--green); background: var(--green-lt); }
+.mob-accordion-btn.gold-link { color: var(--gold-dk); }
+.mob-accordion-chevron { width: 18px; height: 18px; border-radius: 50%; background: var(--bdr); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform .22s ease, background .15s; }
+.mob-accordion-btn.open .mob-accordion-chevron { transform: rotate(180deg); background: var(--green-lt); }
+/* Simple link rows */
+.mob-links > li > a { display: block; padding: 14px 18px; font-size: 15px; font-weight: 600; color: var(--ink); transition: color .15s, background .15s; }
+.mob-links > li > a:hover { color: var(--green); background: var(--green-lt); }
+.mob-links > li > a.gold-link { color: var(--gold-dk); font-weight: 700; }
+/* Sub-menus — hidden by default, accordion-revealed */
+.mob-sub { list-style: none; background: var(--paper); display: none; border-top: 1px solid var(--bdr); }
+.mob-sub.open { display: block; }
+.mob-sub li { border-bottom: 1px solid var(--bdr); }
+.mob-sub li:last-child { border-bottom: none; }
+.mob-sub a { display: flex; align-items: center; gap: 10px; padding: 11px 18px 11px 32px; font-size: 13px; color: var(--ink2); transition: color .15s, background .15s; }
+.mob-sub a:hover { color: var(--green); background: var(--green-lt); }
+.mob-sub-text { line-height: 1.2; }
+.mob-sub-meta { font-size: 10px; color: var(--ink3); display: block; }
+/* Plan Your Trip button inside mobile drawer */
+.mob-plan-cta { display: block; margin: 16px 18px 8px; background: var(--gold); color: var(--ink); font-size: 14px; font-weight: 700; padding: 13px 18px; border-radius: 6px; text-align: center; transition: filter .15s; }
+.mob-plan-cta:hover { filter: brightness(1.05); }
+
+/* ── HERO CAROUSEL — PHOTO VERSION ── */
+.hero-carousel { position: relative; overflow: hidden; min-height: 600px; background: var(--green-deep); }
+.carousel-track { position: relative; min-height: 600px; }
+.c-slide { position: absolute; inset: 0; display: flex; align-items: center; opacity: 0; transition: opacity .9s ease; pointer-events: none; z-index: 0; min-height: 600px; }
+.c-slide.active { opacity: 1; pointer-events: auto; z-index: 1; }
+.slide-photo-wrap { position: absolute; inset: 0; overflow: hidden; }
+.slide-photo-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transform: scale(1.06); transition: transform 9s ease; } .c-slide.active .slide-photo-wrap img { transform: scale(1); }
+.c-slide.active .slide-photo-wrap img { transform: scale(1); }
+.c-slide:nth-child(1) .slide-overlay { background: linear-gradient(to right,rgba(9,40,60,.82) 0%,rgba(9,40,60,.50) 52%,rgba(9,40,60,.18) 100%),linear-gradient(to top,rgba(0,0,0,.45) 0%,transparent 50%); }
+.c-slide:nth-child(2) .slide-overlay { background: linear-gradient(to right,rgba(40,25,8,.84) 0%,rgba(40,25,8,.50) 52%,rgba(40,25,8,.16) 100%),linear-gradient(to top,rgba(0,0,0,.45) 0%,transparent 50%); }
+.c-slide:nth-child(3) .slide-overlay { background: linear-gradient(to right,rgba(13,50,25,.84) 0%,rgba(13,50,25,.50) 52%,rgba(13,50,25,.16) 100%),linear-gradient(to top,rgba(0,0,0,.45) 0%,transparent 50%); }
+.c-slide:nth-child(4) .slide-overlay { background: linear-gradient(to right,rgba(60,15,10,.84) 0%,rgba(60,15,10,.50) 52%,rgba(60,15,10,.16) 100%),linear-gradient(to top,rgba(0,0,0,.45) 0%,transparent 50%); }
+.slide-overlay { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.slide-grain { position: absolute; inset: 0; z-index: 2; pointer-events: none; opacity: .025; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 160px; }
+.slide-content { position: relative; z-index: 3; max-width: var(--max); margin: 0 auto; padding: 80px 24px; display: grid; grid-template-columns: 1fr 400px; gap: 56px; align-items: center; width: 100%; }
+.slide-text { transform: translateX(-22px); opacity: 0; transition: transform .7s ease .2s, opacity .7s ease .2s; }
+.c-slide.active .slide-text { transform: translateX(0); opacity: 1; }
+.slide-kicker { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+.slide-kicker::before { content: ''; width: 20px; height: 2px; background: var(--gold); display: block; }
+.slide-h1 { font-family: var(--ff-serif); font-size: clamp(28px, 4vw, 50px); font-weight: 800; line-height: 1.10; letter-spacing: -.025em; color: var(--white); margin-bottom: 10px; }
+.slide-h1 .gold { color: var(--gold); }
+.slide-tagline { font-family: var(--ff-serif); font-size: 26px; font-weight: 800; font-style: italic; color: var(--gold); letter-spacing: -.01em; margin-bottom: 14px; line-height: 1.1; }
+.slide-desc { font-size: 14px; font-weight: 400; color: rgba(255,255,255,.88); line-height: 1.75; max-width: 480px; margin-bottom: 28px; letter-spacing: .01em; }
+.slide-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.slide-regions { transform: translateX(22px); opacity: 0; transition: transform .7s ease .35s, opacity .7s ease .35s; }
+.c-slide.active .slide-regions { transform: translateX(0); opacity: 1; }
+.carousel-dots { position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 8px; align-items: center; }
+.c-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,.3); border: none; cursor: pointer; padding: 0; transition: background .3s, transform .3s; }
+.c-dot.active { background: var(--gold); transform: scale(1.5); }
+.carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; width: 44px; height: 44px; background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.22); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--white); transition: background .2s; backdrop-filter: blur(4px); }
+.carousel-arrow:hover { background: rgba(255,255,255,.22); }
+.carousel-arrow.prev-btn { left: 20px; }
+.carousel-arrow.next-btn { right: 20px; }
+.carousel-progress { position: absolute; bottom: 0; left: 0; height: 3px; background: var(--gold); z-index: 10; width: 0%; }
+.carousel-progress.running { transition: width 6s linear; }
+.carousel-pause { position: absolute; bottom: 18px; right: 18px; z-index: 10; width: 34px; height: 34px; background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.22); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--white); backdrop-filter: blur(4px); transition: background .2s; }
+.carousel-pause:hover { background: rgba(255,255,255,.22); }
+.carousel-pause .icon-pause { display: block; }
+.carousel-pause .icon-play  { display: none; }
+.carousel-pause.paused .icon-pause { display: none; }
+.carousel-pause.paused .icon-play  { display: block; }
+.carousel-counter { position: absolute; bottom: 52px; right: 18px; z-index: 10; font-size: 11px; font-weight: 600; color: rgba(255,255,255,.4); letter-spacing: .06em; }
+.hero-video-ctrl { display: none; }
+@media (prefers-reduced-motion: reduce) { .c-slide,.slide-text,.slide-regions,.carousel-progress,.slide-photo-wrap img { transition: none !important; animation: none !important; } }
+.hero-kicker { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.hero-kicker::before { content: ''; width: 20px; height: 2px; background: var(--gold); display: block; }
+.hero-h1 { font-family: var(--ff-serif); font-size: clamp(32px, 4.2vw, 52px); font-weight: 800; line-height: 1.10; letter-spacing: -.025em; color: var(--white); margin-bottom: 10px; }
+.hero-h1 .gold { color: var(--gold); }
+.hero-tagline-main { font-family: var(--ff-serif); font-size: 26px; font-weight: 800; font-style: italic; color: var(--gold); letter-spacing: -.01em; margin-bottom: 14px; line-height: 1.1; }
+.hero-desc { font-size: 14px; font-weight: 400; color: rgba(255,255,255,.88); line-height: 1.75; max-width: 480px; margin-bottom: 28px; letter-spacing: .01em; }
+.hero-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn-gold { background: var(--gold); color: var(--ink); font-size: 13px; font-weight: 700; font-family: var(--ff); padding: 12px 26px; border-radius: 4px; border: none; cursor: pointer; transition: filter .15s; }
+.btn-gold:hover { filter: brightness(1.07); }
+.btn-ghost { background: transparent; color: rgba(255,255,255,.8); font-size: 13px; font-weight: 500; padding: 12px 20px; border: 1.5px solid rgba(255,255,255,.28); border-radius: 4px; transition: border-color .15s, color .15s; }
+.btn-ghost:hover { border-color: rgba(255,255,255,.65); color: var(--white); }
+.regions-label { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.38); margin-bottom: 11px; }
+.regions-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; }
+.region-card { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.11); border-radius: 6px; padding: 13px 8px; text-align: center; cursor: pointer; transition: background .2s, border-color .2s, transform .15s; }
+.region-card:hover { background: rgba(247,197,2,.13); border-color: rgba(247,197,2,.4); transform: translateY(-2px); }
+.region-icon { font-size: 20px; margin-bottom: 5px; display: block; }
+.region-name { font-size: 10.5px; font-weight: 600; color: rgba(255,255,255,.82); }
+.region-count { font-size: 9.5px; color: rgba(255,255,255,.32); margin-top: 2px; }
+@media (max-width: 960px) { .slide-content { grid-template-columns: 1fr; padding: 60px 20px; } .slide-regions { display: none; } .carousel-arrow { display: none; } }
+@media (max-width: 640px) { .hero-carousel,.carousel-track,.c-slide { min-height: 480px; } .slide-h1,.hero-h1 { font-size: 26px; } .slide-tagline,.hero-tagline-main { font-size: 20px; } }
+/* ── EDITORIAL PULL-QUOTE ── */
+.editorial-quote { background: var(--ink); padding: 52px 24px; }
+.eq-inner { max-width: 780px; margin: 0 auto; text-align: center; }
+.eq-kicker { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); margin-bottom: 20px; }
+.eq-quote { font-family: var(--ff-serif); font-size: clamp(18px,3vw,26px); font-style: italic; font-weight: 400; color: var(--white); line-height: 1.6; letter-spacing: -.01em; margin-bottom: 18px; }
+.eq-quote::before { content: '\201C'; color: var(--gold); font-size: 1.4em; line-height: 0; vertical-align: -.2em; margin-right: 2px; }
+.eq-quote::after  { content: '\201D'; color: var(--gold); font-size: 1.4em; line-height: 0; vertical-align: -.2em; margin-left: 2px; }
+.eq-source { font-size: 13px; font-weight: 500; color: rgba(255,255,255,.48); letter-spacing: .02em; text-transform: none; }
+.eq-source a { color: var(--gold); border-bottom: 1px solid rgba(247,197,2,.3); transition: border-color .15s; }
+.eq-source a:hover { border-color: var(--gold); }
+
+
+/* ── GOOGLE TRANSLATE WIDGET ── */
+.translate-wrap { position: relative; }
+
+/* Translate button — globe icon only at all sizes */
+.translate-btn {
+  display: flex; align-items: center; justify-content: center;
+  background: transparent; border: 1.5px solid var(--bdr2);
+  border-radius: 50%; width: 34px; height: 34px;
+  color: var(--ink2); cursor: pointer;
+  transition: border-color .15s, color .15s, background .15s;
+  flex-shrink: 0;
+}
+.translate-btn:hover { border-color: var(--green); color: var(--green); background: var(--green-lt); }
+.translate-btn.open { border-color: var(--green); background: var(--green-lt); color: var(--green); }
+.translate-label { display: none; }
+.translate-chevron { display: none; }
+.translate-globe { flex-shrink: 0; }
+
+/* Dropdown panel */
+.translate-panel {
+  position: absolute; top: calc(100% + 8px); right: 0;
+  background: var(--white); border: 1px solid var(--bdr2);
+  border-top: 3px solid var(--green);
+  border-radius: 4px; box-shadow: 0 8px 28px rgba(0,0,0,.12);
+  min-width: 240px; z-index: 500;
+  display: none; padding: 0 0 10px;
+}
+.translate-panel.open { display: block; }
+
+/* Language buttons grid inside panel */
+.translate-panel-head {
+  display: flex; align-items: center; gap: 7px;
+  padding: 12px 14px 10px;
+  font-size: 11px; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--ink3);
+  border-bottom: 1px solid var(--bdr);
+  margin-bottom: 8px;
+}
+.translate-langs {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 6px; padding: 4px 12px 8px;
+}
+.translate-lang-btn {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 10px; border-radius: 4px;
+  font-size: 12px; font-weight: 500; color: var(--ink2);
+  border: 1px solid var(--bdr); background: var(--white);
+  cursor: pointer; transition: all .15s; text-align: left;
+  font-family: var(--ff);
+}
+.translate-lang-btn:hover { background: var(--green-lt); border-color: var(--green); color: var(--green); }
+.translate-lang-btn.active { background: var(--green); border-color: var(--green); color: var(--white); font-weight: 600; }
+.translate-lang-flag { font-size: 16px; flex-shrink: 0; }
+.translate-lang-name { font-size: 11px; line-height: 1.2; }
+.translate-lang-native { font-size: 9px; opacity: .65; display: block; }
+.translate-panel-note {
+  font-size: 10px; color: var(--ink3);
+  text-align: center; padding: 6px 14px 0;
+  border-top: 1px solid var(--bdr); margin-top: 4px; padding-top: 8px;
+}
+
+/* Hidden Google element — still needed for actual translation */
+#google_translate_element { display: none; }
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+.skiptranslate { display: none !important; }
+#google_translate_element select { display: none; }
+
+/* MOBILE: show globe icon only — hide label and chevron */
+@media (max-width: 680px) {
+  .translate-label { display: none; }
+  .translate-chevron { display: none; }
+  .translate-btn { padding: 7px 9px; border-radius: 50%; width: 34px; height: 34px; justify-content: center; }
+  .translate-panel { right: -10px; min-width: 260px; }
+}
+
+/* ── ABOVE-FOLD NEWSLETTER STRIP — visible without scrolling (competitor pattern) ── */
+.nl-strip { background: var(--gold-lt); border-bottom: 1px solid rgba(200,137,0,.2); padding: 10px 24px; }
+.nl-strip-inner { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.nl-strip-text { font-size: 13px; font-weight: 600; color: var(--ink2); flex: 1; min-width: 200px; }
+.nl-strip-text span { color: var(--green); }
+.nl-strip-form { display: flex; gap: 8px; flex-shrink: 0; }
+.nl-strip-input { background: var(--white); border: 1px solid rgba(200,137,0,.35); border-radius: 4px; padding: 7px 14px; font-size: 12px; font-family: var(--ff); color: var(--ink); outline: none; width: 220px; transition: border-color .15s; }
+.nl-strip-input:focus { border-color: var(--green); }
+.nl-strip-btn { background: var(--green); color: var(--white); border: none; border-radius: 4px; padding: 7px 18px; font-size: 12px; font-weight: 700; font-family: var(--ff); cursor: pointer; white-space: nowrap; transition: background .15s; }
+.nl-strip-btn:hover { background: var(--green-dk); }
+.nl-strip-note { font-size: 10px; color: var(--ink3); }
+@media (max-width: 640px) { .nl-strip-form { width: 100%; } .nl-strip-input { flex: 1; } }
+
+/* ── DESTINATION SEARCH BAR (Go2Africa / SafariBookings pattern) ── */
+.dest-search-bar { background: rgba(0,0,0,.55); backdrop-filter: blur(8px); padding: 0; }
+.dest-search-inner { max-width: var(--max); margin: 0 auto; padding: 16px 24px; }
+.dest-search-label { font-size: 11px; font-weight: 700; letter-spacing: .10em; text-transform: uppercase; color: rgba(255,255,255,.6); margin-bottom: 10px; }
+.dest-search-form { display: flex; gap: 8px; flex-wrap: wrap; }
+.dest-search-select { flex: 1; min-width: 140px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22); border-radius: 4px; padding: 10px 14px; font-size: 13px; font-family: var(--ff); color: var(--white); cursor: pointer; outline: none; transition: border-color .15s; appearance: none; background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='rgba(255,255,255,.5)' stroke-width='1.4' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; }
+.dest-search-select:focus { border-color: var(--gold); }
+.dest-search-select option { background: var(--green-deep); color: var(--white); }
+.dest-search-btn { background: var(--gold); color: var(--ink); border: none; border-radius: 4px; padding: 10px 24px; font-size: 13px; font-weight: 700; font-family: var(--ff); cursor: pointer; white-space: nowrap; transition: filter .15s; }
+.dest-search-btn:hover { filter: brightness(1.06); }
+
+/* ── RCA DESK SLIDER (Black Tomato editorial pattern) ── */
+.eq-slider { position: relative; overflow: hidden; min-height: 140px; }
+.eq-slide { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; transition: opacity .8s ease; pointer-events: none; }
+.eq-slide.active { opacity: 1; pointer-events: auto; }
+.eq-dots { display: flex; gap: 8px; justify-content: center; margin-top: 16px; position: relative; z-index: 2; }
+.eq-dot { width: 5px; height: 5px; border-radius: 50%; background: rgba(255,255,255,.25); border: none; cursor: pointer; padding: 0; transition: background .3s, transform .3s; }
+.eq-dot.active { background: var(--gold); transform: scale(1.4); }
+
+/* ── AVIATION & HOSPITALITY SECTION (VoyagesAfriq pattern) ── */
+.avia-section { background: var(--ink); padding: 40px 24px; }
+.avia-inner { max-width: var(--max); margin: 0 auto; }
+.avia-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.avia-title { font-family: var(--ff-serif); font-size: 18px; font-weight: 700; color: var(--white); }
+.avia-title span { color: var(--gold); }
+.avia-more { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid rgba(247,197,2,.3); padding-bottom: 1px; }
+.avia-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.avia-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); border-radius: 6px; padding: 16px; transition: background .2s, border-color .2s; cursor: pointer; }
+.avia-card:hover { background: rgba(255,255,255,.09); border-color: rgba(247,197,2,.3); }
+.avia-tag { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--terra-lt); margin-bottom: 7px; opacity: .9; }
+.avia-card-title { font-family: var(--ff-serif); font-size: 13px; font-weight: 700; color: var(--white); line-height: 1.4; margin-bottom: 8px; }
+.avia-card:hover .avia-card-title { color: var(--gold); }
+.avia-card-meta { font-size: 10px; color: rgba(255,255,255,.35); }
+@media (max-width: 768px) { .avia-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .avia-grid { grid-template-columns: 1fr; } }
+
+/* ── DESTINATION CARDS WITH PHOTOS (andBeyond pattern) ── */
+.dest-photo-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+.dest-photo-card { position: relative; height: 180px; border-radius: 6px; overflow: hidden; cursor: pointer; transition: transform .2s; }
+.dest-photo-card:hover { transform: translateY(-4px); }
+.dest-photo-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 6s ease; }
+.dest-photo-card:hover img { transform: scale(1.06); }
+.dest-photo-card .dest-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.75) 0%, rgba(0,0,0,.1) 60%); }
+.dest-photo-card .dest-card-body { position: absolute; bottom: 0; left: 0; right: 0; padding: 12px 12px 10px; }
+.dest-photo-card .dest-card-flag { font-size: 16px; display: block; margin-bottom: 3px; }
+.dest-photo-card .dest-card-name { font-size: 13px; font-weight: 700; color: var(--white); display: block; }
+.dest-photo-card .dest-card-sub { font-size: 10px; color: rgba(255,255,255,.6); }
+.dest-photo-card .dest-card-guide { font-size: 10px; font-weight: 600; color: var(--terra-lt); margin-top: 4px; display: block; letter-spacing: .04em; }
+/* Colour-coded placeholder backgrounds per region when no image */
+.dest-bg-1 { background: linear-gradient(135deg, #1a3a2a 0%, #2d6040 100%); }
+.dest-bg-2 { background: linear-gradient(135deg, #3a2a0a 0%, #8a5a1a 100%); }
+.dest-bg-3 { background: linear-gradient(135deg, #0a2a3a 0%, #1a5a6a 100%); }
+.dest-bg-4 { background: linear-gradient(135deg, #2a0a3a 0%, #5a1a6a 100%); }
+.dest-bg-5 { background: linear-gradient(135deg, #3a1a0a 0%, #7a3a1a 100%); }
+@media (max-width: 960px) { .dest-photo-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) { .dest-photo-grid { grid-template-columns: 1fr 1fr; } .dest-photo-card { height: 140px; } }
+
+/* ── DESTINATION SEARCH — MOBILE MODAL (Fix 3) ── */
+/* Desktop: keep existing dropdowns. Mobile: show modal */
+.dest-search-bar { background: rgba(0,0,0,.55); backdrop-filter: blur(8px); }
+.dest-search-inner { max-width: var(--max); margin: 0 auto; padding: 16px 24px; }
+.dest-search-label { font-size: 11px; font-weight: 700; letter-spacing: .10em; text-transform: uppercase; color: rgba(255,255,255,.6); margin-bottom: 10px; }
+.dest-search-form { display: flex; gap: 8px; flex-wrap: wrap; }
+.dest-search-select { flex: 1; min-width: 140px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22); border-radius: 4px; padding: 10px 14px; font-size: 13px; font-family: var(--ff); color: var(--white); cursor: pointer; outline: none; transition: border-color .15s; appearance: none; background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='rgba(255,255,255,.5)' stroke-width='1.4' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; }
+.dest-search-select:focus { border-color: var(--gold); }
+.dest-search-select option { background: var(--green-deep); color: var(--white); }
+.dest-search-btn { background: var(--gold); color: var(--ink); border: none; border-radius: 4px; padding: 10px 24px; font-size: 13px; font-weight: 700; font-family: var(--ff); cursor: pointer; white-space: nowrap; transition: filter .15s; }
+.dest-search-btn:hover { filter: brightness(1.06); }
+
+/* Mobile tap-to-select button (replaces selects at ≤640px) */
+.dest-mobile-search { display: none; }
+.dest-mobile-btn { width: 100%; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22); border-radius: 4px; padding: 12px 16px; color: var(--white); font-size: 14px; font-family: var(--ff); font-weight: 500; cursor: pointer; display: flex; align-items: center; justify-content: space-between; transition: border-color .15s; }
+.dest-mobile-btn:hover, .dest-mobile-btn:focus { border-color: var(--gold); outline: none; }
+.dest-mobile-btn-icon { font-size: 18px; }
+.dest-mobile-go { background: var(--gold); color: var(--ink); border: none; border-radius: 4px; padding: 12px; font-size: 14px; font-weight: 700; font-family: var(--ff); cursor: pointer; width: 100%; margin-top: 8px; transition: filter .15s; }
+/* Destination modal overlay */
+.dest-modal { display: none; position: fixed; inset: 0; z-index: 400; align-items: flex-end; }
+.dest-modal.open { display: flex; }
+.dest-modal-bg { position: absolute; inset: 0; background: rgba(0,0,0,.6); }
+.dest-modal-sheet { position: relative; background: var(--white); width: 100%; border-radius: 16px 16px 0 0; padding: 0 0 24px; max-height: 80vh; overflow-y: auto; animation: slideUp .28s cubic-bezier(.4,0,.2,1); }
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.dest-modal-handle { width: 36px; height: 4px; background: var(--bdr2); border-radius: 2px; margin: 12px auto 0; }
+.dest-modal-head { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; border-bottom: 1px solid var(--bdr); }
+.dest-modal-title { font-size: 15px; font-weight: 700; color: var(--ink); }
+.dest-modal-close { font-size: 22px; color: var(--ink3); cursor: pointer; line-height: 1; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background .15s; }
+.dest-modal-close:hover { background: var(--bdr); }
+.dest-modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 16px 16px 8px; }
+.dest-modal-item { border: 2px solid var(--bdr); border-radius: 8px; padding: 14px 10px; text-align: center; cursor: pointer; transition: border-color .15s, background .15s; }
+.dest-modal-item:hover, .dest-modal-item.selected { border-color: var(--green); background: var(--green-lt); }
+.dest-modal-flag { font-size: 26px; display: block; margin-bottom: 5px; }
+.dest-modal-name { font-size: 12px; font-weight: 700; color: var(--ink); }
+.dest-modal-sub { font-size: 10px; color: var(--ink3); margin-top: 2px; }
+
+/* TRUST BAR ── */
+.trust { background: var(--green-dk); padding: 9px 24px; }
+.trust-inner { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.trust-item { font-size: 11.5px; color: rgba(255,255,255,.62); display: flex; align-items: center; gap: 5px; white-space: nowrap; }
+.trust-item strong { color: var(--gold); font-weight: 700; }
+.trust-sep { color: var(--terra-lt); opacity: .6; }
+
+/* ── BODY LAYOUT ── */
+/* AUDIT FIX: single-column main feed, NO sidebar categories widget */
+.body-wrap { max-width: var(--max); margin: 0 auto; padding: 36px 24px 48px; display: grid; grid-template-columns: 1fr 296px; gap: 34px; align-items: start; }
+
+/* ── SECTION HEAD ── */
+.sec-head { display: flex; align-items: center; justify-content: space-between; border-bottom: 3px solid var(--green); padding-bottom: 9px; margin-bottom: 18px; }
+.sec-title { font-size: 16px; font-weight: 700; color: var(--ink); letter-spacing: -.01em; font-family: var(--ff-serif); }
+.sec-more { font-size: 10.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--terra); border-bottom: 1px solid var(--terra-lt); padding-bottom: 1px; transition: border-color .15s, color .15s; }
+.sec-more:hover { border-color: var(--terra); color: var(--terra-dk); }
+
+/* ── FEATURED LEAD (with real photo) ── */
+.featured { display: grid; grid-template-columns: 1fr 1fr; background: var(--white); border: 1px solid var(--bdr); border-radius: 6px; overflow: hidden; margin-bottom: 28px; transition: box-shadow .2s; }
+.featured:hover { box-shadow: 0 6px 28px rgba(30,128,65,.12); }
+.feat-img { position: relative; min-height: 300px; overflow: hidden; }
+.feat-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.featured:hover .feat-img img { transform: scale(1.03); }
+.feat-badge { position: absolute; top: 12px; left: 12px; background: var(--terra); color: var(--white); font-size: 9px; font-weight: 700; letter-spacing: .10em; text-transform: uppercase; padding: 4px 10px; border-radius: 2px; z-index: 1; }
+.feat-body { padding: 26px 24px; display: flex; flex-direction: column; justify-content: center; }
+.art-cat { font-size: 9.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--terra); margin-bottom: 7px; }
+.feat-title { font-size: 19px; font-weight: 700; line-height: 1.28; letter-spacing: -.015em; color: var(--ink); margin-bottom: 11px; transition: color .15s; font-family: var(--ff-serif); }
+.featured:hover .feat-title { color: var(--green); }
+.feat-excerpt { font-size: 13px; font-weight: 300; color: var(--ink2); line-height: 1.7; margin-bottom: 16px; }
+.art-meta { font-size: 11px; color: var(--ink3); display: flex; align-items: center; gap: 8px; }
+.art-meta .author { font-weight: 600; color: var(--ink2); }
+.art-meta .dot { color: var(--bdr2); }
+
+/* ── ARTICLE GRID (3-col with photos) ── */
+.art-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; }
+.art-card { background: var(--white); border: 1px solid var(--bdr); border-radius: 6px; overflow: hidden; transition: box-shadow .2s, transform .15s; }
+.art-card:hover { box-shadow: 0 4px 18px rgba(30,128,65,.10); transform: translateY(-2px); }
+.card-img { height: 150px; overflow: hidden; position: relative; background: var(--green-lt); }
+.card-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.art-card:hover .card-img img { transform: scale(1.04); }
+.card-body { padding: 14px; }
+.card-cat { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--terra); margin-bottom: 5px; }
+.card-title { font-size: 13px; font-weight: 700; line-height: 1.4; color: var(--ink); margin-bottom: 8px; transition: color .15s; font-family: var(--ff-serif); }
+.art-card:hover .card-title { color: var(--green); }
+.card-meta { font-size: 10px; color: var(--ink3); }
+
+/* ── LIST ARTICLES ── */
+.art-list { margin-bottom: 28px; }
+.list-item { display: grid; grid-template-columns: 96px 1fr; gap: 14px; padding: 13px 0; border-bottom: 1px solid var(--bdr); align-items: start; }
+.list-item:last-child { border-bottom: none; }
+.list-img { height: 70px; border-radius: 4px; overflow: hidden; position: relative; background: var(--green-lt); }
+.list-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .35s; }
+.list-item:hover .list-img img { transform: scale(1.05); }
+.list-cat { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--terra); margin-bottom: 3px; }
+.list-title { font-size: 13px; font-weight: 700; line-height: 1.38; color: var(--ink); margin-bottom: 5px; transition: color .15s; font-family: var(--ff-serif); }
+.list-item:hover .list-title { color: var(--green); }
+.list-meta { font-size: 10px; color: var(--ink3); }
+
+/* ── SIDEBAR ── */
+/* AUDIT FIX: NO Categories widget. Only: Trending, Newsletter, Popular Posts (filtered) */
+.widget { background: var(--white); border: 1px solid var(--bdr); border-radius: 6px; overflow: hidden; margin-bottom: 20px; }
+.widget-head { padding: 12px 16px 10px; border-bottom: 2.5px solid var(--green); font-size: 13.5px; font-weight: 700; color: var(--ink); }
+
+/* Trending */
+.trend-item { display: flex; gap: 9px; padding: 9px 16px; align-items: start; cursor: pointer; transition: background .1s; border-bottom: 1px solid var(--bdr); }
+.trend-item:last-child { border-bottom: none; }
+.trend-item:hover { background: var(--green-lt); }
+.trend-num { font-size: 17px; font-weight: 800; font-style: italic; color: var(--terra-lt); line-height: 1.1; flex-shrink: 0; width: 20px; text-align: right; }
+.trend-title { font-size: 12px; font-weight: 500; line-height: 1.4; color: var(--ink2); }
+.trend-item:hover .trend-title { color: var(--green); }
+
+/* Newsletter — AUDIT FIX: working form rendered, not just heading */
+.nl-widget { background: var(--green); }
+.nl-widget .widget-head { background: var(--green-dk); border-bottom-color: rgba(255,255,255,.15); color: var(--white); }
+.nl-body { padding: 15px; }
+.nl-body p { font-size: 12px; font-weight: 300; color: rgba(255,255,255,.68); line-height: 1.65; margin-bottom: 11px; }
+.nl-input { width: 100%; background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.2); border-radius: 4px; padding: 9px 11px; font-size: 12px; font-family: var(--ff); color: var(--white); margin-bottom: 8px; outline: none; transition: border-color .15s; }
+.nl-input::placeholder { color: rgba(255,255,255,.32); }
+.nl-input:focus { border-color: var(--gold); }
+.nl-btn { width: 100%; background: var(--gold); color: var(--ink); border: none; border-radius: 4px; padding: 9px; font-size: 12px; font-weight: 700; font-family: var(--ff); cursor: pointer; transition: filter .15s; letter-spacing: .03em; }
+.nl-btn:hover { filter: brightness(1.06); }
+.nl-note { font-size: 10px; color: rgba(255,255,255,.28); margin-top: 7px; line-height: 1.5; }
+
+/* Popular Posts — AUDIT FIX: only travel/culture/adventure articles */
+.pop-item { display: flex; gap: 10px; padding: 10px 16px; border-bottom: 1px solid var(--bdr); cursor: pointer; transition: background .1s; align-items: start; }
+.pop-item:last-child { border-bottom: none; }
+.pop-item:hover { background: var(--green-lt); }
+.pop-img { width: 58px; height: 46px; border-radius: 3px; overflow: hidden; flex-shrink: 0; position: relative; background: var(--green-lt); }
+.pop-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.pop-title { font-size: 11.5px; font-weight: 500; line-height: 1.38; color: var(--ink2); }
+.pop-item:hover .pop-title { color: var(--green); }
+.pop-cat { font-size: 9px; color: var(--terra); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-top: 3px; }
+
+/* ── WHY RCA AUTHORITY SECTION ── */
+.why-rca { background: var(--paper); border-top: 1px solid var(--bdr); border-bottom: 1px solid var(--bdr); padding: 52px 24px; }
+.why-inner { max-width: var(--max); margin: 0 auto; }
+.why-head { text-align: center; margin-bottom: 40px; }
+.why-kicker { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); margin-bottom: 10px; }
+.why-title { font-family: var(--ff-serif); font-size: 28px; font-weight: 700; color: var(--ink); letter-spacing: -.02em; }
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.why-card { background: var(--white); border: 1px solid var(--bdr); border-radius: 8px; padding: 28px 24px; text-align: center; transition: box-shadow .2s, transform .15s; }
+.why-card:hover { box-shadow: 0 6px 24px rgba(200,121,58,.12); border-color: var(--terra-lt); transform: translateY(-3px); }
+.why-icon { width: 52px; height: 52px; background: var(--terra-lt); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; color: var(--terra-dk); }
+.why-card-title { font-family: var(--ff-serif); font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+.why-card-desc { font-size: 13px; font-weight: 300; color: var(--ink2); line-height: 1.72; }
+@media (max-width: 640px) { .why-grid { grid-template-columns: 1fr; } .why-title { font-size: 22px; } }
+
+/* ── DESTINATIONS HUB — AUDIT FIX: new section ── */
+.destinations { background: var(--green-deep); padding: 46px 24px; }
+.dest-inner { max-width: var(--max); margin: 0 auto; }
+.dest-top { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 22px; }
+.dest-h { font-size: 25px; font-weight: 800; letter-spacing: -.02em; color: var(--white); }
+.dest-sub { font-size: 12.5px; color: rgba(255,255,255,.48); margin-top: 3px; }
+.dest-all { font-size: 11px; font-weight: 700; letter-spacing: .10em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid rgba(247,197,2,.3); padding-bottom: 1px; transition: border-color .15s; }
+.dest-all:hover { border-color: var(--gold); }
+.dest-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+.dest-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.09); border-radius: 6px; padding: 15px 10px; text-align: center; cursor: pointer; transition: background .2s, border-color .2s, transform .15s; }
+.dest-card:hover { background: rgba(247,197,2,.10); border-color: rgba(247,197,2,.28); transform: translateY(-3px); }
+.dest-flag { font-size: 22px; margin-bottom: 7px; display: block; }
+.dest-name { font-size: 11px; font-weight: 600; color: rgba(255,255,255,.82); }
+.dest-stories { font-size: 9.5px; color: rgba(255,255,255,.28); margin-top: 2px; }
+
+/* ── WORK WITH US — AUDIT FIX: visible on homepage ── */
+.work-strip { background: var(--gold); padding: 24px; }
+.work-inner { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.work-h { font-size: 17px; font-weight: 800; color: var(--ink); letter-spacing: -.01em; }
+.work-sub { font-size: 12.5px; color: var(--ink2); margin-top: 3px; font-weight: 300; }
+.work-cta { background: var(--green); color: var(--white); font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 11px 26px; border-radius: 4px; transition: background .15s; flex-shrink: 0; }
+.work-cta:hover { background: var(--green-dk); }
+
+/* ── FLOATING PLAN YOUR TRIP CTA — mobile only (Fix 5) ── */
+.mob-float-cta {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0;
+  z-index: 200;
+  background: var(--gold);
+  padding: 12px 20px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,.15);
+}
+.mob-float-cta a {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: var(--green); color: var(--white);
+  font-size: 15px; font-weight: 700; font-family: var(--ff);
+  padding: 13px; border-radius: 8px; transition: background .15s;
+}
+.mob-float-cta a:hover { background: var(--green-dk); }
+@media (max-width: 960px) { .mob-float-cta { display: block; } }
+
+/* Pad body so content isn't hidden behind floating bar */
+@media (max-width: 960px) { body { padding-bottom: 64px; } }
+
+
+/* ═══════════════════════════════════════════════════
+   ABOUT THE PLATFORM SECTION (Gap 1)
+   ═══════════════════════════════════════════════════ */
+.about-section { background: var(--white); padding: 72px 24px; }
+.about-inner { max-width: var(--max); margin: 0 auto; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+.about-left {}
+.about-kicker { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); margin-bottom: 14px; }
+.about-headline { font-family: var(--ff-serif); font-size: clamp(26px,3vw,38px); font-weight: 800; color: var(--ink); line-height: 1.18; letter-spacing: -.02em; margin-bottom: 20px; }
+.about-headline span { color: var(--green); font-style: italic; }
+.about-body { font-size: 15px; font-weight: 300; color: var(--ink2); line-height: 1.85; margin-bottom: 24px; }
+.about-body strong { font-weight: 600; color: var(--ink); }
+.about-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin: 32px 0; }
+.about-stat { text-align: center; padding: 20px 12px; background: var(--paper); border-radius: 6px; border-top: 3px solid var(--gold); }
+.about-stat-num { font-family: var(--ff-serif); font-size: 30px; font-weight: 800; color: var(--green); line-height: 1; margin-bottom: 6px; }
+.about-stat-label { font-size: 11px; color: var(--ink3); line-height: 1.45; }
+.about-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--green); color: var(--white); font-size: 13px; font-weight: 700; padding: 12px 24px; border-radius: 4px; transition: background .15s; margin-top: 8px; }
+.about-cta:hover { background: var(--green-dk); }
+.about-right {}
+.about-pillars { display: flex; flex-direction: column; gap: 0; }
+.about-pillar { padding: 24px 0; border-bottom: 1px solid var(--bdr); }
+.about-pillar:first-child { padding-top: 0; }
+.about-pillar:last-child { border-bottom: none; padding-bottom: 0; }
+.about-pillar-num { font-family: var(--ff-serif); font-size: 13px; font-weight: 700; font-style: italic; color: var(--terra); margin-bottom: 6px; }
+.about-pillar-title { font-family: var(--ff-serif); font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+.about-pillar-body { font-size: 14px; font-weight: 300; color: var(--ink2); line-height: 1.78; }
+@media (max-width: 900px) { .about-grid { grid-template-columns: 1fr; gap: 40px; } }
+@media (max-width: 560px) { .about-stats { grid-template-columns: 1fr 1fr; } .about-section { padding: 48px 16px; } }
+
+/* ═══════════════════════════════════════════════════
+   WORK WITH US — MEDIA PARTNERSHIPS (Gap 2)
+   ═══════════════════════════════════════════════════ */
+.wwu-section { background: var(--green-deep); padding: 72px 24px; }
+.wwu-inner { max-width: var(--max); margin: 0 auto; }
+.wwu-top { text-align: center; margin-bottom: 52px; }
+.wwu-kicker { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); margin-bottom: 12px; }
+.wwu-headline { font-family: var(--ff-serif); font-size: clamp(24px,3vw,36px); font-weight: 800; color: var(--white); margin-bottom: 14px; line-height: 1.2; }
+.wwu-sub { font-size: 14px; color: rgba(255,255,255,.55); max-width: 580px; margin: 0 auto; line-height: 1.7; }
+.wwu-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 48px; }
+.wwu-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); border-radius: 8px; padding: 28px 22px; transition: background .2s, border-color .2s; }
+.wwu-card:hover { background: rgba(255,255,255,.09); border-color: rgba(247,197,2,.25); }
+.wwu-card-icon { width: 44px; height: 44px; background: rgba(247,197,2,.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.wwu-card-title { font-family: var(--ff-serif); font-size: 16px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+.wwu-card-body { font-size: 13px; color: rgba(255,255,255,.5); line-height: 1.7; margin-bottom: 14px; }
+.wwu-card-detail { font-size: 11px; font-weight: 600; color: var(--gold); letter-spacing: .04em; }
+.wwu-careers { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 8px; padding: 32px; }
+.wwu-careers-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; }
+.wwu-careers-title { font-family: var(--ff-serif); font-size: 20px; font-weight: 700; color: var(--white); }
+.wwu-careers-email { font-size: 12px; color: var(--gold); border-bottom: 1px solid rgba(247,197,2,.3); padding-bottom: 1px; }
+.wwu-roles { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
+.wwu-role { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07); border-radius: 6px; padding: 16px; }
+.wwu-role-title { font-size: 13px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+.wwu-role-type { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--terra); }
+.wwu-role-desc { font-size: 12px; color: rgba(255,255,255,.45); margin-top: 6px; line-height: 1.6; }
+.wwu-contact-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--gold); color: var(--ink); font-size: 13px; font-weight: 700; padding: 12px 28px; border-radius: 4px; margin-top: 24px; transition: filter .15s; }
+.wwu-contact-btn:hover { filter: brightness(1.06); }
+@media (max-width: 900px) { .wwu-grid { grid-template-columns: 1fr; } .wwu-roles { grid-template-columns: 1fr; } .wwu-section { padding: 48px 16px; } }
+
+/* ═══════════════════════════════════════════════════
+   REGION HUB SECTION (Gap 6)
+   ═══════════════════════════════════════════════════ */
+.region-hub { background: var(--paper); padding: 72px 24px; }
+.region-hub-inner { max-width: var(--max); margin: 0 auto; }
+.region-hub-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 36px; flex-wrap: wrap; gap: 12px; }
+.region-hub-kicker { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); margin-bottom: 8px; }
+.region-hub-title { font-family: var(--ff-serif); font-size: clamp(22px,3vw,32px); font-weight: 800; color: var(--ink); letter-spacing: -.02em; }
+.region-hub-all { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--green); border-bottom: 1px solid var(--green-md); padding-bottom: 1px; }
+.region-hub-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.region-hub-card { background: var(--white); border: 1px solid var(--bdr); border-radius: 8px; overflow: hidden; transition: box-shadow .2s, transform .15s; }
+.region-hub-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,.10); transform: translateY(-3px); }
+.region-hub-card-img { height: 160px; background: var(--green-deep); position: relative; overflow: hidden; }
+.region-hub-card-img-bg { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 64px; opacity: .25; }
+.region-hub-card-img-overlay { position: absolute; inset: 0; background: linear-gradient(to top,rgba(8,45,22,.85) 0%,rgba(8,45,22,.2) 60%); }
+.region-hub-card-region { position: absolute; bottom: 12px; left: 14px; }
+.region-hub-card-name { font-family: var(--ff-serif); font-size: 20px; font-weight: 800; color: var(--white); line-height: 1; }
+.region-hub-card-nations { font-size: 10px; font-weight: 600; color: var(--gold); letter-spacing: .06em; text-transform: uppercase; margin-top: 3px; }
+.region-hub-card-body { padding: 16px 18px 18px; }
+.region-hub-card-desc { font-size: 13px; color: var(--ink2); line-height: 1.65; margin-bottom: 14px; font-weight: 300; }
+.region-hub-card-stories { display: flex; align-items: center; justify-content: space-between; }
+.region-hub-card-count { font-size: 11px; color: var(--ink3); }
+.region-hub-card-link { font-size: 12px; font-weight: 700; color: var(--terra); border-bottom: 1px solid var(--terra-lt); padding-bottom: 1px; transition: border-color .15s; }
+.region-hub-card-link:hover { border-color: var(--terra); }
+@media (max-width: 900px) { .region-hub-grid { grid-template-columns: 1fr 1fr; } .region-hub { padding: 48px 16px; } }
+@media (max-width: 560px) { .region-hub-grid { grid-template-columns: 1fr; } }
+
+/* ═══════════════════════════════════════════════════
+   EDITORIAL TEAM (Gap 10)
+   ═══════════════════════════════════════════════════ */
+.team-section { background: var(--white); padding: 72px 24px; border-top: 1px solid var(--bdr); }
+.team-inner { max-width: var(--max); margin: 0 auto; }
+.team-top { text-align: center; margin-bottom: 48px; }
+.team-kicker { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); margin-bottom: 12px; }
+.team-headline { font-family: var(--ff-serif); font-size: clamp(22px,3vw,32px); font-weight: 800; color: var(--ink); letter-spacing: -.02em; margin-bottom: 12px; }
+.team-sub { font-size: 14px; color: var(--ink3); max-width: 520px; margin: 0 auto; line-height: 1.7; }
+.team-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; margin-bottom: 36px; }
+.team-card { text-align: center; }
+.team-avatar { width: 72px; height: 72px; border-radius: 50%; background: var(--green-lt); border: 3px solid var(--bdr2); margin: 0 auto 14px; display: flex; align-items: center; justify-content: center; font-family: var(--ff-serif); font-size: 22px; font-weight: 800; color: var(--green); overflow: hidden; }
+.team-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.team-name { font-family: var(--ff-serif); font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 3px; }
+.team-role { font-size: 11px; font-weight: 600; color: var(--terra); letter-spacing: .04em; text-transform: uppercase; margin-bottom: 8px; }
+.team-bio { font-size: 12px; color: var(--ink3); line-height: 1.6; }
+.team-authors-row { border-top: 1px solid var(--bdr); padding-top: 28px; }
+.team-authors-label { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ink3); margin-bottom: 16px; text-align: center; }
+.team-authors-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+.team-author-card { display: flex; align-items: center; gap: 10px; padding: 12px 14px; background: var(--paper); border: 1px solid var(--bdr); border-radius: 6px; transition: border-color .15s, background .15s; }
+.team-author-card:hover { border-color: var(--green); background: var(--green-lt); }
+.team-author-avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--green-lt); border: 2px solid var(--bdr2); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; color: var(--green); flex-shrink: 0; }
+.team-author-name { font-size: 13px; font-weight: 600; color: var(--ink); line-height: 1.2; }
+.team-author-beat { font-size: 10px; color: var(--ink3); margin-top: 2px; }
+@media (max-width: 900px) { .team-grid { grid-template-columns: repeat(2,1fr); } .team-authors-grid { grid-template-columns: repeat(2,1fr); } .team-section { padding: 48px 16px; } }
+@media (max-width: 560px) { .team-grid { grid-template-columns: 1fr 1fr; } .team-authors-grid { grid-template-columns: 1fr; } }
+
+/* ═══════════════════════════════════════════════════
+   OMIREN STYLES FEATURE SECTION (Gap 12)
+   ═══════════════════════════════════════════════════ */
+.omiren-section { background: var(--green-deep); padding: 72px 24px; }
+.omiren-inner { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+.omiren-left {}
+.omiren-kicker { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+.omiren-kicker::before { content: ''; width: 24px; height: 2px; background: var(--terra); display: block; }
+.omiren-headline { font-family: var(--ff-serif); font-size: clamp(24px,3vw,38px); font-weight: 800; color: var(--white); line-height: 1.18; letter-spacing: -.02em; margin-bottom: 16px; }
+.omiren-headline span { color: var(--gold); font-style: italic; }
+.omiren-body { font-size: 14px; color: rgba(255,255,255,.55); line-height: 1.85; margin-bottom: 28px; }
+.omiren-pillars { display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px; }
+.omiren-pillar { display: flex; align-items: flex-start; gap: 12px; }
+.omiren-pillar-dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+.omiren-pillar-text { font-size: 13px; color: rgba(255,255,255,.65); line-height: 1.6; }
+.omiren-pillar-text strong { color: var(--white); font-weight: 600; }
+.omiren-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--gold); color: var(--ink); font-size: 13px; font-weight: 700; padding: 12px 24px; border-radius: 4px; transition: filter .15s; }
+.omiren-cta:hover { filter: brightness(1.06); }
+.omiren-right {}
+.omiren-articles { display: flex; flex-direction: column; gap: 14px; }
+.omiren-article { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.07); border-radius: 6px; padding: 16px 18px; display: flex; gap: 14px; align-items: flex-start; transition: background .2s, border-color .2s; }
+.omiren-article:hover { background: rgba(255,255,255,.09); border-color: rgba(247,197,2,.2); }
+.omiren-article-num { font-family: var(--ff-serif); font-size: 24px; font-weight: 800; color: rgba(247,197,2,.25); flex-shrink: 0; line-height: 1; }
+.omiren-article-cat { font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--terra); margin-bottom: 5px; }
+.omiren-article-title { font-size: 13px; font-weight: 600; color: var(--white); line-height: 1.45; transition: color .15s; }
+.omiren-article:hover .omiren-article-title { color: var(--gold); }
+.omiren-article-meta { font-size: 10px; color: rgba(255,255,255,.3); margin-top: 5px; }
+@media (max-width: 900px) { .omiren-inner { grid-template-columns: 1fr; gap: 40px; } .omiren-section { padding: 48px 16px; } }
+
+/* ═══════════════════════════════════════════════════
+   CONTACT SECTION (Gap 3)
+   ═══════════════════════════════════════════════════ */
+.contact-section { background: var(--paper); padding: 72px 24px; border-top: 1px solid var(--bdr); }
+.contact-inner { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.contact-left {}
+.contact-kicker { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); margin-bottom: 14px; }
+.contact-headline { font-family: var(--ff-serif); font-size: clamp(24px,3vw,34px); font-weight: 800; color: var(--ink); letter-spacing: -.02em; margin-bottom: 16px; line-height: 1.2; }
+.contact-body { font-size: 14px; color: var(--ink2); line-height: 1.8; margin-bottom: 32px; font-weight: 300; }
+.contact-details { display: flex; flex-direction: column; gap: 18px; }
+.contact-detail { display: flex; align-items: flex-start; gap: 14px; }
+.contact-detail-icon { width: 38px; height: 38px; background: var(--green-lt); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--green); }
+.contact-detail-label { font-size: 10px; font-weight: 700; letter-spacing: .10em; text-transform: uppercase; color: var(--ink3); margin-bottom: 3px; }
+.contact-detail-value { font-size: 14px; font-weight: 500; color: var(--ink); }
+.contact-detail-value a { color: var(--green); border-bottom: 1px solid var(--green-lt); transition: border-color .15s; }
+.contact-detail-value a:hover { border-color: var(--green); }
+.contact-right {}
+.contact-enquiry-types { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 24px; }
+.contact-type { border: 1.5px solid var(--bdr2); border-radius: 6px; padding: 14px; cursor: pointer; transition: border-color .15s, background .15s; }
+.contact-type:hover, .contact-type.selected { border-color: var(--green); background: var(--green-lt); }
+.contact-type-title { font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+.contact-type-sub { font-size: 11px; color: var(--ink3); }
+.contact-form { display: flex; flex-direction: column; gap: 12px; }
+.cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.cf-field { display: flex; flex-direction: column; gap: 5px; }
+.cf-label { font-size: 11px; font-weight: 600; color: var(--ink2); letter-spacing: .03em; }
+.cf-input, .cf-select, .cf-textarea { border: 1.5px solid var(--bdr2); border-radius: 5px; padding: 10px 13px; font-size: 13px; font-family: var(--ff); color: var(--ink); background: var(--white); outline: none; transition: border-color .15s; }
+.cf-input:focus, .cf-select:focus, .cf-textarea:focus { border-color: var(--green); }
+.cf-textarea { resize: vertical; min-height: 100px; }
+.cf-submit { background: var(--green); color: var(--white); border: none; border-radius: 5px; padding: 13px; font-size: 14px; font-weight: 700; font-family: var(--ff); cursor: pointer; transition: background .15s; margin-top: 4px; }
+.cf-submit:hover { background: var(--green-dk); }
+@media (max-width: 900px) { .contact-inner { grid-template-columns: 1fr; gap: 40px; } .contact-section { padding: 48px 16px; } }
+@media (max-width: 560px) { .cf-row { grid-template-columns: 1fr; } .contact-enquiry-types { grid-template-columns: 1fr; } }
+
+/* ── FOOTER — gold brand background ── */
+.footer { background: var(--gold); color: #000000; padding: 46px 24px 22px; }
+.foot-logo img { height: 36px; filter: none; opacity: 1; }
+.foot-tagline-brand { font-size: 14px; font-style: italic; color: #000000; font-weight: 700; margin-bottom: 10px; }
+.foot-desc { font-size: 12px; font-weight: 300; color: #000000; line-height: 1.7; max-width: 256px; }
+.foot-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 38px; margin-bottom: 34px; padding-bottom: 34px; border-bottom: 1px solid rgba(0,0,0,.25); }
+.foot-logo { margin-bottom: 8px; }
+.foot-col-lbl { font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #000000; margin-bottom: 13px; }
+.foot-links { list-style: none; }
+.foot-links li { margin-bottom: 8px; }
+.foot-links a { font-size: 12px; color: #000000; transition: color .15s; }
+.foot-links a:hover { color: #000000; font-weight: 700; text-decoration: underline; }
+.foot-socials { display: flex; gap: 7px; margin-top: 17px; }
+.social { width: 30px; height: 30px; border: 1.5px solid rgba(0,0,0,.35); border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #000000; transition: border-color .15s, background .15s, color .15s; }
+.social:hover { border-color: var(--green); background: var(--green); color: var(--white); }
+.foot-btm { display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #000000; flex-wrap: wrap; gap: 10px; }
+.foot-btm a { color: #000000; margin-left: 16px; transition: color .15s; }
+.foot-btm a:hover { color: #000000; text-decoration: underline; }
+/* AUDIT FIX: "Africa, In Full." tagline prominent in footer brand section, not just copyright line */
+
+/* foot-inner handled by existing class */
+.foot-inner { max-width: var(--max); margin: 0 auto; }
+
+/* Accessibility: pause video animation for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-video-wrap video { animation: none; }
+  .hero-grain { animation: none; }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — Mobile-first breakpoints
+   ══════════════════════════════════════════ */
+
+/* ── TABLET: 960px and below ── */
+@media (max-width: 960px) {
+  /* Nav: hide desktop nav, show burger */
+  .nav { display: none; }
+  .burger { display: flex; }
+  .mob-nav { display: block; }
+
+  /* Tagline: smaller, hide sub-label */
+  .mast-tagline-sub { display: none; }
+  .mast-tagline-text { font-size: 15px; }
+
+  /* Work With Us: hide on tablet — lives in mobile drawer */
+  .btn-wwu { display: none; }
+
+  /* Hero */
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-right { display: none; }
+  .slide-content { grid-template-columns: 1fr; padding: 60px 20px; }
+  .slide-regions { display: none; }
+  .carousel-arrow { display: none; }
+
+  /* Layout */
+  .body-wrap { grid-template-columns: 1fr; }
+  .art-grid { grid-template-columns: 1fr 1fr; }
+  .dest-grid { grid-template-columns: repeat(3, 1fr); }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+  .why-grid { grid-template-columns: 1fr 1fr; }
+  .avia-grid { grid-template-columns: 1fr 1fr; }
+  .dest-photo-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ── MOBILE: 640px and below ── */
+@media (max-width: 640px) {
+  /* Masthead: compact */
+  .mast-top-inner { height: 48px; padding: 0 16px; }
+
+  .logo img { height: 30px; }
+
+  /* Nav bar: hide plan cta text, compress */
+  .mast-nav-bar { display: none; }
+
+  /* Ticker: smaller text */
+  .ticker { height: 30px; }
+  .ticker-scroll span { font-size: 11px; padding: 0 24px; }
+  .ticker-lbl { font-size: 9px; padding: 0 10px; }
+
+  /* Hero */
+  .hero-carousel, .carousel-track, .c-slide { min-height: 420px; }
+  .slide-h1, .hero-h1 { font-size: 24px; }
+  .slide-tagline, .hero-tagline-main { font-size: 18px; }
+  .slide-content { padding: 40px 16px 60px; }
+  .slide-btns { flex-direction: column; gap: 8px; }
+  .btn-gold, .btn-ghost { width: 100%; text-align: center; justify-content: center; }
+  .carousel-dots { bottom: 14px; }
+  .carousel-counter { display: none; }
+  .carousel-pause { bottom: 10px; right: 10px; }
+
+  /* Destination search: hide desktop selects, show mobile button */
+  .dest-search-inner { padding: 12px 16px; }
+  .dest-desktop-only { display: none; }
+  .dest-mobile-search { display: block; }
+
+  /* Newsletter strip */
+  .nl-strip-inner { flex-direction: column; gap: 10px; }
+  .nl-strip-form { width: 100%; }
+  .nl-strip-input { flex: 1; width: 100%; }
+
+  /* Main content */
+  .body-wrap { padding: 20px 16px 36px; }
+  .featured { grid-template-columns: 1fr; }
+  .feat-img { min-height: 200px; }
+  .art-grid { grid-template-columns: 1fr; }
+
+  /* Sections */
+  .dest-grid { grid-template-columns: repeat(2, 1fr); }
+  .dest-photo-grid { grid-template-columns: 1fr 1fr; }
+  .dest-photo-card { height: 130px; }
+  .why-grid { grid-template-columns: 1fr; }
+  .why-title { font-size: 22px; }
+  .avia-grid { grid-template-columns: 1fr; }
+
+  /* Aviation section */
+  .avia-section { padding: 28px 16px; }
+
+  /* Editorial quote slider */
+  .editorial-quote { padding: 36px 16px; }
+  .eq-quote { font-size: clamp(16px, 4vw, 20px); }
+
+  /* Destinations */
+  .destinations { padding: 32px 16px; }
+  .dest-top { flex-direction: column; align-items: flex-start; gap: 8px; }
+
+  /* Work With Us strip */
+  .work-inner { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .work-strip { padding: 20px 16px; }
+
+  /* Footer */
+  .foot-grid { grid-template-columns: 1fr; }
+  .footer { padding: 32px 16px 20px; }
+  .foot-btm { flex-direction: column; align-items: flex-start; gap: 8px; }
+
+  /* Translate panel on mobile: full-width friendly */
+  .translate-panel { right: -8px; min-width: 280px; }
+  .translate-langs { grid-template-columns: 1fr 1fr; gap: 5px; }
+}
+
+/* Hide tagline at very small screens only */
+@media (max-width: 480px) {
+  .mast-tagline { display: none; }
+}
+/* ── SMALL MOBILE: 380px and below ── */
+@media (max-width: 380px) {
+  .slide-h1 { font-size: 22px; }
+  .mast-utils { gap: 6px; }
+  .translate-langs { grid-template-columns: 1fr; }
+  .dest-grid { grid-template-columns: repeat(2, 1fr); }
+  .dest-photo-grid { grid-template-columns: 1fr; }
+}
+</style>
+<style>
+/* ── Article page styles (eswatini) ── */
+
 /* ── RESET & ROOT ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
@@ -136,9 +1010,9 @@ body { top: 0 !important; }
 .mast-nav-bar { background: var(--green); border-bottom: 3px solid var(--gold); }
 .mast-nav-inner { max-width: var(--max); margin: 0 auto; padding: 0 24px; height: 38px; display: flex; align-items: center; justify-content: space-between; }
 .nav { display: flex; list-style: none; height: 38px; align-items: center; }
-.nav > li > a { font-size: 12px; font-weight: 600; color: rgba(255,255,255,.82); padding: 0 13px; height: 38px; display: flex; align-items: center; transition: color .15s; white-space: nowrap; }
+.nav > li > a { font-size: 12px; font-weight: 600; color: #ffffff; padding: 0 13px; height: 38px; display: flex; align-items: center; transition: color .15s; white-space: nowrap; }
 .nav > li > a:hover { color: var(--gold); }
-.nav > li.nav-gold > a { color: var(--gold); }
+.nav > li.nav-gold > a { color: #ffffff; }
 .nav-plan { background: var(--gold); color: var(--ink); font-size: 11px; font-weight: 700; padding: 7px 16px; letter-spacing: .04em; text-transform: uppercase; transition: filter .15s; white-space: nowrap; }
 .nav-plan:hover { filter: brightness(1.06); }
 @media (max-width: 900px) { .mast-tagline-sub, .nav { display: none; } }
@@ -378,85 +1252,247 @@ body { top: 0 !important; }
 .foot-btm a:hover { text-decoration: underline; }
 @media (max-width: 760px) { .foot-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .foot-grid { grid-template-columns: 1fr; } }
+
 </style>
-<script src="site-router.js" defer></script>
-</head>
 <body>
 
-<!-- READING PROGRESS -->
-<div class="progress-bar" id="progressBar"></div>
 
-<!-- MASTHEAD -->
+<!-- BREAKING TICKER -->
+<div class="ticker">
+  <div class="ticker-lbl">Breaking</div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <span>Eswatini records 16.3% surge in international tourist arrivals</span>
+      <span>Cape Town Airport wins Africa's Best Airport for 11 consecutive years — Skytrax 2026</span>
+      <span>BBC 'Kingdom' documentary puts Zambia's South Luangwa on the world tourism map</span>
+      <span>Ethiopia hosts Hospitality Hackathon 2026 to pioneer AI-powered tourism solutions</span>
+      <span>69th UN Tourism Commission for Africa holds in Seychelles</span>
+      <span>Eswatini records 16.3% surge in international tourist arrivals</span>
+      <span>Cape Town Airport wins Africa's Best Airport for 11 consecutive years — Skytrax 2026</span>
+      <span>BBC 'Kingdom' documentary puts Zambia's South Luangwa on the world tourism map</span>
+      <span>Ethiopia hosts Hospitality Hackathon 2026 to pioneer AI-powered tourism solutions</span>
+      <span>69th UN Tourism Commission for Africa holds in Seychelles</span>
+    </div>
+  </div>
+</div>
+
+<!-- MASTHEAD — Two rows: brand identity bar + destination-first green nav bar -->
 <header class="masthead">
+
+  <!-- ROW 1: Logo + "Africa, In Full." tagline + utility controls -->
   <div class="mast-top">
     <div class="mast-top-inner">
-      <div style="display:flex;align-items:center;">
-        <a href="index.html" class="logo">
-          <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/logo_rex_clarke_adv.png"
-               alt="Rex Clarke Adventures"
-               onerror="this.style.display='none'">
-        </a>
-        <div class="mast-tagline">
-          <div class="mast-tagline-bar"></div>
-          <div>
-            <div class="mast-tagline-text">Africa, <span class="gold">In Full.</span></div>
-            <div class="mast-tagline-sub">54 Nations · Daily Editorial</div>
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/logo_rex_clarke_adv.png"
+             alt="Rex Clarke Adventures"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div style="display:none;align-items:center;gap:8px;">
+          <svg width="32" height="32" viewBox="0 0 80 80" fill="none">
+            <path d="M14 8h36c12 0 18 8 18 18s-6 14-16 16l16 28H54L40 46H28v24H14Z" fill="#1E8041"/>
+            <path d="M28 20v16h18c6 0 10-4 10-8s-4-8-10-8Z" fill="white" opacity=".35"/>
+          </svg>
+          <div style="line-height:1;">
+            <span style="font-size:15px;font-weight:700;color:#1E8041;display:block;">RexClarke</span>
+            <span style="font-size:15px;font-weight:700;color:#c49c00;display:block;margin-top:-2px;">Adventures</span>
           </div>
         </div>
-      </div>
-      <div class="mast-utils">
-        <div class="btn-search">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="5.5" cy="5.5" r="4" stroke="currentColor" stroke-width="1.3"/><path d="M9 9l2.5 2.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-          Search
-        </div>
+      </a>
 
-        <!-- GOOGLE TRANSLATE -->
+      <!-- TAGLINE — Africa, In Full. Bold, standalone, no sub-text -->
+      <div class="mast-tagline">
+        <div class="mast-tagline-bar"></div>
+        <div class="mast-tagline-text">Africa, <span class="gold">In Full.</span></div>
+      </div>
+
+      <!-- Utility: Search + Work With Us + Burger -->
+      <div class="mast-utils">
         <div class="translate-wrap" id="translateWrap">
-          <button class="translate-btn" id="translateBtn" onclick="toggleTranslate()" aria-label="Translate page" aria-expanded="false">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h12M9 3v2m4.5 13.5L12 17m0 0l-2-5m2 5l2-5m-2 5v2M3 5l6 14M3 5h12"/><path d="M15 11a9 9 0 0 1 4 0M17 8v1M21 11a9 9 0 0 1-4 5.5"/></svg>
-            <span class="translate-label">Translate</span>
-            <svg class="translate-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <button class="translate-btn" id="translateBtn" onclick="toggleTranslate()" aria-label="Translate this page" aria-expanded="false" aria-controls="translatePanel">
+            <svg class="translate-globe" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
           </button>
-          <div class="translate-panel" id="translatePanel" role="dialog" aria-label="Language selector">
+          <div class="translate-panel" id="translatePanel" role="dialog" aria-label="Choose language">
             <div class="translate-panel-head">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
-              <span>Select language</span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
+              <span>Choose language</span>
             </div>
-            <div id="google_translate_element"></div>
+            <div class="translate-langs">
+              <button class="translate-lang-btn active" onclick="setLang('en',this)"><span class="translate-lang-flag">🇬🇧</span><span class="translate-lang-name">English<span class="translate-lang-native">English</span></span></button>
+              <button class="translate-lang-btn" onclick="setLang('fr',this)"><span class="translate-lang-flag">🇫🇷</span><span class="translate-lang-name">French<span class="translate-lang-native">Français</span></span></button>
+              <button class="translate-lang-btn" onclick="setLang('es',this)"><span class="translate-lang-flag">🇪🇸</span><span class="translate-lang-name">Spanish<span class="translate-lang-native">Español</span></span></button>
+              <button class="translate-lang-btn" onclick="setLang('pt',this)"><span class="translate-lang-flag">🇵🇹</span><span class="translate-lang-name">Portuguese<span class="translate-lang-native">Português</span></span></button>
+              <button class="translate-lang-btn" onclick="setLang('sw',this)"><span class="translate-lang-flag">🌍</span><span class="translate-lang-name">Swahili<span class="translate-lang-native">Kiswahili</span></span></button>
+              <button class="translate-lang-btn" onclick="setLang('zh-CN',this)"><span class="translate-lang-flag">🇨🇳</span><span class="translate-lang-name">Mandarin<span class="translate-lang-native">普通话</span></span></button>
+              <button class="translate-lang-btn" onclick="setLang('de',this)"><span class="translate-lang-flag">🇩🇪</span><span class="translate-lang-name">German<span class="translate-lang-native">Deutsch</span></span></button>
+              <button class="translate-lang-btn" onclick="setLang('ar',this)"><span class="translate-lang-flag">🇸🇦</span><span class="translate-lang-name">Arabic<span class="translate-lang-native">العربية</span></span></button>
+            </div>
             <div class="translate-panel-note">Powered by Google Translate</div>
           </div>
+          <div id="google_translate_element" style="display:none;"></div>
         </div>
-
+        <button class="btn-search" aria-label="Search">
+          <svg width="14" height="14" viewBox="0 0 13 13" fill="none"><circle cx="5.5" cy="5.5" r="4" stroke="currentColor" stroke-width="1.4"/><path d="M9 9l2.5 2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </button>
         <a href="work-with-us.html" class="btn-wwu">Work With Us</a>
+        <div class="burger" onclick="openNav()"><span></span><span></span><span></span></div>
       </div>
     </div>
   </div>
+
+  <!-- ROW 2: Destination-first green navigation bar (Rough Guides / Go2Africa pattern) -->
   <div class="mast-nav-bar">
     <div class="mast-nav-inner">
       <ul class="nav">
-        <li class="nav-gold"><a href="https://rexclarkeadventures.com/destinations/">Destinations</a></li>
+
+        <!-- DESTINATIONS — mega dropdown, region-first -->
+        <li class="drop nav-highlight">
+          <a href="regions.html">
+            Destinations
+            <svg class="arr" viewBox="0 0 9 5" fill="none"><path d="M1 1l3.5 3L8 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="drop-menu">
+            <div class="drop-menu-grid">
+              <div class="drop-col">
+                <div class="drop-col-head">By Region</div>
+                <a href="regions.html"><span class="dm-flag">🌍</span><div class="dm-text">West Africa<span class="dm-sub">16 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🦁</span><div class="dm-text">East Africa<span class="dm-sub">20 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🏜</span><div class="dm-text">North Africa<span class="dm-sub">6 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🌴</span><div class="dm-text">Central Africa<span class="dm-sub">9 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🏔</span><div class="dm-text">Southern Africa<span class="dm-sub">6 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🌊</span><div class="dm-text">Islands<span class="dm-sub">7 nations</span></div></a>
+              </div>
+              <div class="drop-col">
+                <div class="drop-col-head">Popular Destinations</div>
+                <a href="regions.html"><span class="dm-flag">🇿🇦</span><div class="dm-text">South Africa<span class="dm-sub">42 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇰🇪</span><div class="dm-text">Kenya<span class="dm-sub">38 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇳🇬</span><div class="dm-text">Nigeria<span class="dm-sub">86 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇲🇦</span><div class="dm-text">Morocco<span class="dm-sub">31 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇪🇹</span><div class="dm-text">Ethiopia<span class="dm-sub">24 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇬🇭</span><div class="dm-text">Ghana<span class="dm-sub">27 stories</span></div></a>
+              </div>
+            </div>
+          </div>
+        </li>
+
         <li><a href="index.html">Home</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/explore-africa/">Explore Africa</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/adventures/">Adventures</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/culture/">Culture</a></li>
-        <li class="nav-gold"><a href="https://rexclarkeadventures.com/category/latest-news/airline-news/">Aviation</a></li>
-        <li class="nav-gold"><a href="https://rexclarkeadventures.com/category/adventures/hospitality-in-nigeria/">Hospitality</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/festivals-in-africa/">Festivals</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/latest-news/">News</a></li>
+        <li><a href="regions.html">Explore Africa</a></li>
+        <li><a href="adventures.html">Adventures</a></li>
+        <li><a href="culture.html">Culture</a></li>
+
+        <!-- AVIATION — standalone top-level link -->
+        <li class="nav-highlight"><a href="aviation.html">Aviation</a></li>
+        <!-- HOSPITALITY — standalone top-level link -->
+        <li class="nav-highlight"><a href="hospitality.html">Hospitality</a></li>
+
+        <li><a href="festivals.html">Festivals</a></li>
+        <li class="active"><a href="news.html">News</a></li>
+        <li class="drop">
+          <a href="#">Discover <svg class="arr" viewBox="0 0 9 5" fill="none"><path d="M1 1l3.5 3L8 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="drop-menu drop-simple">
+            <div class="drop-col">
+              <a href="omiren.html"><span class="dm-flag">🌶</span><div class="dm-text">Food</div></a>
+              <a href="trip-planner.html"><span class="dm-flag">🗺</span><div class="dm-text">Travel Tips</div></a>
+              <a href="omiren.html"><span class="dm-flag">✨</span><div class="dm-text">Lifestyle</div></a>
+              <a href="regions.html"><span class="dm-flag">🌿</span><div class="dm-text">Eco-Tourism</div></a>
+              <a href="#regions"><span class="dm-flag">🗺</span><div class="dm-text">Region Hubs</div></a>
+              <a href="#about"><span class="dm-flag">📖</span><div class="dm-text">About the Platform</div></a>
+              <a href="#team"><span class="dm-flag">✍</span><div class="dm-text">Editorial Team</div></a>
+              <a href="#contact"><span class="dm-flag">✉</span><div class="dm-text">Contact</div></a>
+            </div>
+          </div>
+        </li>
       </ul>
-      <a href="trip-planner.html" class="nav-plan">Plan Your Trip →</a>
+
+      <!-- Plan Your Trip CTA — visible conversion pathway above the fold -->
+      <div class="nav-strip-right">
+        <a href="trip-planner.html" class="nav-plan-cta">Plan Your Trip →</a>
+      </div>
     </div>
   </div>
+
 </header>
+
+<!-- MOBILE NAV — Accordion, region-first, all items -->
+<div class="mob-overlay" id="mobOverlay" onclick="closeNav()"></div>
+<div class="mob-nav" id="mobNav" role="dialog" aria-label="Navigation menu">
+  <div class="mob-top">
+    <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/logo_rex_clarke_adv.png" alt="Rex Clarke Adventures" onerror="this.style.display='none'">
+    <button class="mob-close" onclick="closeNav()" aria-label="Close menu">✕</button>
+  </div>
+  <div class="mob-tagline-strip">
+    Africa, <span style="color:var(--gold);font-style:italic;margin-left:4px;">In Full.</span>
+    <span>54 Nations · Daily Editorial</span>
+  </div>
+
+  <ul class="mob-links">
+
+    <!-- Destinations — accordion -->
+    <li>
+      <button class="mob-accordion-btn gold-link" onclick="mobToggle(this)" aria-expanded="false">
+        Destinations
+        <span class="mob-accordion-chevron" aria-hidden="true">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </button>
+      <ul class="mob-sub" role="list">
+        <li><a href="regions.html"><span class="mob-sub-text">West Africa<span class="mob-sub-meta">16 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">East Africa<span class="mob-sub-meta">20 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">North Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Central Africa<span class="mob-sub-meta">9 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Southern Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Islands<span class="mob-sub-meta">7 nations</span></span></a></li>
+      </ul>
+    </li>
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="regions.html">Explore Africa</a></li>
+    <li><a href="adventures.html">Adventures</a></li>
+    <li><a href="culture.html">Culture</a></li>
+
+    <!-- Aviation — standalone gold, FIX 4 -->
+    <li><a href="aviation.html" class="gold-link">Aviation</a></li>
+    <!-- Hospitality — standalone gold, FIX 4 -->
+    <li><a href="hospitality.html" class="gold-link">Hospitality</a></li>
+
+    <li><a href="festivals.html">Festivals</a></li>
+    <li><a href="news.html">News</a></li>
+
+    <!-- Discover — accordion -->
+    <li>
+      <button class="mob-accordion-btn" onclick="mobToggle(this)" aria-expanded="false">
+        Discover
+        <span class="mob-accordion-chevron" aria-hidden="true">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </button>
+      <ul class="mob-sub" role="list">
+        <li><a href="omiren.html"><span class="mob-sub-text">Food</span></a></li>
+        <li><a href="trip-planner.html"><span class="mob-sub-text">Travel Tips</span></a></li>
+        <li><a href="omiren.html"><span class="mob-sub-text">Lifestyle</span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Eco-Tourism</span></a></li>
+      </ul>
+    </li>
+
+    <li><a href="#about" onclick="closeNav()">About the Platform</a></li>
+    <li><a href="#team" onclick="closeNav()">Editorial Team</a></li>
+    <li><a href="#work-with-us" onclick="closeNav()">Work With Us</a></li>
+    <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+
+  </ul>
+
+  <!-- FIX 5 — Plan Your Trip CTA always visible in drawer -->
+  <a href="trip-planner.html" class="mob-plan-cta">Plan Your Trip →</a>
+
+</div>
 
 <!-- BREADCRUMB -->
 <div class="breadcrumb-bar">
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <a href="index.html">Home</a>
     <span class="breadcrumb-sep">›</span>
-    <a href="https://rexclarkeadventures.com/category/latest-news/">News</a>
+    <a href="news.html">News</a>
     <span class="breadcrumb-sep">›</span>
-    <a href="https://rexclarkeadventures.com/category/latest-news/africa-tourism-news/">Africa Tourism News</a>
+    <a href="article-eswatini.html">Africa Tourism News</a>
     <span class="breadcrumb-sep">›</span>
     <span class="breadcrumb-current">Eswatini Records 16.3% Surge in International Tourist Arrivals</span>
   </nav>
@@ -470,9 +1506,9 @@ body { top: 0 !important; }
 
     <!-- Category tags -->
     <div class="art-cats">
-      <a href="https://rexclarkeadventures.com/category/latest-news/africa-tourism-news/" class="art-cat-tag">Africa Tourism News</a>
-      <a href="https://rexclarkeadventures.com/category/latest-news/" class="art-cat-tag">News & Insights</a>
-      <a href="https://rexclarkeadventures.com/southern-africa/" class="art-cat-tag">Southern Africa</a>
+      <a href="article-eswatini.html" class="art-cat-tag">Africa Tourism News</a>
+      <a href="index.html" class="art-cat-tag">News & Insights</a>
+      <a href="regions.html" class="art-cat-tag">Southern Africa</a>
     </div>
 
     <!-- Headline -->
@@ -570,9 +1606,9 @@ body { top: 0 !important; }
       <div class="inline-related">
         <div class="inline-related-label">Also on RCA</div>
         <ul class="inline-related-links">
-          <li><a href="https://rexclarkeadventures.com/park-hyatt-johannesburg-time/">Park Hyatt Johannesburg Named Among TIME's Top Hotels for 2026</a></li>
-          <li><a href="https://rexclarkeadventures.com/ghana-e-visa-tourism/">Ghana Set to Boost Tourism Surge with E-Visa Launch and Global Push</a></li>
-          <li><a href="https://rexclarkeadventures.com/bbc-kingdom-zambia-south-luangwa/">BBC 'Kingdom' Documentary Puts Zambia's South Luangwa on the Map</a></li>
+          <li><a href="article-eswatini.html">Park Hyatt Johannesburg Named Among TIME's Top Hotels for 2026</a></li>
+          <li><a href="article-eswatini.html">Ghana Set to Boost Tourism Surge with E-Visa Launch and Global Push</a></li>
+          <li><a href="article-eswatini.html">BBC 'Kingdom' Documentary Puts Zambia's South Luangwa on the Map</a></li>
         </ul>
       </div>
 
@@ -629,11 +1665,11 @@ body { top: 0 !important; }
     <!-- TAGS -->
     <div class="art-tags">
       <span class="art-tags-label">Topics</span>
-      <a href="https://rexclarkeadventures.com/tag/african-travel-trends/" class="art-tag">African Travel Trends</a>
-      <a href="https://rexclarkeadventures.com/tag/eswatini-tourism-growth/" class="art-tag">Eswatini Tourism</a>
-      <a href="https://rexclarkeadventures.com/tag/southern-africa-tourism/" class="art-tag">Southern Africa Tourism</a>
-      <a href="https://rexclarkeadventures.com/tag/intra-african-travel/" class="art-tag">Intra-African Travel</a>
-      <a href="https://rexclarkeadventures.com/tag/sadc-tourism/" class="art-tag">SADC</a>
+      <a href="article-eswatini.html" class="art-tag">African Travel Trends</a>
+      <a href="article-eswatini.html" class="art-tag">Eswatini Tourism</a>
+      <a href="article-eswatini.html" class="art-tag">Southern Africa Tourism</a>
+      <a href="article-eswatini.html" class="art-tag">Intra-African Travel</a>
+      <a href="article-eswatini.html" class="art-tag">SADC</a>
     </div>
 
     <!-- FAQ SECTION -->
@@ -689,7 +1725,7 @@ body { top: 0 !important; }
         <div class="author-title">Africa Tourism Correspondent · Rex Clarke Adventures</div>
         <p class="author-bio">Familugba Victor covers tourism intelligence, destination policy, and travel industry developments across Africa's 54 nations. Based in Nigeria, his reporting spans aviation, hospitality, and the structural forces shaping intra-African travel. His work has been cited by tourism boards and industry analysts across the continent.</p>
         <div class="author-links">
-          <a href="https://rexclarkeadventures.com/author/victor/" class="author-link">
+          <a href="team.html" class="author-link">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             All articles
           </a>
@@ -734,7 +1770,7 @@ body { top: 0 !important; }
     <section class="related-section">
       <h2 class="related-heading">More from Africa Tourism News</h2>
       <div class="related-grid">
-        <a href="https://rexclarkeadventures.com/cape-town-airport-skytrax-award/" class="related-card">
+        <a href="article-eswatini.html" class="related-card">
           <div class="related-card-img">
             <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/03/cape-town-airport.jpg"
                  alt="Cape Town Airport"
@@ -745,7 +1781,7 @@ body { top: 0 !important; }
             <div class="related-card-title">Cape Town Airport Wins Africa's Best for 11 Consecutive Years</div>
           </div>
         </a>
-        <a href="https://rexclarkeadventures.com/park-hyatt-johannesburg-time/" class="related-card">
+        <a href="article-eswatini.html" class="related-card">
           <div class="related-card-img">
             <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/03/park-hyatt-jhb.jpg"
                  alt="Park Hyatt Johannesburg"
@@ -756,7 +1792,7 @@ body { top: 0 !important; }
             <div class="related-card-title">Park Hyatt Johannesburg Named Among TIME's World's Greatest Places 2026</div>
           </div>
         </a>
-        <a href="https://rexclarkeadventures.com/bbc-kingdom-zambia-south-luangwa/" class="related-card">
+        <a href="article-eswatini.html" class="related-card">
           <div class="related-card-img">
             <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/03/zambia-luangwa.jpg"
                  alt="Zambia South Luangwa"
@@ -798,7 +1834,7 @@ body { top: 0 !important; }
         </div>
         <div>
           <div class="sidebar-art-cat">West Africa</div>
-          <a href="https://rexclarkeadventures.com/ghana-e-visa-tourism/" class="sidebar-art-title">Ghana Boosts Tourism with E-Visa Launch and Global Push</a>
+          <a href="article-eswatini.html" class="sidebar-art-title">Ghana Boosts Tourism with E-Visa Launch and Global Push</a>
           <div class="sidebar-art-meta">2 days ago</div>
         </div>
       </div>
@@ -811,7 +1847,7 @@ body { top: 0 !important; }
         </div>
         <div>
           <div class="sidebar-art-cat">Innovation · Ethiopia</div>
-          <a href="https://rexclarkeadventures.com/ethiopia-hospitality-hackathon/" class="sidebar-art-title">Ethiopia Hosts Hospitality Hackathon 2026: AI-Powered Tourism</a>
+          <a href="article-eswatini.html" class="sidebar-art-title">Ethiopia Hosts Hospitality Hackathon 2026: AI-Powered Tourism</a>
           <div class="sidebar-art-meta">5 days ago</div>
         </div>
       </div>
@@ -824,7 +1860,7 @@ body { top: 0 !important; }
         </div>
         <div>
           <div class="sidebar-art-cat">Policy · Islands</div>
-          <a href="https://rexclarkeadventures.com/un-tourism-commission-africa-seychelles/" class="sidebar-art-title">69th UN Tourism Commission for Africa Holds in Seychelles</a>
+          <a href="article-eswatini.html" class="sidebar-art-title">69th UN Tourism Commission for Africa Holds in Seychelles</a>
           <div class="sidebar-art-meta">1 week ago</div>
         </div>
       </div>
@@ -843,34 +1879,49 @@ body { top: 0 !important; }
 
 </div><!-- /page-wrap -->
 
-<!-- FOOTER -->
+
+<!-- FOOTER
+     AUDIT FIX: "Africa, In Full." tagline now prominent as brand statement, not only copyright line
+-->
 <footer class="footer">
   <div class="foot-inner">
     <div class="foot-grid">
       <div>
-        <div class="foot-logo" style="margin-bottom:10px;">
-          <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/logo_rex_clarke_adv.png" alt="Rex Clarke Adventures" style="height:32px;">
+        <div class="foot-logo">
+          <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/logo_rex_clarke_adv.png"
+               alt="Rex Clarke Adventures"
+               onerror="this.remove()">
         </div>
-        <div class="foot-tagline">Africa, In Full.</div>
-        <p class="foot-desc">Authoritative editorial across travel, culture, heritage, aviation, and hospitality — covering all 54 African nations daily.</p>
+        <!-- AUDIT FIX: tagline as brand identity statement in footer, not just copyright -->
+        <div class="foot-tagline-brand">Africa, In Full.</div>
+        <p class="foot-desc">Authoritative, concise, brand-led. Your guide to travel news, culture, and belonging across Africa's 54 nations — the stories, histories, landmarks, kingdoms, and communities the continent holds in extraordinary abundance.</p>
+        <div class="foot-socials">
+          <a href="https://www.facebook.com/RexClarkeAdventures" class="social" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://x.com/RCAdventures17" class="social" aria-label="X Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.instagram.com/rexclarkeadventures_/" class="social" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.linkedin.com/company/rex-clarke-adventures" class="social" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://www.youtube.com/@rexclarkeadventure/videos" class="social" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+        </div>
       </div>
       <div>
         <div class="foot-col-lbl">Explore</div>
         <ul class="foot-links">
-          <li><a href="https://rexclarkeadventures.com/category/explore-africa/">Explore Africa</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/adventures/">Adventures</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/culture/">Culture</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/festivals-in-africa/">Festivals</a></li>
-          <li><a href="https://rexclarkeadventures.com/destinations/">Destinations</a></li>
+          <li><a href="/category/explore-africa/">Explore Africa</a></li>
+          <li><a href="/category/adventures/">Adventures</a></li>
+          <li><a href="/category/african-culture-traditions/">Culture & Heritage</a></li>
+          <li><a href="/destinations/">All Destinations</a></li>
+          <li><a href="/category/latest-news/">News & Insights</a></li>
+          <li><a href="/category/festivals-in-africa/">Festivals</a></li>
         </ul>
       </div>
       <div>
         <div class="foot-col-lbl">Editorial</div>
         <ul class="foot-links">
-          <li><a href="https://rexclarkeadventures.com/category/latest-news/">Latest News</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/latest-news/airline-news/">Aviation</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/adventures/hospitality-in-nigeria/">Hospitality</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/latest-news/africa-tourism-news/">Tourism News</a></li>
+          <li><a href="/category/adventures/travel-tips-for-nigeria/">Travel Tips</a></li>
+          <li><a href="/category/tourism-in-nigeria/ecotourism-in-nigeria/">Eco-Tourism</a></li>
+          <li><a href="/category/living-in-africa/food-in-nigeria/">Food & Culture</a></li>
+          <li><a href="/category/living-in-africa/">Lifestyle</a></li>
+          <li><a href="/category/latest-news/tourism-news/">Tourism News</a></li>
         </ul>
       </div>
       <div>
@@ -879,21 +1930,374 @@ body { top: 0 !important; }
           <li><a href="about.html">About Us</a></li>
           <li><a href="work-with-us.html">Work With Us</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="omiren.html" target="_self">Omiren Styles</a></li>
-          <li><a href="https://rexclarkeadventures.com/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
+    <!-- AUDIT FIX: tagline in copyright line too — correct position retained -->
+    <!-- SISTER BRAND ROW + ABOUT PLATFORM link -->
+    <div style="border-top:1px solid rgba(0,0,0,.12);padding-top:18px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <div style="font-size:11px;color:#000000;">
+        From <span style="color:#000000;font-weight:700;">Rex Clarke Global Ventures:</span>
+        <a href="https://omirenstyles.com/" style="color:#000000;font-weight:700;margin-left:8px;border-bottom:1px solid rgba(0,0,0,.3);transition:border-color .15s;">Omiren Styles</a>
+        <span style="color:#000000;margin:0 6px;">—</span>
+        <span style="color:#000000;">Fashion. Culture. Identity.</span>
+      </div>
+      <a href="about.html" style="font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#000000;border-bottom:1px solid rgba(0,0,0,.3);padding-bottom:1px;transition:color .15s;">About the Platform →</a>
+    </div>
+
     <div class="foot-btm">
       <span>Africa, In Full. © 2026 Rex Clarke Adventures. All Rights Reserved.</span>
       <div>
-        <a href="https://rexclarkeadventures.com/privacy-policy/">Privacy Policy</a>
+        <a href="/privacy-policy/">Privacy</a>
         <a href="about.html">About</a>
+        <a href="work-with-us.html">Partnerships</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
   </div>
 </footer>
+
+<script>
+/* ── NAV ── */
+function openNav()  { document.getElementById('mobNav').classList.add('open');    document.body.style.overflow='hidden'; }
+function closeNav() { document.getElementById('mobNav').classList.remove('open'); document.body.style.overflow=''; }
+
+/* ── GOOGLE TRANSLATE INIT ──
+   Called automatically by the Google script once it loads.
+   Creates the language selector inside #google_translate_element.
+   Languages: all major African + international languages.
+*/
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,es,pt,sw,zh-CN,fr,de,ar',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false,
+    multilanguagePage: true
+  }, 'google_translate_element');
+}
+
+/* ── TRANSLATE PANEL TOGGLE ── */
+function toggleTranslate() {
+  const btn   = document.getElementById('translateBtn');
+  const panel = document.getElementById('translatePanel');
+  const isOpen = panel.classList.contains('open');
+  panel.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+
+/* Close on outside click or Escape */
+document.addEventListener('click', function(e) {
+  const wrap = document.getElementById('translateWrap');
+  if (wrap && !wrap.contains(e.target)) {
+    document.getElementById('translatePanel').classList.remove('open');
+    document.getElementById('translateBtn').classList.remove('open');
+    document.getElementById('translateBtn').setAttribute('aria-expanded','false');
+  }
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.getElementById('translatePanel').classList.remove('open');
+    document.getElementById('translateBtn').classList.remove('open');
+    document.getElementById('translateBtn').setAttribute('aria-expanded','false');
+  }
+});
+
+/* ── SET LANGUAGE — uses Google Translate cookie method ── */
+function setLang(langCode, btn) {
+  /* Mark the active button */
+  document.querySelectorAll('.translate-lang-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  /* English = reset translation */
+  if (langCode === 'en') {
+    const iframe = document.querySelector('.goog-te-banner-frame');
+    if (iframe) iframe.contentDocument.getElementById('dismiss-button')?.click();
+    /* Remove the cookie and reload to restore English */
+    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + location.hostname + ';';
+    location.reload();
+    return;
+  }
+
+  /* Set the Google Translate cookie and reload */
+  const cookieVal = '/en/' + langCode;
+  document.cookie = 'googtrans=' + cookieVal + '; path=/';
+  document.cookie = 'googtrans=' + cookieVal + '; path=/; domain=.' + location.hostname;
+  location.reload();
+}
+
+/* On load — highlight active language from cookie */
+(function() {
+  const m = document.cookie.match(/googtrans=\/en\/([^;]+)/);
+  if (m) {
+    const code = m[1];
+    document.querySelectorAll('.translate-lang-btn').forEach(b => {
+      if (b.getAttribute('onclick')?.includes("'" + code + "'")) {
+        b.classList.add('active');
+      } else {
+        b.classList.remove('active');
+      }
+    });
+  }
+})();
+
+/* ── CAROUSEL ENGINE — PHOTO VERSION ── */
+const slides   = Array.from(document.querySelectorAll('.c-slide'));
+const dots     = Array.from(document.querySelectorAll('.c-dot'));
+const progress = document.getElementById('carouselProgress');
+const pauseBtn = document.getElementById('carouselPause');
+const counter  = document.getElementById('carouselCounter');
+const DURATION = 6000;
+const TOTAL = slides.length;
+let current    = 0;
+let timer      = null;
+let isPaused   = false;
+
+function goTo(index) {
+  if (index < 0) index = slides.length - 1;
+  if (index >= slides.length) index = 0;
+  slides[current].classList.remove('active');
+  dots[current].classList.remove('active');
+  const prev = current;
+  setTimeout(() => {}, 900);
+  current = index;
+  slides[current].classList.add('active');
+  dots[current].classList.add('active');
+  counter.textContent = (current + 1) + ' / ' + TOTAL;
+  resetProgress();
+}
+
+function resetProgress() {
+  progress.classList.remove('running');
+  progress.style.width = '0%';
+  void progress.offsetWidth;
+  if (!isPaused) {
+    progress.classList.add('running');
+    progress.style.width = '100%';
+  }
+}
+
+function startAuto() {
+  clearInterval(timer);
+  if (!isPaused) timer = setInterval(() => goTo(current + 1), DURATION);
+}
+
+function carouselMove(dir)   { clearInterval(timer); goTo(current + dir); startAuto(); }
+function carouselGoTo(index) { clearInterval(timer); goTo(index);          startAuto(); }
+
+function carouselTogglePause() {
+  isPaused = !isPaused;
+  pauseBtn.classList.toggle('paused', isPaused);
+  pauseBtn.setAttribute('aria-label', isPaused ? 'Play carousel' : 'Pause carousel');
+  if (isPaused) {
+    clearInterval(timer);
+    progress.classList.remove('running');
+  } else {
+    resetProgress();
+    startAuto();
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowLeft')  carouselMove(-1);
+  if (e.key === 'ArrowRight') carouselMove(1);
+  if (e.key === ' ')          { e.preventDefault(); carouselTogglePause(); }
+});
+
+/* ── SWIPE WITH VISUAL DRAG FEEDBACK (Fix 2) ── */
+let touchStartX = 0, touchStartY = 0, touchDeltaX = 0, isDragging = false;
+const carousel = document.getElementById('heroCarousel');
+const track = document.getElementById('carouselTrack');
+
+carousel.addEventListener('touchstart', e => {
+  touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+  touchDeltaX = 0;
+  isDragging = false;
+  clearInterval(timer);
+}, { passive: true });
+
+carousel.addEventListener('touchmove', e => {
+  const dx = e.touches[0].clientX - touchStartX;
+  const dy = e.touches[0].clientY - touchStartY;
+  if (!isDragging && Math.abs(dy) > Math.abs(dx)) return; // vertical scroll wins
+  isDragging = true;
+  touchDeltaX = dx;
+  /* Live drag: translate the active slide */
+  const activeSlide = document.querySelector('.c-slide.active');
+  if (activeSlide) activeSlide.style.transform = 'translateX(' + (dx * 0.35) + 'px)';
+}, { passive: true });
+
+carousel.addEventListener('touchend', e => {
+  /* Reset any live transform */
+  document.querySelectorAll('.c-slide').forEach(s => s.style.transform = '');
+  if (!isDragging) { startAuto(); return; }
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 44) {
+    carouselMove(diff > 0 ? 1 : -1);
+  } else {
+    startAuto();
+  }
+  isDragging = false;
+}, { passive: true });
+
+carousel.addEventListener('mouseenter', () => { if (!isPaused) { clearInterval(timer); progress.classList.remove('running'); } });
+carousel.addEventListener('mouseleave', () => { if (!isPaused) { resetProgress(); startAuto(); } });
+
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  isPaused = true;
+  pauseBtn.classList.add('paused');
+}
+
+/* Boot — slide 0 is already active in HTML, just start the timer */
+startAuto();
+resetProgress();
+
+/* ══ FIX 1 — Mobile nav accordion ══ */
+function openNav() {
+  document.getElementById('mobNav').classList.add('open');
+  document.getElementById('mobOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('mobNav').setAttribute('aria-hidden','false');
+}
+function closeNav() {
+  document.getElementById('mobNav').classList.remove('open');
+  document.getElementById('mobOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+  document.getElementById('mobNav').setAttribute('aria-hidden','true');
+}
+function mobToggle(btn) {
+  const isOpen = btn.classList.contains('open');
+  /* Close all others */
+  document.querySelectorAll('.mob-accordion-btn.open').forEach(b => {
+    b.classList.remove('open');
+    b.setAttribute('aria-expanded','false');
+    const sub = b.parentElement.querySelector('.mob-sub');
+    if (sub) sub.classList.remove('open');
+  });
+  if (!isOpen) {
+    btn.classList.add('open');
+    btn.setAttribute('aria-expanded','true');
+    const sub = btn.parentElement.querySelector('.mob-sub');
+    if (sub) sub.classList.add('open');
+  }
+}
+/* Escape key closes drawer */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeNav();
+});
+
+/* ══ FIX 3 — Destination modal ══ */
+let selectedDestUrl = 'regions.html';
+function openDestModal() {
+  document.getElementById('destModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeDestModal() {
+  document.getElementById('destModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function selectModalDest(el, url) {
+  document.querySelectorAll('.dest-modal-item').forEach(i => i.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedDestUrl = url;
+  /* Update the button text */
+  const name = el.querySelector('.dest-modal-name').textContent;
+  const flag = el.querySelector('.dest-modal-flag').textContent;
+  const btn = document.querySelector('.dest-mobile-btn');
+  if (btn) btn.innerHTML = '<span>' + flag + ' ' + name + '</span><span>✓</span>';
+  /* Auto-close after selection */
+  setTimeout(closeDestModal, 380);
+}
+/* Override destSearch for mobile */
+const _origDestSearch = window.destSearch;
+window.destSearch = function() {
+  if (window.innerWidth <= 640 && selectedDestUrl) {
+    window.location.href = selectedDestUrl;
+  } else if (_origDestSearch) {
+    _origDestSearch();
+  }
+};
+
+/* ══ FIX 5 — Hide floating CTA when mobile nav is open ══ */
+const floatCta = document.getElementById('mobFloatCta');
+const _origOpenNav = window.openNav;
+const _origCloseNav = window.closeNav;
+
+/* ══ FIX 6 — Footer accordion ══ */
+document.querySelectorAll('.foot-col-lbl').forEach(lbl => {
+  lbl.addEventListener('click', function() {
+    if (window.innerWidth > 480) return;
+    const links = this.nextElementSibling;
+    if (!links) return;
+    const isOpen = links.classList.contains('open');
+    /* Close all */
+    document.querySelectorAll('.foot-links').forEach(f => f.classList.remove('open'));
+    document.querySelectorAll('.foot-col-lbl').forEach(l => l.classList.remove('open'));
+    if (!isOpen) {
+      links.classList.add('open');
+      this.classList.add('open');
+    }
+  });
+});
+/* On desktop keep all footer links visible */
+function handleFooterResize() {
+  if (window.innerWidth > 480) {
+    document.querySelectorAll('.foot-links').forEach(f => f.style.display = '');
+  }
+}
+window.addEventListener('resize', handleFooterResize);
+
+/* ── CONTACT ENQUIRY TYPE SELECTOR ── */
+function selectEnquiry(el) {
+  document.querySelectorAll('.contact-type').forEach(t => t.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+/* ── RCA DESK SLIDER ── */
+(function() {
+  const eqSlides = Array.from(document.querySelectorAll('.eq-slide'));
+  const eqDots   = Array.from(document.querySelectorAll('.eq-dot'));
+  if (!eqSlides.length) return;
+  let eqCurrent = 0;
+  let eqTimer = null;
+
+  function eqGoToFn(index) {
+    eqSlides[eqCurrent].classList.remove('active');
+    eqDots[eqCurrent].classList.remove('active');
+    eqCurrent = (index + eqSlides.length) % eqSlides.length;
+    eqSlides[eqCurrent].classList.add('active');
+    eqDots[eqCurrent].classList.add('active');
+  }
+  window.eqGoTo = eqGoToFn;
+  eqTimer = setInterval(() => eqGoToFn(eqCurrent + 1), 5000);
+})();
+
+/* ── DESTINATION SEARCH ── */
+function destSearch() {
+  const selects = document.querySelectorAll('.dest-search-select');
+  let url = '';
+  selects.forEach(s => { if (s.value) url = s.value; });
+  if (url) window.location.href = url;
+  else window.location.href = 'regions.html';
+}
+/* Make selects navigate on change for quick UX */
+document.querySelectorAll('.dest-search-select').forEach(s => {
+  s.addEventListener('change', function() {
+    if (this.value) {
+      document.querySelector('.dest-search-btn').style.background = 'var(--green-dk)';
+    }
+  });
+});
+</script>
+
+<!-- GOOGLE TRANSLATE SCRIPT — loads the translation engine -->
+
+</body>
+</html>
 
 <script>
 /* ── READING PROGRESS BAR ── */
@@ -964,5 +2368,7 @@ document.addEventListener('keydown', function(e) {
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
 </body>
 </html>

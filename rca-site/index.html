@@ -105,10 +105,10 @@ img { display: block; max-width: 100%; height: 100%; object-fit: cover; }
 .mast-nav-inner { max-width: var(--max); margin: 0 auto; padding: 0 24px; height: 40px; display: flex; align-items: center; justify-content: space-between; }
 .nav { display: flex; list-style: none; height: 40px; align-items: center; }
 .nav > li { position: relative; height: 100%; display: flex; align-items: center; }
-.nav > li > a { font-size: 12px; font-weight: 600; color: rgba(255,255,255,.82); padding: 0 14px; height: 100%; display: flex; align-items: center; letter-spacing: .02em; transition: color .15s, background .15s; white-space: nowrap; }
+.nav > li > a { font-size: 12px; font-weight: 600; color: #ffffff; padding: 0 14px; height: 100%; display: flex; align-items: center; letter-spacing: .02em; transition: color .15s, background .15s; white-space: nowrap; }
 .nav > li > a:hover { color: var(--gold); background: rgba(255,255,255,.07); }
 .nav > li.active > a { color: var(--gold); }
-.nav > li.nav-highlight > a { color: var(--gold); font-weight: 700; }
+.nav > li.nav-highlight > a { color: #ffffff; font-weight: 700; }
 .arr { width: 9px; height: 5px; margin-left: 3px; opacity: .5; }
 
 /* Mega-dropdown — rich region menu (Go2Africa / andBeyond pattern) */
@@ -926,7 +926,6 @@ body { top: 0 !important; }
   .dest-photo-grid { grid-template-columns: 1fr; }
 }
 </style>
-<script src="site-router.js" defer></script>
 </head>
 <body>
 
@@ -978,18 +977,12 @@ body { top: 0 !important; }
         <div class="mast-tagline-text">Africa, <span class="gold">In Full.</span></div>
       </div>
 
-      <!-- Utility: Translate + Search + Work With Us + Burger -->
+      <!-- Utility: Search + Work With Us + Burger -->
       <div class="mast-utils">
-        <!-- Google Translate -->
         <div class="translate-wrap" id="translateWrap">
-          <!-- Globe icon button — label on desktop, icon-only on mobile -->
           <button class="translate-btn" id="translateBtn" onclick="toggleTranslate()" aria-label="Translate this page" aria-expanded="false" aria-controls="translatePanel">
             <svg class="translate-globe" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
-            <span class="translate-label">Translate</span>
-            <svg class="translate-chevron" width="9" height="5" viewBox="0 0 9 5" fill="none"><path d="M1 1l3.5 3L8 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
-
-          <!-- Language panel — 8 languages as branded buttons -->
           <div class="translate-panel" id="translatePanel" role="dialog" aria-label="Choose language">
             <div class="translate-panel-head">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
@@ -1007,10 +1000,8 @@ body { top: 0 !important; }
             </div>
             <div class="translate-panel-note">Powered by Google Translate</div>
           </div>
-          <!-- Hidden Google element still needed for engine -->
           <div id="google_translate_element" style="display:none;"></div>
         </div>
-
         <button class="btn-search" aria-label="Search">
           <svg width="14" height="14" viewBox="0 0 13 13" fill="none"><circle cx="5.5" cy="5.5" r="4" stroke="currentColor" stroke-width="1.4"/><path d="M9 9l2.5 2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
         </button>
@@ -1027,7 +1018,7 @@ body { top: 0 !important; }
 
         <!-- DESTINATIONS — mega dropdown, region-first -->
         <li class="drop nav-highlight">
-          <a href="https://rexclarkeadventures.com/destinations/">
+          <a href="regions.html">
             Destinations
             <svg class="arr" viewBox="0 0 9 5" fill="none"><path d="M1 1l3.5 3L8 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -1035,50 +1026,50 @@ body { top: 0 !important; }
             <div class="drop-menu-grid">
               <div class="drop-col">
                 <div class="drop-col-head">By Region</div>
-                <a href="https://rexclarkeadventures.com/west-africa/"><span class="dm-flag">🌍</span><div class="dm-text">West Africa<span class="dm-sub">16 nations</span></div></a>
-                <a href="https://rexclarkeadventures.com/east-africa/"><span class="dm-flag">🦁</span><div class="dm-text">East Africa<span class="dm-sub">20 nations</span></div></a>
-                <a href="https://rexclarkeadventures.com/north-africa/"><span class="dm-flag">🏜</span><div class="dm-text">North Africa<span class="dm-sub">6 nations</span></div></a>
-                <a href="https://rexclarkeadventures.com/central-africa/"><span class="dm-flag">🌴</span><div class="dm-text">Central Africa<span class="dm-sub">9 nations</span></div></a>
-                <a href="https://rexclarkeadventures.com/southern-africa/"><span class="dm-flag">🏔</span><div class="dm-text">Southern Africa<span class="dm-sub">6 nations</span></div></a>
-                <a href="https://rexclarkeadventures.com/african-islands/"><span class="dm-flag">🌊</span><div class="dm-text">Islands<span class="dm-sub">7 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🌍</span><div class="dm-text">West Africa<span class="dm-sub">16 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🦁</span><div class="dm-text">East Africa<span class="dm-sub">20 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🏜</span><div class="dm-text">North Africa<span class="dm-sub">6 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🌴</span><div class="dm-text">Central Africa<span class="dm-sub">9 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🏔</span><div class="dm-text">Southern Africa<span class="dm-sub">6 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🌊</span><div class="dm-text">Islands<span class="dm-sub">7 nations</span></div></a>
               </div>
               <div class="drop-col">
                 <div class="drop-col-head">Popular Destinations</div>
-                <a href="https://rexclarkeadventures.com/destinations/south-africa/"><span class="dm-flag">🇿🇦</span><div class="dm-text">South Africa<span class="dm-sub">42 stories</span></div></a>
-                <a href="https://rexclarkeadventures.com/destinations/kenya/"><span class="dm-flag">🇰🇪</span><div class="dm-text">Kenya<span class="dm-sub">38 stories</span></div></a>
-                <a href="https://rexclarkeadventures.com/destinations/nigeria/"><span class="dm-flag">🇳🇬</span><div class="dm-text">Nigeria<span class="dm-sub">86 stories</span></div></a>
-                <a href="https://rexclarkeadventures.com/destinations/morocco/"><span class="dm-flag">🇲🇦</span><div class="dm-text">Morocco<span class="dm-sub">31 stories</span></div></a>
-                <a href="https://rexclarkeadventures.com/destinations/ethiopia/"><span class="dm-flag">🇪🇹</span><div class="dm-text">Ethiopia<span class="dm-sub">24 stories</span></div></a>
-                <a href="https://rexclarkeadventures.com/destinations/ghana/"><span class="dm-flag">🇬🇭</span><div class="dm-text">Ghana<span class="dm-sub">27 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇿🇦</span><div class="dm-text">South Africa<span class="dm-sub">42 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇰🇪</span><div class="dm-text">Kenya<span class="dm-sub">38 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇳🇬</span><div class="dm-text">Nigeria<span class="dm-sub">86 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇲🇦</span><div class="dm-text">Morocco<span class="dm-sub">31 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇪🇹</span><div class="dm-text">Ethiopia<span class="dm-sub">24 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇬🇭</span><div class="dm-text">Ghana<span class="dm-sub">27 stories</span></div></a>
               </div>
             </div>
           </div>
         </li>
 
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/explore-africa/">Explore Africa</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/adventures/">Adventures</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/culture/">Culture</a></li>
+        <li><a href="regions.html">Explore Africa</a></li>
+        <li><a href="adventures.html">Adventures</a></li>
+        <li><a href="culture.html">Culture</a></li>
 
         <!-- AVIATION — standalone top-level link -->
-        <li class="nav-highlight"><a href="https://rexclarkeadventures.com/category/latest-news/airline-news/">Aviation</a></li>
+        <li class="nav-highlight"><a href="aviation.html">Aviation</a></li>
         <!-- HOSPITALITY — standalone top-level link -->
-        <li class="nav-highlight"><a href="https://rexclarkeadventures.com/category/adventures/hospitality-in-nigeria/">Hospitality</a></li>
+        <li class="nav-highlight"><a href="hospitality.html">Hospitality</a></li>
 
-        <li><a href="https://rexclarkeadventures.com/category/festivals-in-africa/">Festivals</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/latest-news/">News</a></li>
+        <li><a href="festivals.html">Festivals</a></li>
+        <li><a href="news.html">News</a></li>
         <li class="drop">
           <a href="#">Discover <svg class="arr" viewBox="0 0 9 5" fill="none"><path d="M1 1l3.5 3L8 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <div class="drop-menu drop-simple">
             <div class="drop-col">
-              <a href="https://rexclarkeadventures.com/category/living-in-africa/food-in-nigeria/"><span class="dm-flag">🌶</span><div class="dm-text">Food</div></a>
-              <a href="https://rexclarkeadventures.com/category/adventures/travel-tips-for-nigeria/"><span class="dm-flag">🗺</span><div class="dm-text">Travel Tips</div></a>
-              <a href="https://rexclarkeadventures.com/category/living-in-africa/"><span class="dm-flag">✨</span><div class="dm-text">Lifestyle</div></a>
-              <a href="https://rexclarkeadventures.com/category/tourism-in-nigeria/ecotourism-in-nigeria/"><span class="dm-flag">🌿</span><div class="dm-text">Eco-Tourism</div></a>
-              <a href="regions.html"><span class="dm-flag">🗺</span><div class="dm-text">Region Hubs</div></a>
-              <a href="about.html"><span class="dm-flag">📖</span><div class="dm-text">About the Platform</div></a>
-              <a href="team.html"><span class="dm-flag">✍</span><div class="dm-text">Editorial Team</div></a>
-              <a href="contact.html"><span class="dm-flag">✉</span><div class="dm-text">Contact</div></a>
+              <a href="omiren.html"><span class="dm-flag">🌶</span><div class="dm-text">Food</div></a>
+              <a href="trip-planner.html"><span class="dm-flag">🗺</span><div class="dm-text">Travel Tips</div></a>
+              <a href="omiren.html"><span class="dm-flag">✨</span><div class="dm-text">Lifestyle</div></a>
+              <a href="regions.html"><span class="dm-flag">🌿</span><div class="dm-text">Eco-Tourism</div></a>
+              <a href="#regions"><span class="dm-flag">🗺</span><div class="dm-text">Region Hubs</div></a>
+              <a href="#about"><span class="dm-flag">📖</span><div class="dm-text">About the Platform</div></a>
+              <a href="#team"><span class="dm-flag">✍</span><div class="dm-text">Editorial Team</div></a>
+              <a href="#contact"><span class="dm-flag">✉</span><div class="dm-text">Contact</div></a>
             </div>
           </div>
         </li>
@@ -1116,27 +1107,27 @@ body { top: 0 !important; }
         </span>
       </button>
       <ul class="mob-sub" role="list">
-        <li><a href="https://rexclarkeadventures.com/west-africa/"><span class="mob-sub-text">West Africa<span class="mob-sub-meta">16 nations</span></span></a></li>
-        <li><a href="https://rexclarkeadventures.com/east-africa/"><span class="mob-sub-text">East Africa<span class="mob-sub-meta">20 nations</span></span></a></li>
-        <li><a href="https://rexclarkeadventures.com/north-africa/"><span class="mob-sub-text">North Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
-        <li><a href="https://rexclarkeadventures.com/central-africa/"><span class="mob-sub-text">Central Africa<span class="mob-sub-meta">9 nations</span></span></a></li>
-        <li><a href="https://rexclarkeadventures.com/southern-africa/"><span class="mob-sub-text">Southern Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
-        <li><a href="https://rexclarkeadventures.com/african-islands/"><span class="mob-sub-text">Islands<span class="mob-sub-meta">7 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">West Africa<span class="mob-sub-meta">16 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">East Africa<span class="mob-sub-meta">20 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">North Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Central Africa<span class="mob-sub-meta">9 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Southern Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Islands<span class="mob-sub-meta">7 nations</span></span></a></li>
       </ul>
     </li>
 
     <li><a href="index.html">Home</a></li>
-    <li><a href="https://rexclarkeadventures.com/category/explore-africa/">Explore Africa</a></li>
-    <li><a href="https://rexclarkeadventures.com/category/adventures/">Adventures</a></li>
-    <li><a href="https://rexclarkeadventures.com/category/culture/">Culture</a></li>
+    <li><a href="regions.html">Explore Africa</a></li>
+    <li><a href="adventures.html">Adventures</a></li>
+    <li><a href="culture.html">Culture</a></li>
 
     <!-- Aviation — standalone gold, FIX 4 -->
-    <li><a href="https://rexclarkeadventures.com/category/latest-news/airline-news/" class="gold-link">Aviation</a></li>
+    <li><a href="aviation.html" class="gold-link">Aviation</a></li>
     <!-- Hospitality — standalone gold, FIX 4 -->
-    <li><a href="https://rexclarkeadventures.com/category/adventures/hospitality-in-nigeria/" class="gold-link">Hospitality</a></li>
+    <li><a href="hospitality.html" class="gold-link">Hospitality</a></li>
 
-    <li><a href="https://rexclarkeadventures.com/category/festivals-in-africa/">Festivals</a></li>
-    <li><a href="https://rexclarkeadventures.com/category/latest-news/">News</a></li>
+    <li><a href="festivals.html">Festivals</a></li>
+    <li><a href="news.html">News</a></li>
 
     <!-- Discover — accordion -->
     <li>
@@ -1147,17 +1138,17 @@ body { top: 0 !important; }
         </span>
       </button>
       <ul class="mob-sub" role="list">
-        <li><a href="https://rexclarkeadventures.com/category/living-in-africa/food-in-nigeria/"><span class="mob-sub-text">Food</span></a></li>
-        <li><a href="https://rexclarkeadventures.com/category/adventures/travel-tips-for-nigeria/"><span class="mob-sub-text">Travel Tips</span></a></li>
-        <li><a href="https://rexclarkeadventures.com/category/living-in-africa/"><span class="mob-sub-text">Lifestyle</span></a></li>
-        <li><a href="https://rexclarkeadventures.com/category/tourism-in-nigeria/ecotourism-in-nigeria/"><span class="mob-sub-text">Eco-Tourism</span></a></li>
+        <li><a href="omiren.html"><span class="mob-sub-text">Food</span></a></li>
+        <li><a href="trip-planner.html"><span class="mob-sub-text">Travel Tips</span></a></li>
+        <li><a href="omiren.html"><span class="mob-sub-text">Lifestyle</span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Eco-Tourism</span></a></li>
       </ul>
     </li>
 
-    <li><a href="about.html" onclick="closeNav()">About the Platform</a></li>
-    <li><a href="team.html" onclick="closeNav()">Editorial Team</a></li>
-    <li><a href="work-with-us.html" onclick="closeNav()">Work With Us</a></li>
-    <li><a href="contact.html" onclick="closeNav()">Contact</a></li>
+    <li><a href="#about" onclick="closeNav()">About the Platform</a></li>
+    <li><a href="#team" onclick="closeNav()">Editorial Team</a></li>
+    <li><a href="#work-with-us" onclick="closeNav()">Work With Us</a></li>
+    <li><a href="#contact" onclick="closeNav()">Contact</a></li>
 
   </ul>
 
@@ -1180,17 +1171,17 @@ body { top: 0 !important; }
           <h1 class="slide-h1">Where the<br>mountain meets<br><span class="gold">the Atlantic.</span></h1>
           <div class="slide-tagline">Africa, In Full.</div>
           <p class="slide-desc">Cape Town Airport has won Africa's Best Airport for 11 consecutive years. The city beneath Table Mountain is one of the continent's most complete travel experiences.</p>
-          <div class="slide-btns"><a href="https://rexclarkeadventures.com/destinations/south-africa/" class="btn-gold">Explore South Africa</a><a href="https://rexclarkeadventures.com/cape-town-airport-skytrax-award/" class="btn-ghost">Airport story →</a></div>
+          <div class="slide-btns"><a href="regions.html" class="btn-gold">Explore South Africa</a><a href="aviation.html" class="btn-ghost">Airport story →</a></div>
         </div>
         <div class="slide-regions">
           <div class="regions-label">Southern Africa</div>
           <div class="regions-grid">
-            <a href="https://rexclarkeadventures.com/destinations/south-africa/" class="region-card"><span class="region-icon">🇿🇦</span><div class="region-name">South Africa</div><div class="region-count">42 stories</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/zimbabwe/" class="region-card"><span class="region-icon">🇿🇼</span><div class="region-name">Zimbabwe</div><div class="region-count">Victoria Falls</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/botswana/" class="region-card"><span class="region-icon">🇧🇼</span><div class="region-name">Botswana</div><div class="region-count">Okavango</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/namibia/" class="region-card"><span class="region-icon">🇳🇦</span><div class="region-name">Namibia</div><div class="region-count">Desert dunes</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/mozambique/" class="region-card"><span class="region-icon">🇲🇿</span><div class="region-name">Mozambique</div><div class="region-count">Indian Ocean</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/zambia/" class="region-card"><span class="region-icon">🇿🇲</span><div class="region-name">Zambia</div><div class="region-count">South Luangwa</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇿🇦</span><div class="region-name">South Africa</div><div class="region-count">42 stories</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇿🇼</span><div class="region-name">Zimbabwe</div><div class="region-count">Victoria Falls</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇧🇼</span><div class="region-name">Botswana</div><div class="region-count">Okavango</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇳🇦</span><div class="region-name">Namibia</div><div class="region-count">Desert dunes</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇲🇿</span><div class="region-name">Mozambique</div><div class="region-count">Indian Ocean</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇿🇲</span><div class="region-name">Zambia</div><div class="region-count">South Luangwa</div></a>
           </div>
         </div>
       </div>
@@ -1206,17 +1197,17 @@ body { top: 0 !important; }
           <h1 class="slide-h1">Every bead<br>carries a<br><span class="gold">century of meaning.</span></h1>
           <div class="slide-tagline">Africa, In Full.</div>
           <p class="slide-desc">Ndebele beadwork is not decoration — it is a coded language, a rite of passage, and a declaration of sovereignty. RCA covers the culture behind the colour.</p>
-          <div class="slide-btns"><a href="https://rexclarkeadventures.com/category/culture/" class="btn-gold">Explore Culture</a><a href="https://rexclarkeadventures.com/african-fabrics-identity-adire-kente-kitenge/" class="btn-ghost">Fabric identity →</a></div>
+          <div class="slide-btns"><a href="about.html" class="btn-gold">Explore Culture</a><a href="omiren.html" class="btn-ghost">Fabric identity →</a></div>
         </div>
         <div class="slide-regions">
           <div class="regions-label">Cultural editorial series</div>
           <div class="regions-grid">
-            <a href="https://rexclarkeadventures.com/mali-empire-west-africa/" class="region-card"><span class="region-icon">🏛</span><div class="region-name">Mali Empire</div><div class="region-count">West Africa</div></a>
-            <a href="https://rexclarkeadventures.com/ifa-divination-african-diaspora/" class="region-card"><span class="region-icon">✦</span><div class="region-name">Ifá Divination</div><div class="region-count">Nigeria</div></a>
-            <a href="https://rexclarkeadventures.com/african-fabrics-identity-adire-kente-kitenge/" class="region-card"><span class="region-icon">🧵</span><div class="region-name">Fabric Identity</div><div class="region-count">Pan-Africa</div></a>
-            <a href="https://rexclarkeadventures.com/category/african-culture-traditions/" class="region-card"><span class="region-icon">👑</span><div class="region-name">Kingdoms</div><div class="region-count">Royal courts</div></a>
-            <a href="https://rexclarkeadventures.com/category/festivals-in-africa/" class="region-card"><span class="region-icon">🎭</span><div class="region-name">Festivals</div><div class="region-count">54 nations</div></a>
-            <a href="https://rexclarkeadventures.com/accra-city-guide-ghana/" class="region-card"><span class="region-icon">🇬🇭</span><div class="region-name">Ghana</div><div class="region-count">Accra guide</div></a>
+            <a href="about.html" class="region-card"><span class="region-icon">🏛</span><div class="region-name">Mali Empire</div><div class="region-count">West Africa</div></a>
+            <a href="omiren.html" class="region-card"><span class="region-icon">✦</span><div class="region-name">Ifá Divination</div><div class="region-count">Nigeria</div></a>
+            <a href="omiren.html" class="region-card"><span class="region-icon">🧵</span><div class="region-name">Fabric Identity</div><div class="region-count">Pan-Africa</div></a>
+            <a href="about.html" class="region-card"><span class="region-icon">👑</span><div class="region-name">Kingdoms</div><div class="region-count">Royal courts</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🎭</span><div class="region-name">Festivals</div><div class="region-count">54 nations</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇬🇭</span><div class="region-name">Ghana</div><div class="region-count">Accra guide</div></a>
           </div>
         </div>
       </div>
@@ -1232,17 +1223,17 @@ body { top: 0 !important; }
           <h1 class="slide-h1">1,063 left<br>on Earth.<br><span class="gold">This is their forest.</span></h1>
           <div class="slide-tagline">Africa, In Full.</div>
           <p class="slide-desc">Bwindi Impenetrable National Park, Uganda. Gorilla trekking permits fund the conservation of one of the world's most endangered primates. RCA covers the encounter and the cause.</p>
-          <div class="slide-btns"><a href="https://rexclarkeadventures.com/destinations/uganda/" class="btn-gold">Explore Uganda</a><a href="https://rexclarkeadventures.com/eco-tourism-in-africa/" class="btn-ghost">Eco-Tourism →</a></div>
+          <div class="slide-btns"><a href="regions.html" class="btn-gold">Explore Uganda</a><a href="regions.html" class="btn-ghost">Eco-Tourism →</a></div>
         </div>
         <div class="slide-regions">
           <div class="regions-label">East Africa wildlife</div>
           <div class="regions-grid">
-            <a href="https://rexclarkeadventures.com/destinations/uganda/" class="region-card"><span class="region-icon">🇺🇬</span><div class="region-name">Uganda</div><div class="region-count">Gorilla trekking</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/kenya/" class="region-card"><span class="region-icon">🇰🇪</span><div class="region-name">Kenya</div><div class="region-count">Maasai Mara</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/rwanda/" class="region-card"><span class="region-icon">🇷🇼</span><div class="region-name">Rwanda</div><div class="region-count">Volcanoes NP</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/tanzania/" class="region-card"><span class="region-icon">🇹🇿</span><div class="region-name">Tanzania</div><div class="region-count">Serengeti</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/ethiopia/" class="region-card"><span class="region-icon">🇪🇹</span><div class="region-name">Ethiopia</div><div class="region-count">Simien Mts</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/zambia/" class="region-card"><span class="region-icon">🇿🇲</span><div class="region-name">Zambia</div><div class="region-count">South Luangwa</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇺🇬</span><div class="region-name">Uganda</div><div class="region-count">Gorilla trekking</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇰🇪</span><div class="region-name">Kenya</div><div class="region-count">Maasai Mara</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇷🇼</span><div class="region-name">Rwanda</div><div class="region-count">Volcanoes NP</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇹🇿</span><div class="region-name">Tanzania</div><div class="region-count">Serengeti</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇪🇹</span><div class="region-name">Ethiopia</div><div class="region-count">Simien Mts</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇿🇲</span><div class="region-name">Zambia</div><div class="region-count">South Luangwa</div></a>
           </div>
         </div>
       </div>
@@ -1258,17 +1249,17 @@ body { top: 0 !important; }
           <h1 class="slide-h1">Above the clouds.<br>The summit<br><span class="gold">is still higher.</span></h1>
           <div class="slide-tagline">Africa, In Full.</div>
           <p class="slide-desc">At 5,895 metres, Kilimanjaro is Africa's roof. The Serengeti spreads below the clouds. RCA covers the climb, the ecosystem, and the reason it matters for Tanzanian tourism.</p>
-          <div class="slide-btns"><a href="https://rexclarkeadventures.com/destinations/tanzania/" class="btn-gold">Explore Tanzania</a><a href="https://rexclarkeadventures.com/best-adventures-in-africa/" class="btn-ghost">Best Adventures →</a></div>
+          <div class="slide-btns"><a href="regions.html" class="btn-gold">Explore Tanzania</a><a href="adventures.html" class="btn-ghost">Best Adventures →</a></div>
         </div>
         <div class="slide-regions">
           <div class="regions-label">Iconic landmarks</div>
           <div class="regions-grid">
-            <a href="https://rexclarkeadventures.com/destinations/tanzania/" class="region-card"><span class="region-icon">🏔</span><div class="region-name">Kilimanjaro</div><div class="region-count">5,895m summit</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/ethiopia/" class="region-card"><span class="region-icon">🕍</span><div class="region-name">Lalibela</div><div class="region-count">Rock churches</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/morocco/" class="region-card"><span class="region-icon">🕌</span><div class="region-name">Morocco</div><div class="region-count">Medinas</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/egypt/" class="region-card"><span class="region-icon">🏛</span><div class="region-name">Egypt</div><div class="region-count">Pyramids</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/zimbabwe/" class="region-card"><span class="region-icon">💧</span><div class="region-name">Vic Falls</div><div class="region-count">Zimbabwe</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/south-africa/" class="region-card"><span class="region-icon">🏔</span><div class="region-name">Table Mountain</div><div class="region-count">Cape Town</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🏔</span><div class="region-name">Kilimanjaro</div><div class="region-count">5,895m summit</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🕍</span><div class="region-name">Lalibela</div><div class="region-count">Rock churches</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🕌</span><div class="region-name">Morocco</div><div class="region-count">Medinas</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🏛</span><div class="region-name">Egypt</div><div class="region-count">Pyramids</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">💧</span><div class="region-name">Vic Falls</div><div class="region-count">Zimbabwe</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🏔</span><div class="region-name">Table Mountain</div><div class="region-count">Cape Town</div></a>
           </div>
         </div>
       </div>
@@ -1284,17 +1275,17 @@ body { top: 0 !important; }
           <h1 class="slide-h1">The greatest<br>wildlife show<br><span class="gold">on Earth.</span></h1>
           <div class="slide-tagline">Africa, In Full.</div>
           <p class="slide-desc">Serengeti National Park hosts the largest terrestrial mammal migration on the planet. RCA covers the park, the lodges, the conservation, and the debate around responsible safari tourism.</p>
-          <div class="slide-btns"><a href="https://rexclarkeadventures.com/destinations/tanzania/" class="btn-gold">Explore Serengeti</a><a href="https://rexclarkeadventures.com/category/adventures/" class="btn-ghost">Adventures →</a></div>
+          <div class="slide-btns"><a href="regions.html" class="btn-gold">Explore Serengeti</a><a href="adventures.html" class="btn-ghost">Adventures →</a></div>
         </div>
         <div class="slide-regions">
           <div class="regions-label">National parks</div>
           <div class="regions-grid">
-            <a href="https://rexclarkeadventures.com/destinations/tanzania/" class="region-card"><span class="region-icon">🦒</span><div class="region-name">Serengeti</div><div class="region-count">Tanzania</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/kenya/" class="region-card"><span class="region-icon">🦁</span><div class="region-name">Maasai Mara</div><div class="region-count">Kenya</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/botswana/" class="region-card"><span class="region-icon">🌊</span><div class="region-name">Okavango</div><div class="region-count">Botswana</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/south-africa/" class="region-card"><span class="region-icon">🐘</span><div class="region-name">Kruger</div><div class="region-count">South Africa</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/namibia/" class="region-card"><span class="region-icon">🏜</span><div class="region-name">Etosha</div><div class="region-count">Namibia</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/zambia/" class="region-card"><span class="region-icon">🐆</span><div class="region-name">South Luangwa</div><div class="region-count">Zambia</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🦒</span><div class="region-name">Serengeti</div><div class="region-count">Tanzania</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🦁</span><div class="region-name">Maasai Mara</div><div class="region-count">Kenya</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🌊</span><div class="region-name">Okavango</div><div class="region-count">Botswana</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🐘</span><div class="region-name">Kruger</div><div class="region-count">South Africa</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🏜</span><div class="region-name">Etosha</div><div class="region-count">Namibia</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🐆</span><div class="region-name">South Luangwa</div><div class="region-count">Zambia</div></a>
           </div>
         </div>
       </div>
@@ -1312,17 +1303,17 @@ body { top: 0 !important; }
           <h1 class="slide-h1">Ancient medinas.<br>Modern ambitions.<br><span class="gold">Morocco rewrites the rules.</span></h1>
           <div class="slide-tagline">Africa, In Full.</div>
           <p class="slide-desc">Rabat is no longer playing second fiddle to Marrakech. Morocco's capital is rewriting the MICE tourism playbook — while Fès, Chefchaouen, and the Sahara absorb the world's travellers.</p>
-          <div class="slide-btns"><a href="https://rexclarkeadventures.com/rabat-mice-tourism/" class="btn-gold">Morocco · MICE Tourism</a><a href="https://rexclarkeadventures.com/destinations/morocco/" class="btn-ghost">Full guide →</a></div>
+          <div class="slide-btns"><a href="article-eswatini.html" class="btn-gold">Morocco · MICE Tourism</a><a href="regions.html" class="btn-ghost">Full guide →</a></div>
         </div>
         <div class="slide-regions">
           <div class="regions-label">North Africa</div>
           <div class="regions-grid">
-            <a href="https://rexclarkeadventures.com/destinations/morocco/" class="region-card"><span class="region-icon">🇲🇦</span><div class="region-name">Morocco</div><div class="region-count">31 stories</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/egypt/" class="region-card"><span class="region-icon">🇪🇬</span><div class="region-name">Egypt</div><div class="region-count">Red Sea</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/tunisia/" class="region-card"><span class="region-icon">🇹🇳</span><div class="region-name">Tunisia</div><div class="region-count">Mediterranean</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/algeria/" class="region-card"><span class="region-icon">🇩🇿</span><div class="region-name">Algeria</div><div class="region-count">Sahara</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/libya/" class="region-card"><span class="region-icon">🇱🇾</span><div class="region-name">Libya</div><div class="region-count">Ancient sites</div></a>
-            <a href="https://rexclarkeadventures.com/north-africa/" class="region-card"><span class="region-icon">🏜</span><div class="region-name">All North Africa</div><div class="region-count">6 nations</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇲🇦</span><div class="region-name">Morocco</div><div class="region-count">31 stories</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇪🇬</span><div class="region-name">Egypt</div><div class="region-count">Red Sea</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇹🇳</span><div class="region-name">Tunisia</div><div class="region-count">Mediterranean</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇩🇿</span><div class="region-name">Algeria</div><div class="region-count">Sahara</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇱🇾</span><div class="region-name">Libya</div><div class="region-count">Ancient sites</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🏜</span><div class="region-name">All North Africa</div><div class="region-count">6 nations</div></a>
           </div>
         </div>
       </div>
@@ -1340,17 +1331,17 @@ body { top: 0 !important; }
           <h1 class="slide-h1">The world's<br>second lung<br><span class="gold">is still breathing.</span></h1>
           <div class="slide-tagline">Africa, In Full.</div>
           <p class="slide-desc">The Congo Basin rainforest stores 8% of the world's forest carbon. Gabon has protected 11% of its land as national parks. This is the eco-tourism frontier the world hasn't discovered yet.</p>
-          <div class="slide-btns"><a href="https://rexclarkeadventures.com/congo-basin-deforestation-eco-tourism/" class="btn-gold">Congo Basin Report</a><a href="https://rexclarkeadventures.com/central-africa/" class="btn-ghost">Central Africa →</a></div>
+          <div class="slide-btns"><a href="article-eswatini.html" class="btn-gold">Congo Basin Report</a><a href="regions.html" class="btn-ghost">Central Africa →</a></div>
         </div>
         <div class="slide-regions">
           <div class="regions-label">Central Africa</div>
           <div class="regions-grid">
-            <a href="https://rexclarkeadventures.com/destinations/gabon/" class="region-card"><span class="region-icon">🇬🇦</span><div class="region-name">Gabon</div><div class="region-count">13 national parks</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/congo/" class="region-card"><span class="region-icon">🇨🇬</span><div class="region-name">Congo</div><div class="region-count">Congo Basin</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/cameroon/" class="region-card"><span class="region-icon">🇨🇲</span><div class="region-name">Cameroon</div><div class="region-count">Waza NP</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/drc/" class="region-card"><span class="region-icon">🇨🇩</span><div class="region-name">DR Congo</div><div class="region-count">Virunga NP</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/equatorial-guinea/" class="region-card"><span class="region-icon">🇬🇶</span><div class="region-name">Eq. Guinea</div><div class="region-count">Bioko Island</div></a>
-            <a href="https://rexclarkeadventures.com/central-africa/" class="region-card"><span class="region-icon">🌴</span><div class="region-name">All Central Africa</div><div class="region-count">9 nations</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇬🇦</span><div class="region-name">Gabon</div><div class="region-count">13 national parks</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇨🇬</span><div class="region-name">Congo</div><div class="region-count">Congo Basin</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇨🇲</span><div class="region-name">Cameroon</div><div class="region-count">Waza NP</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇨🇩</span><div class="region-name">DR Congo</div><div class="region-count">Virunga NP</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇬🇶</span><div class="region-name">Eq. Guinea</div><div class="region-count">Bioko Island</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🌴</span><div class="region-name">All Central Africa</div><div class="region-count">9 nations</div></a>
           </div>
         </div>
       </div>
@@ -1368,17 +1359,17 @@ body { top: 0 !important; }
           <h1 class="slide-h1">Accra is<br>not waiting<br><span class="gold">for the world.</span></h1>
           <div class="slide-tagline">Africa, In Full.</div>
           <p class="slide-desc">Ghana was the first sub-Saharan African country to gain independence. Accra's art scene, Cape Coast Castle's history, and the Ashanti Kingdom's legacy make this West Africa's most complete destination.</p>
-          <div class="slide-btns"><a href="https://rexclarkeadventures.com/accra-city-guide-ghana/" class="btn-gold">Accra City Guide</a><a href="https://rexclarkeadventures.com/west-africa/" class="btn-ghost">West Africa →</a></div>
+          <div class="slide-btns"><a href="regions.html" class="btn-gold">Accra City Guide</a><a href="regions.html" class="btn-ghost">West Africa →</a></div>
         </div>
         <div class="slide-regions">
           <div class="regions-label">West Africa</div>
           <div class="regions-grid">
-            <a href="https://rexclarkeadventures.com/destinations/ghana/" class="region-card"><span class="region-icon">🇬🇭</span><div class="region-name">Ghana</div><div class="region-count">27 stories</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/nigeria/" class="region-card"><span class="region-icon">🇳🇬</span><div class="region-name">Nigeria</div><div class="region-count">86 stories</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/senegal/" class="region-card"><span class="region-icon">🇸🇳</span><div class="region-name">Senegal</div><div class="region-count">Dakar</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/cameroon/" class="region-card"><span class="region-icon">🇨🇲</span><div class="region-name">Cameroon</div><div class="region-count">Mt Cameroon</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/ivory-coast/" class="region-card"><span class="region-icon">🇨🇮</span><div class="region-name">Côte d'Ivoire</div><div class="region-count">Abidjan</div></a>
-            <a href="https://rexclarkeadventures.com/west-africa/" class="region-card"><span class="region-icon">🌍</span><div class="region-name">All West Africa</div><div class="region-count">16 nations</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇬🇭</span><div class="region-name">Ghana</div><div class="region-count">27 stories</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇳🇬</span><div class="region-name">Nigeria</div><div class="region-count">86 stories</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇸🇳</span><div class="region-name">Senegal</div><div class="region-count">Dakar</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇨🇲</span><div class="region-name">Cameroon</div><div class="region-count">Mt Cameroon</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇨🇮</span><div class="region-name">Côte d'Ivoire</div><div class="region-count">Abidjan</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🌍</span><div class="region-name">All West Africa</div><div class="region-count">16 nations</div></a>
           </div>
         </div>
       </div>
@@ -1396,17 +1387,17 @@ body { top: 0 !important; }
           <h1 class="slide-h1">90% of its<br>species exist<br><span class="gold">nowhere else.</span></h1>
           <div class="slide-tagline">Africa, In Full.</div>
           <p class="slide-desc">Madagascar is the world's fourth largest island and one of its most biodiverse. Lemurs, baobab avenues, and coral reefs make this the Indian Ocean's most extraordinary destination.</p>
-          <div class="slide-btns"><a href="https://rexclarkeadventures.com/african-islands/" class="btn-gold">Explore the Islands</a><a href="https://rexclarkeadventures.com/eco-tourism-in-africa/" class="btn-ghost">Eco-Tourism →</a></div>
+          <div class="slide-btns"><a href="regions.html" class="btn-gold">Explore the Islands</a><a href="regions.html" class="btn-ghost">Eco-Tourism →</a></div>
         </div>
         <div class="slide-regions">
           <div class="regions-label">African islands</div>
           <div class="regions-grid">
-            <a href="https://rexclarkeadventures.com/destinations/madagascar/" class="region-card"><span class="region-icon">🇲🇬</span><div class="region-name">Madagascar</div><div class="region-count">Lemur paradise</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/seychelles/" class="region-card"><span class="region-icon">🇸🇨</span><div class="region-name">Seychelles</div><div class="region-count">Indian Ocean</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/mauritius/" class="region-card"><span class="region-icon">🇲🇺</span><div class="region-name">Mauritius</div><div class="region-count">Luxury resorts</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/zanzibar/" class="region-card"><span class="region-icon">🇹🇿</span><div class="region-name">Zanzibar</div><div class="region-count">Tanzania</div></a>
-            <a href="https://rexclarkeadventures.com/destinations/comoros/" class="region-card"><span class="region-icon">🇰🇲</span><div class="region-name">Comoros</div><div class="region-count">Volcanic islands</div></a>
-            <a href="https://rexclarkeadventures.com/african-islands/" class="region-card"><span class="region-icon">🌊</span><div class="region-name">All Islands</div><div class="region-count">7 nations</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇲🇬</span><div class="region-name">Madagascar</div><div class="region-count">Lemur paradise</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇸🇨</span><div class="region-name">Seychelles</div><div class="region-count">Indian Ocean</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇲🇺</span><div class="region-name">Mauritius</div><div class="region-count">Luxury resorts</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇹🇿</span><div class="region-name">Zanzibar</div><div class="region-count">Tanzania</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🇰🇲</span><div class="region-name">Comoros</div><div class="region-count">Volcanic islands</div></a>
+            <a href="regions.html" class="region-card"><span class="region-icon">🌊</span><div class="region-name">All Islands</div><div class="region-count">7 nations</div></a>
           </div>
         </div>
       </div>
@@ -1602,8 +1593,8 @@ body { top: 0 !important; }
   <main>
 
     <!-- TOP STORY -->
-<div class="sec-head"><h2 class="sec-title">Top Story</h2><a href="https://rexclarkeadventures.com/category/latest-news/" class="sec-more">All Stories →</a></div>
-    <a href="article-eswatini.html" class="featured">
+    <div class="sec-head"><h2 class="sec-title">Top Story</h2><a href="/category/latest-news/" class="sec-more">All Stories →</a></div>
+    <a href="/eswatini-tourism-boom/" class="featured">
       <div class="feat-img">
         <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/03/eswatini-tourism-boom.jpg"
              alt="Eswatini tourism surge 2026"
@@ -1619,9 +1610,9 @@ body { top: 0 !important; }
     </a>
 
     <!-- NEWS & FEATURES — each article appears only once (audit: no duplicates) -->
-<div class="sec-head" style="margin-top:4px;"><h2 class="sec-title">News & Features</h2><a href="https://rexclarkeadventures.com/category/latest-news/" class="sec-more">More →</a></div>
+    <div class="sec-head" style="margin-top:4px;"><h2 class="sec-title">News & Features</h2><a href="/category/latest-news/" class="sec-more">More →</a></div>
     <div class="art-grid">
-      <a href="article-eswatini.html" class="art-card">
+      <a href="/sharm-el-sheikh-family-tourism/" class="art-card">
         <div class="card-img">
           <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/03/aquamania-jungle-park-sharm-el-sheikh.jpg"
                alt="Aquamania Jungle Park Sharm El Sheikh"
@@ -1633,7 +1624,7 @@ body { top: 0 !important; }
           <div class="card-meta">Oluwafemi Kehinde · 14 hours ago</div>
         </div>
       </a>
-      <a href="article-eswatini.html" class="art-card">
+      <a href="/bbc-kingdom-zambia-south-luangwa/" class="art-card">
         <div class="card-img">
           <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/03/bbc-kingdom-zambia-south-luangwa.jpg"
                alt="BBC Kingdom documentary Zambia South Luangwa"
@@ -1645,7 +1636,7 @@ body { top: 0 !important; }
           <div class="card-meta">Familugba Victor · 2 days ago</div>
         </div>
       </a>
-      <a href="article-eswatini.html" class="art-card">
+      <a href="/cape-town-airport-skytrax-award/" class="art-card">
         <div class="card-img">
           <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/03/cape-town-airport-skytrax-2026.jpg"
                alt="Cape Town Airport Skytrax Awards 2026"
@@ -1660,9 +1651,9 @@ body { top: 0 !important; }
     </div>
 
     <!-- CULTURE & HERITAGE -->
-<div class="sec-head" style="margin-top:4px;"><h2 class="sec-title">Culture & Heritage</h2><a href="https://rexclarkeadventures.com/category/culture/" class="sec-more">More →</a></div>
+    <div class="sec-head" style="margin-top:4px;"><h2 class="sec-title">Culture & Heritage</h2><a href="/category/culture/" class="sec-more">More →</a></div>
     <div class="art-list">
-      <a href="article-eswatini.html" class="list-item">
+      <a href="/mali-empire-west-africa/" class="list-item">
         <div class="list-img">
           <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/12/mali-empire-west-africa.jpg"
                alt="Mali Empire West Africa cultural legacy"
@@ -1674,7 +1665,7 @@ body { top: 0 !important; }
           <div class="list-meta">Leyira Virtue Barisuka · 3 weeks ago</div>
         </div>
       </a>
-      <a href="article-eswatini.html" class="list-item">
+      <a href="/african-fabrics-identity-adire-kente-kitenge/" class="list-item">
         <div class="list-img">
           <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/11/african-fabrics-adire-kente-kitenge.jpg"
                alt="African fabrics identity Adire Kente Kitenge"
@@ -1686,7 +1677,7 @@ body { top: 0 !important; }
           <div class="list-meta">Leyira Virtue Barisuka · 1 month ago</div>
         </div>
       </a>
-      <a href="article-eswatini.html" class="list-item">
+      <a href="/ifa-divination-african-diaspora/" class="list-item">
         <div class="list-img">
           <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/ifa-divination-diaspora.jpg"
                alt="Ifa divination African diaspora Cuba Brazil"
@@ -1698,7 +1689,7 @@ body { top: 0 !important; }
           <div class="list-meta">Leyira Virtue Barisuka · 2 months ago</div>
         </div>
       </a>
-      <a href="article-eswatini.html" class="list-item">
+      <a href="/trans-saharan-spice-trail-kano-morocco/" class="list-item">
         <div class="list-img">
           <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/trans-saharan-spice-trail-kano-morocco.jpg"
                alt="Trans-Saharan spice trail Kano Morocco"
@@ -1713,9 +1704,9 @@ body { top: 0 !important; }
     </div>
 
     <!-- ADVENTURES -->
-<div class="sec-head" style="margin-top:4px;"><h2 class="sec-title">Adventures</h2><a href="https://rexclarkeadventures.com/category/adventures/" class="sec-more">More →</a></div>
+    <div class="sec-head" style="margin-top:4px;"><h2 class="sec-title">Adventures</h2><a href="/category/adventures/" class="sec-more">More →</a></div>
     <div class="art-grid">
-      <a href="article-eswatini.html" class="art-card">
+      <a href="/best-adventures-in-africa/" class="art-card">
         <div class="card-img">
           <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/03/best-adventures-africa-2026.jpg"
                alt="Best adventures in Africa 2026"
@@ -1727,7 +1718,7 @@ body { top: 0 !important; }
           <div class="card-meta">Adebukola Benjamin · 15 hours ago</div>
         </div>
       </a>
-      <a href="article-eswatini.html" class="art-card">
+      <a href="regions.html" class="art-card">
         <div class="card-img">
           <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/eco-tourism-africa-nature-reserves.jpg"
                alt="Eco-tourism in Africa nature reserves"
@@ -1739,7 +1730,7 @@ body { top: 0 !important; }
           <div class="card-meta">RCA Editorial · 2 months ago</div>
         </div>
       </a>
-      <a href="article-eswatini.html" class="art-card">
+      <a href="/south-africa-planted-forests/" class="art-card">
         <div class="card-img">
           <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/03/south-africa-planted-forests.jpg"
                alt="South Africa planted forests sustainability"
@@ -1765,10 +1756,10 @@ body { top: 0 !important; }
     <div class="widget">
       <div class="widget-head">Trending Now</div>
       <div>
-        <div class="trend-item"><div class="trend-num">1</div><a href="article-eswatini.html" class="trend-title">Eswatini Records 16.3% Surge in Tourist Arrivals</a></div>
-        <div class="trend-item"><div class="trend-num">2</div><a href="article-eswatini.html" class="trend-title">Best Adventures in Africa (2026)</a></div>
-        <div class="trend-item"><div class="trend-num">3</div><a href="article-eswatini.html" class="trend-title">BBC 'Kingdom' Puts Zambia's South Luangwa on the World Map</a></div>
-        <div class="trend-item"><div class="trend-num">4</div><a href="article-eswatini.html" class="trend-title">Cape Town Airport: Africa's Best for 11 Consecutive Years</a></div>
+        <div class="trend-item"><div class="trend-num">1</div><a href="/eswatini-tourism-boom/" class="trend-title">Eswatini Records 16.3% Surge in Tourist Arrivals</a></div>
+        <div class="trend-item"><div class="trend-num">2</div><a href="/best-adventures-in-africa/" class="trend-title">Best Adventures in Africa (2026)</a></div>
+        <div class="trend-item"><div class="trend-num">3</div><a href="/bbc-kingdom-zambia-south-luangwa/" class="trend-title">BBC 'Kingdom' Puts Zambia's South Luangwa on the World Map</a></div>
+        <div class="trend-item"><div class="trend-num">4</div><a href="/cape-town-airport-skytrax-award/" class="trend-title">Cape Town Airport: Africa's Best for 11 Consecutive Years</a></div>
         <div class="trend-item"><div class="trend-num">5</div><a href="regions.html" class="trend-title">Exploring Africa by Region: West, East, Central, North & Islands</a></div>
       </div>
     </div>
@@ -1799,7 +1790,7 @@ body { top: 0 !important; }
           </div>
           <div><div class="pop-title">Exploring Africa by Region: West, East, Central, North & Islands</div><div class="pop-cat">Explore Africa</div></div>
         </a>
-        <a href="article-eswatini.html" class="pop-item">
+        <a href="about.html" class="pop-item">
           <div class="pop-img">
             <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/cultural-tourism-africa-festivals-heritage.jpg"
                  alt="Cultural tourism Africa"
@@ -1807,7 +1798,7 @@ body { top: 0 !important; }
           </div>
           <div><div class="pop-title">Cultural Tourism in Africa: Traditions, Festivals, and Heritage Sites</div><div class="pop-cat">Culture</div></div>
         </a>
-        <a href="article-eswatini.html" class="pop-item">
+        <a href="/accra-city-guide-ghana/" class="pop-item">
           <div class="pop-img">
             <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/12/accra-city-guide-ghana.jpg"
                  alt="Accra city guide Ghana"
@@ -1815,7 +1806,7 @@ body { top: 0 !important; }
           </div>
           <div><div class="pop-title">Accra City Guide: Where to Stay, Eat and Experience the New Ghana</div><div class="pop-cat">Destinations</div></div>
         </a>
-        <a href="article-eswatini.html" class="pop-item">
+        <a href="/rabat-mice-tourism/" class="pop-item">
           <div class="pop-img">
             <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/02/rabat-mice-tourism-morocco.jpg"
                  alt="Rabat MICE tourism Morocco"
@@ -1823,7 +1814,7 @@ body { top: 0 !important; }
           </div>
           <div><div class="pop-title">Rabat MICE Tourism: Morocco's Capital Rewrites the Rules</div><div class="pop-cat">North Africa</div></div>
         </a>
-        <a href="article-eswatini.html" class="pop-item">
+        <a href="/park-hyatt-johannesburg-time/" class="pop-item">
           <div class="pop-img">
             <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/02/park-hyatt-johannesburg-time-2026.jpg"
                  alt="Park Hyatt Johannesburg TIME 2026"
@@ -1845,25 +1836,25 @@ body { top: 0 !important; }
   <div class="avia-inner">
     <div class="avia-head">
       <h2 class="avia-title">Aviation & <span>Hospitality</span></h2>
-      <a href="https://rexclarkeadventures.com/category/latest-news/airline-news/" class="avia-more">All Aviation & Hospitality →</a>
+      <a href="aviation.html" class="avia-more">All Aviation & Hospitality →</a>
     </div>
     <div class="avia-grid">
-      <a href="https://rexclarkeadventures.com/cape-town-airport-skytrax-award/" class="avia-card">
+      <a href="aviation.html" class="avia-card">
         <div class="avia-tag">✈ Aviation · South Africa</div>
         <div class="avia-card-title">Cape Town Airport: Africa's Best for 11 Consecutive Years — Skytrax 2026</div>
         <div class="avia-card-meta">Oluwafemi Kehinde · 4 days ago</div>
       </a>
-      <a href="https://rexclarkeadventures.com/park-hyatt-johannesburg-time/" class="avia-card">
+      <a href="aviation.html" class="avia-card">
         <div class="avia-tag">🏨 Hospitality · South Africa</div>
         <div class="avia-card-title">Park Hyatt Johannesburg Named Among TIME's World's Greatest Places for 2026</div>
         <div class="avia-card-meta">Oluwafemi Kehinde · 1 week ago</div>
       </a>
-      <a href="https://rexclarkeadventures.com/kuriftu-resorts-ride-ethiopia-tourism/" class="avia-card">
+      <a href="aviation.html" class="avia-card">
         <div class="avia-tag">🤝 Hospitality · Ethiopia</div>
         <div class="avia-card-title">Kuriftu Resorts & RIDE Join Forces to Drive Tourism Growth and Smart Transport in Ethiopia</div>
         <div class="avia-card-meta">Familugba Victor · 4 days ago</div>
       </a>
-      <a href="https://rexclarkeadventures.com/ethiopia-hospitality-hackathon/" class="avia-card">
+      <a href="aviation.html" class="avia-card">
         <div class="avia-tag">💡 Innovation · Ethiopia</div>
         <div class="avia-card-title">Ethiopia Hosts Hospitality Hackathon 2026: AI-Powered Tourism Solutions Across Africa</div>
         <div class="avia-card-meta">Familugba Victor · 1 week ago</div>
@@ -1878,23 +1869,23 @@ body { top: 0 !important; }
     <div class="eq-slider" id="eqSlider">
       <div class="eq-slide active">
         <p class="eq-quote">Eswatini crossed the one-million arrivals mark in 2025. Not a recovery story. A declaration.</p>
-        <div class="eq-source">Africa Tourism — <a href="https://rexclarkeadventures.com/eswatini-tourism-boom/">Read the full report</a></div>
+        <div class="eq-source">Africa Tourism — <a href="article-eswatini.html">Read the full report</a></div>
       </div>
       <div class="eq-slide">
         <p class="eq-quote">Cape Town Airport has won Africa's Best Airport for eleven consecutive years. Not a streak. A culture.</p>
-        <div class="eq-source">Aviation & Airports — <a href="https://rexclarkeadventures.com/cape-town-airport-skytrax-award/">Read the full report</a></div>
+        <div class="eq-source">Aviation & Airports — <a href="article-eswatini.html">Read the full report</a></div>
       </div>
       <div class="eq-slide">
         <p class="eq-quote">The Congo Basin stores 8% of the world's forest carbon. Its eco-tourism story is the one the industry hasn't written yet.</p>
-        <div class="eq-source">Eco-Tourism — <a href="https://rexclarkeadventures.com/congo-basin-deforestation-eco-tourism/">Read the full report</a></div>
+        <div class="eq-source">Eco-Tourism — <a href="article-eswatini.html">Read the full report</a></div>
       </div>
       <div class="eq-slide">
         <p class="eq-quote">Morocco's capital is no longer content to play second fiddle to Marrakech. Rabat is building a case the business world is starting to hear.</p>
-        <div class="eq-source">MICE & Hospitality — <a href="https://rexclarkeadventures.com/rabat-mice-tourism/">Read the full report</a></div>
+        <div class="eq-source">MICE & Hospitality — <a href="article-eswatini.html">Read the full report</a></div>
       </div>
       <div class="eq-slide">
         <p class="eq-quote">Park Hyatt Johannesburg in TIME's World's Greatest Places 2026. Not a hotel story. A statement about where serious hospitality is happening.</p>
-        <div class="eq-source">Hospitality — <a href="https://rexclarkeadventures.com/park-hyatt-johannesburg-time/">Read the full report</a></div>
+        <div class="eq-source">Hospitality — <a href="article-eswatini.html">Read the full report</a></div>
       </div>
     </div>
     <div class="eq-dots" id="eqDots">
@@ -1948,12 +1939,12 @@ body { top: 0 !important; }
         <h2 class="dest-h">Explore by Destination</h2>
         <p class="dest-sub">54 nations. Landmarks, kingdoms, national parks, and coastlines. Start anywhere.</p>
       </div>
-      <a href="https://rexclarkeadventures.com/destinations/" class="dest-all">Full destination index →</a>
+      <a href="regions.html" class="dest-all">Full destination index →</a>
     </div>
     <!-- NOTE FOR DEPLOYMENT: replace src paths with WordPress CDN URLs after media library upload -->
     <div class="dest-photo-grid">
 
-      <a href="https://rexclarkeadventures.com/destinations/south-africa/" class="dest-photo-card">
+      <a href="regions.html" class="dest-photo-card">
         <img src="dest-south-africa.jpg" alt="Cape Town viewpoint — Table Mountain" loading="lazy">
         <div class="dest-card-overlay"></div>
         <div class="dest-card-body">
@@ -1964,7 +1955,7 @@ body { top: 0 !important; }
         </div>
       </a>
 
-      <a href="https://rexclarkeadventures.com/destinations/uganda/" class="dest-photo-card">
+      <a href="regions.html" class="dest-photo-card">
         <img src="dest-gorilla.jpg" alt="Mountain gorilla — Bwindi, Uganda" loading="lazy">
         <div class="dest-card-overlay"></div>
         <div class="dest-card-body">
@@ -1975,7 +1966,7 @@ body { top: 0 !important; }
         </div>
       </a>
 
-      <a href="https://rexclarkeadventures.com/destinations/tanzania/" class="dest-photo-card">
+      <a href="regions.html" class="dest-photo-card">
         <img src="dest-serengeti.jpg" alt="Elephant family — Serengeti, Tanzania" loading="lazy">
         <div class="dest-card-overlay"></div>
         <div class="dest-card-body">
@@ -1986,7 +1977,7 @@ body { top: 0 !important; }
         </div>
       </a>
 
-      <a href="https://rexclarkeadventures.com/destinations/tanzania/" class="dest-photo-card">
+      <a href="regions.html" class="dest-photo-card">
         <img src="dest-kilimanjaro.jpg" alt="High camp on Kilimanjaro" loading="lazy">
         <div class="dest-card-overlay"></div>
         <div class="dest-card-body">
@@ -1997,7 +1988,7 @@ body { top: 0 !important; }
         </div>
       </a>
 
-      <a href="https://rexclarkeadventures.com/destinations/nigeria/" class="dest-photo-card">
+      <a href="regions.html" class="dest-photo-card">
         <img src="slide-culture.jpg" alt="Olu of Warri Itsekiri royal court" loading="lazy">
         <div class="dest-card-overlay"></div>
         <div class="dest-card-body">
@@ -2008,7 +1999,7 @@ body { top: 0 !important; }
         </div>
       </a>
 
-      <a href="https://rexclarkeadventures.com/destinations/ethiopia/" class="dest-photo-card">
+      <a href="regions.html" class="dest-photo-card">
         <img src="slide-heritage.jpg" alt="Lalibela rock-hewn church — Ethiopia" loading="lazy">
         <div class="dest-card-overlay"></div>
         <div class="dest-card-body">
@@ -2019,7 +2010,7 @@ body { top: 0 !important; }
         </div>
       </a>
 
-      <a href="https://rexclarkeadventures.com/destinations/morocco/" class="dest-photo-card dest-bg-2">
+      <a href="regions.html" class="dest-photo-card dest-bg-2">
         <div class="dest-card-overlay"></div>
         <div class="dest-card-body">
           <span class="dest-card-flag">🇲🇦</span>
@@ -2029,7 +2020,7 @@ body { top: 0 !important; }
         </div>
       </a>
 
-      <a href="https://rexclarkeadventures.com/destinations/ghana/" class="dest-photo-card dest-bg-5">
+      <a href="regions.html" class="dest-photo-card dest-bg-5">
         <div class="dest-card-overlay"></div>
         <div class="dest-card-body">
           <span class="dest-card-flag">🇬🇭</span>
@@ -2039,7 +2030,7 @@ body { top: 0 !important; }
         </div>
       </a>
 
-      <a href="https://rexclarkeadventures.com/destinations/gabon/" class="dest-photo-card dest-bg-1">
+      <a href="regions.html" class="dest-photo-card dest-bg-1">
         <div class="dest-card-overlay"></div>
         <div class="dest-card-body">
           <span class="dest-card-flag">🇬🇦</span>
@@ -2049,7 +2040,7 @@ body { top: 0 !important; }
         </div>
       </a>
 
-      <a href="https://rexclarkeadventures.com/destinations/madagascar/" class="dest-photo-card dest-bg-3">
+      <a href="regions.html" class="dest-photo-card dest-bg-3">
         <div class="dest-card-overlay"></div>
         <div class="dest-card-body">
           <span class="dest-card-flag">🇲🇬</span>
@@ -2088,7 +2079,7 @@ body { top: 0 !important; }
           <div class="omiren-pillar-text"><strong>Shared audience</strong> — every RCA traveller interested in African culture is a natural Omiren Styles reader. Two platforms, one ecosystem</div>
         </div>
       </div>
-      <a href="omiren.html" target="_self" class="omiren-cta" target="_blank" rel="noopener">
+      <a href="https://omirenstyles.com/" class="omiren-cta" target="_blank" rel="noopener">
         Visit Omiren Styles →
       </a>
     </div>
@@ -2168,22 +2159,22 @@ body { top: 0 !important; }
       <div>
         <div class="foot-col-lbl">Explore</div>
         <ul class="foot-links">
-          <li><a href="https://rexclarkeadventures.com/category/explore-africa/">Explore Africa</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/adventures/">Adventures</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/african-culture-traditions/">Culture & Heritage</a></li>
-          <li><a href="https://rexclarkeadventures.com/destinations/">All Destinations</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/latest-news/">News & Insights</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/festivals-in-africa/">Festivals</a></li>
+          <li><a href="/category/explore-africa/">Explore Africa</a></li>
+          <li><a href="/category/adventures/">Adventures</a></li>
+          <li><a href="/category/african-culture-traditions/">Culture & Heritage</a></li>
+          <li><a href="/destinations/">All Destinations</a></li>
+          <li><a href="/category/latest-news/">News & Insights</a></li>
+          <li><a href="/category/festivals-in-africa/">Festivals</a></li>
         </ul>
       </div>
       <div>
         <div class="foot-col-lbl">Editorial</div>
         <ul class="foot-links">
-          <li><a href="https://rexclarkeadventures.com/category/adventures/travel-tips-for-nigeria/">Travel Tips</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/tourism-in-nigeria/ecotourism-in-nigeria/">Eco-Tourism</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/living-in-africa/food-in-nigeria/">Food & Culture</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/living-in-africa/">Lifestyle</a></li>
-          <li><a href="https://rexclarkeadventures.com/category/latest-news/tourism-news/">Tourism News</a></li>
+          <li><a href="/category/adventures/travel-tips-for-nigeria/">Travel Tips</a></li>
+          <li><a href="/category/tourism-in-nigeria/ecotourism-in-nigeria/">Eco-Tourism</a></li>
+          <li><a href="/category/living-in-africa/food-in-nigeria/">Food & Culture</a></li>
+          <li><a href="/category/living-in-africa/">Lifestyle</a></li>
+          <li><a href="/category/latest-news/tourism-news/">Tourism News</a></li>
         </ul>
       </div>
       <div>
@@ -2192,7 +2183,7 @@ body { top: 0 !important; }
           <li><a href="about.html">About Us</a></li>
           <li><a href="work-with-us.html">Work With Us</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://rexclarkeadventures.com/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
@@ -2201,7 +2192,7 @@ body { top: 0 !important; }
     <div style="border-top:1px solid rgba(0,0,0,.12);padding-top:18px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
       <div style="font-size:11px;color:#000000;">
         From <span style="color:#000000;font-weight:700;">Rex Clarke Global Ventures:</span>
-        <a href="omiren.html" target="_self" style="color:#000000;font-weight:700;margin-left:8px;border-bottom:1px solid rgba(0,0,0,.3);transition:border-color .15s;">Omiren Styles</a>
+        <a href="https://omirenstyles.com/" style="color:#000000;font-weight:700;margin-left:8px;border-bottom:1px solid rgba(0,0,0,.3);transition:border-color .15s;">Omiren Styles</a>
         <span style="color:#000000;margin:0 6px;">—</span>
         <span style="color:#000000;">Fashion. Culture. Identity.</span>
       </div>
@@ -2211,7 +2202,7 @@ body { top: 0 !important; }
     <div class="foot-btm">
       <span>Africa, In Full. © 2026 Rex Clarke Adventures. All Rights Reserved.</span>
       <div>
-        <a href="https://rexclarkeadventures.com/privacy-policy/">Privacy</a>
+        <a href="/privacy-policy/">Privacy</a>
         <a href="about.html">About</a>
         <a href="work-with-us.html">Partnerships</a>
         <a href="contact.html">Contact</a>
@@ -2453,7 +2444,7 @@ document.addEventListener('keydown', e => {
 });
 
 /* ══ FIX 3 — Destination modal ══ */
-let selectedDestUrl = 'https://rexclarkeadventures.com/destinations/';
+let selectedDestUrl = 'regions.html';
 function openDestModal() {
   document.getElementById('destModal').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -2544,7 +2535,7 @@ function destSearch() {
   let url = '';
   selects.forEach(s => { if (s.value) url = s.value; });
   if (url) window.location.href = url;
-  else window.location.href = 'https://rexclarkeadventures.com/destinations/';
+  else window.location.href = 'regions.html';
 }
 /* Make selects navigate on change for quick UX */
 document.querySelectorAll('.dest-search-select').forEach(s => {
@@ -2557,8 +2548,9 @@ document.querySelectorAll('.dest-search-select').forEach(s => {
 </script>
 
 <!-- GOOGLE TRANSLATE SCRIPT — loads the translation engine -->
-<!-- This is the official Google Translate widget script. It calls googleTranslateElementInit() once loaded. -->
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+
+<!-- Google Translate widget loader -->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

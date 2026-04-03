@@ -106,10 +106,10 @@ img { display: block; max-width: 100%; height: 100%; object-fit: cover; }
 .mast-nav-inner { max-width: var(--max); margin: 0 auto; padding: 0 24px; height: 40px; display: flex; align-items: center; justify-content: space-between; }
 .nav { display: flex; list-style: none; height: 40px; align-items: center; }
 .nav > li { position: relative; height: 100%; display: flex; align-items: center; }
-.nav > li > a { font-size: 12px; font-weight: 600; color: rgba(255,255,255,.82); padding: 0 14px; height: 100%; display: flex; align-items: center; letter-spacing: .02em; transition: color .15s, background .15s; white-space: nowrap; }
+.nav > li > a { font-size: 12px; font-weight: 600; color: #ffffff; padding: 0 14px; height: 100%; display: flex; align-items: center; letter-spacing: .02em; transition: color .15s, background .15s; white-space: nowrap; }
 .nav > li > a:hover { color: var(--gold); background: rgba(255,255,255,.07); }
 .nav > li.active > a { color: var(--gold); }
-.nav > li.nav-highlight > a { color: var(--gold); font-weight: 700; }
+.nav > li.nav-highlight > a { color: #ffffff; font-weight: 700; }
 .arr { width: 9px; height: 5px; margin-left: 3px; opacity: .5; }
 
 /* Mega-dropdown — rich region menu (Go2Africa / andBeyond pattern) */
@@ -983,7 +983,6 @@ body { top: 0 !important; }
 
 @media (max-width: 960px) { body { padding-bottom: 64px; } }
 </style>
-<script src="site-router.js" defer></script>
 </head>
 <body>
 <!-- BREAKING TICKER -->
@@ -1034,18 +1033,12 @@ body { top: 0 !important; }
         <div class="mast-tagline-text">Africa, <span class="gold">In Full.</span></div>
       </div>
 
-      <!-- Utility: Translate + Search + Work With Us + Burger -->
+      <!-- Utility: Search + Work With Us + Burger -->
       <div class="mast-utils">
-        <!-- Google Translate -->
         <div class="translate-wrap" id="translateWrap">
-          <!-- Globe icon button — label on desktop, icon-only on mobile -->
           <button class="translate-btn" id="translateBtn" onclick="toggleTranslate()" aria-label="Translate this page" aria-expanded="false" aria-controls="translatePanel">
             <svg class="translate-globe" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
-            <span class="translate-label">Translate</span>
-            <svg class="translate-chevron" width="9" height="5" viewBox="0 0 9 5" fill="none"><path d="M1 1l3.5 3L8 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
-
-          <!-- Language panel — 8 languages as branded buttons -->
           <div class="translate-panel" id="translatePanel" role="dialog" aria-label="Choose language">
             <div class="translate-panel-head">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
@@ -1063,10 +1056,8 @@ body { top: 0 !important; }
             </div>
             <div class="translate-panel-note">Powered by Google Translate</div>
           </div>
-          <!-- Hidden Google element still needed for engine -->
           <div id="google_translate_element" style="display:none;"></div>
         </div>
-
         <button class="btn-search" aria-label="Search">
           <svg width="14" height="14" viewBox="0 0 13 13" fill="none"><circle cx="5.5" cy="5.5" r="4" stroke="currentColor" stroke-width="1.4"/><path d="M9 9l2.5 2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
         </button>
@@ -1083,7 +1074,7 @@ body { top: 0 !important; }
 
         <!-- DESTINATIONS — mega dropdown, region-first -->
         <li class="drop nav-highlight">
-          <a href="https://rexclarkeadventures.com/destinations/">
+          <a href="regions.html">
             Destinations
             <svg class="arr" viewBox="0 0 9 5" fill="none"><path d="M1 1l3.5 3L8 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -1091,50 +1082,50 @@ body { top: 0 !important; }
             <div class="drop-menu-grid">
               <div class="drop-col">
                 <div class="drop-col-head">By Region</div>
-                <a href="https://rexclarkeadventures.com/west-africa/"><span class="dm-flag">🌍</span><div class="dm-text">West Africa<span class="dm-sub">16 nations</span></div></a>
-                <a href="https://rexclarkeadventures.com/east-africa/"><span class="dm-flag">🦁</span><div class="dm-text">East Africa<span class="dm-sub">20 nations</span></div></a>
-                <a href="https://rexclarkeadventures.com/north-africa/"><span class="dm-flag">🏜</span><div class="dm-text">North Africa<span class="dm-sub">6 nations</span></div></a>
-                <a href="https://rexclarkeadventures.com/central-africa/"><span class="dm-flag">🌴</span><div class="dm-text">Central Africa<span class="dm-sub">9 nations</span></div></a>
-                <a href="https://rexclarkeadventures.com/southern-africa/"><span class="dm-flag">🏔</span><div class="dm-text">Southern Africa<span class="dm-sub">6 nations</span></div></a>
-                <a href="https://rexclarkeadventures.com/african-islands/"><span class="dm-flag">🌊</span><div class="dm-text">Islands<span class="dm-sub">7 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🌍</span><div class="dm-text">West Africa<span class="dm-sub">16 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🦁</span><div class="dm-text">East Africa<span class="dm-sub">20 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🏜</span><div class="dm-text">North Africa<span class="dm-sub">6 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🌴</span><div class="dm-text">Central Africa<span class="dm-sub">9 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🏔</span><div class="dm-text">Southern Africa<span class="dm-sub">6 nations</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🌊</span><div class="dm-text">Islands<span class="dm-sub">7 nations</span></div></a>
               </div>
               <div class="drop-col">
                 <div class="drop-col-head">Popular Destinations</div>
-                <a href="https://rexclarkeadventures.com/destinations/south-africa/"><span class="dm-flag">🇿🇦</span><div class="dm-text">South Africa<span class="dm-sub">42 stories</span></div></a>
-                <a href="https://rexclarkeadventures.com/destinations/kenya/"><span class="dm-flag">🇰🇪</span><div class="dm-text">Kenya<span class="dm-sub">38 stories</span></div></a>
-                <a href="https://rexclarkeadventures.com/destinations/nigeria/"><span class="dm-flag">🇳🇬</span><div class="dm-text">Nigeria<span class="dm-sub">86 stories</span></div></a>
-                <a href="https://rexclarkeadventures.com/destinations/morocco/"><span class="dm-flag">🇲🇦</span><div class="dm-text">Morocco<span class="dm-sub">31 stories</span></div></a>
-                <a href="https://rexclarkeadventures.com/destinations/ethiopia/"><span class="dm-flag">🇪🇹</span><div class="dm-text">Ethiopia<span class="dm-sub">24 stories</span></div></a>
-                <a href="https://rexclarkeadventures.com/destinations/ghana/"><span class="dm-flag">🇬🇭</span><div class="dm-text">Ghana<span class="dm-sub">27 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇿🇦</span><div class="dm-text">South Africa<span class="dm-sub">42 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇰🇪</span><div class="dm-text">Kenya<span class="dm-sub">38 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇳🇬</span><div class="dm-text">Nigeria<span class="dm-sub">86 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇲🇦</span><div class="dm-text">Morocco<span class="dm-sub">31 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇪🇹</span><div class="dm-text">Ethiopia<span class="dm-sub">24 stories</span></div></a>
+                <a href="regions.html"><span class="dm-flag">🇬🇭</span><div class="dm-text">Ghana<span class="dm-sub">27 stories</span></div></a>
               </div>
             </div>
           </div>
         </li>
 
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/explore-africa/">Explore Africa</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/adventures/">Adventures</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/culture/">Culture</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="regions.html">Explore Africa</a></li>
+        <li><a href="adventures.html">Adventures</a></li>
+        <li><a href="culture.html">Culture</a></li>
 
         <!-- AVIATION — standalone top-level link -->
-        <li class="nav-highlight"><a href="https://rexclarkeadventures.com/category/latest-news/airline-news/">Aviation</a></li>
+        <li class="nav-highlight"><a href="aviation.html">Aviation</a></li>
         <!-- HOSPITALITY — standalone top-level link -->
-        <li class="nav-highlight"><a href="https://rexclarkeadventures.com/category/adventures/hospitality-in-nigeria/">Hospitality</a></li>
+        <li class="nav-highlight"><a href="hospitality.html">Hospitality</a></li>
 
-        <li><a href="https://rexclarkeadventures.com/category/festivals-in-africa/">Festivals</a></li>
-        <li><a href="https://rexclarkeadventures.com/category/latest-news/">News</a></li>
+        <li><a href="festivals.html">Festivals</a></li>
+        <li><a href="news.html">News</a></li>
         <li class="drop">
           <a href="#">Discover <svg class="arr" viewBox="0 0 9 5" fill="none"><path d="M1 1l3.5 3L8 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <div class="drop-menu drop-simple">
             <div class="drop-col">
-              <a href="https://rexclarkeadventures.com/category/living-in-africa/food-in-nigeria/"><span class="dm-flag">🌶</span><div class="dm-text">Food</div></a>
-              <a href="https://rexclarkeadventures.com/category/adventures/travel-tips-for-nigeria/"><span class="dm-flag">🗺</span><div class="dm-text">Travel Tips</div></a>
-              <a href="https://rexclarkeadventures.com/category/living-in-africa/"><span class="dm-flag">✨</span><div class="dm-text">Lifestyle</div></a>
-              <a href="https://rexclarkeadventures.com/category/tourism-in-nigeria/ecotourism-in-nigeria/"><span class="dm-flag">🌿</span><div class="dm-text">Eco-Tourism</div></a>
-              <a href="regions.html"><span class="dm-flag">🗺</span><div class="dm-text">Region Hubs</div></a>
-              <a href="about.html"><span class="dm-flag">📖</span><div class="dm-text">About the Platform</div></a>
-              <a href="team.html"><span class="dm-flag">✍</span><div class="dm-text">Editorial Team</div></a>
-              <a href="contact.html"><span class="dm-flag">✉</span><div class="dm-text">Contact</div></a>
+              <a href="omiren.html"><span class="dm-flag">🌶</span><div class="dm-text">Food</div></a>
+              <a href="trip-planner.html"><span class="dm-flag">🗺</span><div class="dm-text">Travel Tips</div></a>
+              <a href="omiren.html"><span class="dm-flag">✨</span><div class="dm-text">Lifestyle</div></a>
+              <a href="regions.html"><span class="dm-flag">🌿</span><div class="dm-text">Eco-Tourism</div></a>
+              <a href="#regions"><span class="dm-flag">🗺</span><div class="dm-text">Region Hubs</div></a>
+              <a href="#about"><span class="dm-flag">📖</span><div class="dm-text">About the Platform</div></a>
+              <a href="#team"><span class="dm-flag">✍</span><div class="dm-text">Editorial Team</div></a>
+              <a href="#contact"><span class="dm-flag">✉</span><div class="dm-text">Contact</div></a>
             </div>
           </div>
         </li>
@@ -1172,27 +1163,27 @@ body { top: 0 !important; }
         </span>
       </button>
       <ul class="mob-sub" role="list">
-        <li><a href="https://rexclarkeadventures.com/west-africa/"><span class="mob-sub-text">West Africa<span class="mob-sub-meta">16 nations</span></span></a></li>
-        <li><a href="https://rexclarkeadventures.com/east-africa/"><span class="mob-sub-text">East Africa<span class="mob-sub-meta">20 nations</span></span></a></li>
-        <li><a href="https://rexclarkeadventures.com/north-africa/"><span class="mob-sub-text">North Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
-        <li><a href="https://rexclarkeadventures.com/central-africa/"><span class="mob-sub-text">Central Africa<span class="mob-sub-meta">9 nations</span></span></a></li>
-        <li><a href="https://rexclarkeadventures.com/southern-africa/"><span class="mob-sub-text">Southern Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
-        <li><a href="https://rexclarkeadventures.com/african-islands/"><span class="mob-sub-text">Islands<span class="mob-sub-meta">7 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">West Africa<span class="mob-sub-meta">16 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">East Africa<span class="mob-sub-meta">20 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">North Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Central Africa<span class="mob-sub-meta">9 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Southern Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Islands<span class="mob-sub-meta">7 nations</span></span></a></li>
       </ul>
     </li>
 
     <li><a href="index.html">Home</a></li>
-    <li><a href="https://rexclarkeadventures.com/category/explore-africa/">Explore Africa</a></li>
-    <li><a href="https://rexclarkeadventures.com/category/adventures/">Adventures</a></li>
-    <li><a href="https://rexclarkeadventures.com/category/culture/">Culture</a></li>
+    <li><a href="regions.html">Explore Africa</a></li>
+    <li><a href="adventures.html">Adventures</a></li>
+    <li><a href="culture.html">Culture</a></li>
 
     <!-- Aviation — standalone gold, FIX 4 -->
-    <li><a href="https://rexclarkeadventures.com/category/latest-news/airline-news/" class="gold-link">Aviation</a></li>
+    <li><a href="aviation.html" class="gold-link">Aviation</a></li>
     <!-- Hospitality — standalone gold, FIX 4 -->
-    <li><a href="https://rexclarkeadventures.com/category/adventures/hospitality-in-nigeria/" class="gold-link">Hospitality</a></li>
+    <li><a href="hospitality.html" class="gold-link">Hospitality</a></li>
 
-    <li><a href="https://rexclarkeadventures.com/category/festivals-in-africa/">Festivals</a></li>
-    <li><a href="https://rexclarkeadventures.com/category/latest-news/">News</a></li>
+    <li><a href="festivals.html">Festivals</a></li>
+    <li><a href="news.html">News</a></li>
 
     <!-- Discover — accordion -->
     <li>
@@ -1203,17 +1194,17 @@ body { top: 0 !important; }
         </span>
       </button>
       <ul class="mob-sub" role="list">
-        <li><a href="https://rexclarkeadventures.com/category/living-in-africa/food-in-nigeria/"><span class="mob-sub-text">Food</span></a></li>
-        <li><a href="https://rexclarkeadventures.com/category/adventures/travel-tips-for-nigeria/"><span class="mob-sub-text">Travel Tips</span></a></li>
-        <li><a href="https://rexclarkeadventures.com/category/living-in-africa/"><span class="mob-sub-text">Lifestyle</span></a></li>
-        <li><a href="https://rexclarkeadventures.com/category/tourism-in-nigeria/ecotourism-in-nigeria/"><span class="mob-sub-text">Eco-Tourism</span></a></li>
+        <li><a href="omiren.html"><span class="mob-sub-text">Food</span></a></li>
+        <li><a href="trip-planner.html"><span class="mob-sub-text">Travel Tips</span></a></li>
+        <li><a href="omiren.html"><span class="mob-sub-text">Lifestyle</span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Eco-Tourism</span></a></li>
       </ul>
     </li>
 
-    <li><a href="about.html" onclick="closeNav()">About the Platform</a></li>
-    <li><a href="team.html" onclick="closeNav()">Editorial Team</a></li>
-    <li><a href="work-with-us.html" onclick="closeNav()">Work With Us</a></li>
-    <li><a href="contact.html" onclick="closeNav()">Contact</a></li>
+    <li><a href="#about" onclick="closeNav()">About the Platform</a></li>
+    <li><a href="#team" onclick="closeNav()">Editorial Team</a></li>
+    <li><a href="#work-with-us" onclick="closeNav()">Work With Us</a></li>
+    <li><a href="#contact" onclick="closeNav()">Contact</a></li>
 
   </ul>
 
@@ -1221,3 +1212,704 @@ body { top: 0 !important; }
   <a href="trip-planner.html" class="mob-plan-cta">Plan Your Trip →</a>
 
 </div>
+
+<div class="mob-nav" id="mobNav" role="dialog" aria-label="Navigation menu">
+  <div class="mob-top">
+    <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/logo_rex_clarke_adv.png" alt="Rex Clarke Adventures" onerror="this.style.display='none'">
+    <button class="mob-close" onclick="closeNav()" aria-label="Close menu">✕</button>
+  </div>
+  <div class="mob-tagline-strip">
+    Africa, <span style="color:var(--gold);font-style:italic;margin-left:4px;">In Full.</span>
+    <span>54 Nations · Daily Editorial</span>
+  </div>
+
+  <ul class="mob-links">
+
+    <!-- Destinations — accordion -->
+    <li>
+      <button class="mob-accordion-btn gold-link" onclick="mobToggle(this)" aria-expanded="false">
+        Destinations
+        <span class="mob-accordion-chevron" aria-hidden="true">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </button>
+      <ul class="mob-sub" role="list">
+        <li><a href="regions.html"><span class="mob-sub-text">West Africa<span class="mob-sub-meta">16 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">East Africa<span class="mob-sub-meta">20 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">North Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Central Africa<span class="mob-sub-meta">9 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Southern Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Islands<span class="mob-sub-meta">7 nations</span></span></a></li>
+      </ul>
+    </li>
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="regions.html">Explore Africa</a></li>
+    <li><a href="adventures.html">Adventures</a></li>
+    <li><a href="culture.html">Culture</a></li>
+
+    <!-- Aviation — standalone gold, FIX 4 -->
+    <li><a href="aviation.html" class="gold-link">Aviation</a></li>
+    <!-- Hospitality — standalone gold, FIX 4 -->
+    <li><a href="hospitality.html" class="gold-link">Hospitality</a></li>
+
+    <li><a href="festivals.html">Festivals</a></li>
+    <li><a href="news.html">News</a></li>
+
+    <!-- Discover — accordion -->
+    <li>
+      <button class="mob-accordion-btn" onclick="mobToggle(this)" aria-expanded="false">
+        Discover
+        <span class="mob-accordion-chevron" aria-hidden="true">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </button>
+      <ul class="mob-sub" role="list">
+        <li><a href="omiren.html"><span class="mob-sub-text">Food</span></a></li>
+        <li><a href="trip-planner.html"><span class="mob-sub-text">Travel Tips</span></a></li>
+        <li><a href="omiren.html"><span class="mob-sub-text">Lifestyle</span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Eco-Tourism</span></a></li>
+      </ul>
+    </li>
+
+    <li><a href="#about" onclick="closeNav()">About the Platform</a></li>
+    <li><a href="#team" onclick="closeNav()">Editorial Team</a></li>
+    <li><a href="#work-with-us" onclick="closeNav()">Work With Us</a></li>
+    <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+
+  </ul>
+
+  <!-- FIX 5 — Plan Your Trip CTA always visible in drawer -->
+  <a href="trip-planner.html" class="mob-plan-cta">Plan Your Trip →</a>
+
+</div>
+
+<div class="mob-nav" id="mobNav" role="dialog" aria-label="Navigation menu">
+  <div class="mob-top">
+    <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/logo_rex_clarke_adv.png" alt="Rex Clarke Adventures" onerror="this.style.display='none'">
+    <button class="mob-close" onclick="closeNav()" aria-label="Close menu">✕</button>
+  </div>
+  <div class="mob-tagline-strip">
+    Africa, <span style="color:var(--gold);font-style:italic;margin-left:4px;">In Full.</span>
+    <span>54 Nations · Daily Editorial</span>
+  </div>
+
+  <ul class="mob-links">
+
+    <!-- Destinations — accordion -->
+    <li>
+      <button class="mob-accordion-btn gold-link" onclick="mobToggle(this)" aria-expanded="false">
+        Destinations
+        <span class="mob-accordion-chevron" aria-hidden="true">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </button>
+      <ul class="mob-sub" role="list">
+        <li><a href="regions.html"><span class="mob-sub-text">West Africa<span class="mob-sub-meta">16 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">East Africa<span class="mob-sub-meta">20 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">North Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Central Africa<span class="mob-sub-meta">9 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Southern Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Islands<span class="mob-sub-meta">7 nations</span></span></a></li>
+      </ul>
+    </li>
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="regions.html">Explore Africa</a></li>
+    <li><a href="adventures.html">Adventures</a></li>
+    <li><a href="culture.html">Culture</a></li>
+
+    <!-- Aviation — standalone gold, FIX 4 -->
+    <li><a href="aviation.html" class="gold-link">Aviation</a></li>
+    <!-- Hospitality — standalone gold, FIX 4 -->
+    <li><a href="hospitality.html" class="gold-link">Hospitality</a></li>
+
+    <li><a href="festivals.html">Festivals</a></li>
+    <li><a href="news.html">News</a></li>
+
+    <!-- Discover — accordion -->
+    <li>
+      <button class="mob-accordion-btn" onclick="mobToggle(this)" aria-expanded="false">
+        Discover
+        <span class="mob-accordion-chevron" aria-hidden="true">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </button>
+      <ul class="mob-sub" role="list">
+        <li><a href="omiren.html"><span class="mob-sub-text">Food</span></a></li>
+        <li><a href="trip-planner.html"><span class="mob-sub-text">Travel Tips</span></a></li>
+        <li><a href="omiren.html"><span class="mob-sub-text">Lifestyle</span></a></li>
+        <li><a href="regions.html"><span class="mob-sub-text">Eco-Tourism</span></a></li>
+      </ul>
+    </li>
+
+    <li><a href="#about" onclick="closeNav()">About the Platform</a></li>
+    <li><a href="#team" onclick="closeNav()">Editorial Team</a></li>
+    <li><a href="#work-with-us" onclick="closeNav()">Work With Us</a></li>
+    <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+
+  </ul>
+
+  <!-- FIX 5 — Plan Your Trip CTA always visible in drawer -->
+  <a href="trip-planner.html" class="mob-plan-cta">Plan Your Trip →</a>
+
+</div>
+<main>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-kicker">Contact Rex Clarke Adventures</div>
+    <h1 class="page-hero-h">We cover Africa.<br><span>Let's talk.</span></h1>
+    <p class="page-hero-sub">Whether you're a tourism board, travel researcher, diaspora community member, journalist, or a reader with a story tip — we want to hear from you.</p>
+  </div>
+</div>
+
+<div class="contact-wrap">
+  <aside class="contact-sidebar">
+    <div class="contact-sidebar-card">
+      <div class="contact-sidebar-head">
+        <div class="contact-sidebar-head-title">Rex Clarke Adventures</div>
+        <div class="contact-sidebar-head-sub">Rex Clarke Global Ventures Limited</div>
+      </div>
+      <div class="contact-detail-list">
+        <div class="contact-detail-item">
+          <div class="contact-detail-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="contact-detail-label">Office</div><div class="contact-detail-value">#60 Odogun Avenue, New Layout<br>Off Jakpa Road, Ekpan<br>Effurun, Delta State, Nigeria</div></div>
+        </div>
+        <div class="contact-detail-item">
+          <div class="contact-detail-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><div class="contact-detail-label">Editorial & General</div><div class="contact-detail-value"><a href="mailto:info@rexclarkeadventures.com">info@rexclarkeadventures.com</a></div></div>
+        </div>
+        <div class="contact-detail-item">
+          <div class="contact-detail-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><div class="contact-detail-label">Partnerships & Careers</div><div class="contact-detail-value"><a href="mailto:infos@rexclarkeadventures.com">infos@rexclarkeadventures.com</a></div></div>
+        </div>
+        <div class="contact-detail-item">
+          <div class="contact-detail-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.32h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.05 6.05l1.68-1.68a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><div class="contact-detail-label">Phone</div><div class="contact-detail-value"><a href="tel:+2347043544108">+234 7043 544 108</a></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-socials">
+      <div class="contact-socials-title">Follow RCA</div>
+      <div class="contact-social-links">
+        <a href="https://www.facebook.com/RexClarkeAdventures" class="contact-social-link" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook
+        </a>
+        <a href="https://x.com/RCAdventures17" class="contact-social-link" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>X / Twitter
+        </a>
+        <a href="https://www.instagram.com/rexclarkeadventures_/" class="contact-social-link" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram
+        </a>
+        <a href="https://www.linkedin.com/company/rex-clarke-adventures" class="contact-social-link" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="contact-main">
+    <div class="contact-types-label">What is this about?</div>
+    <div class="contact-types">
+      <button class="contact-type-btn active" onclick="setContactType(this)"><div class="contact-type-title">Partnership enquiry</div><div class="contact-type-sub">Tourism boards, brands, airlines</div></button>
+      <button class="contact-type-btn" onclick="setContactType(this)"><div class="contact-type-title">Editorial / press</div><div class="contact-type-sub">Media, research, citations</div></button>
+      <button class="contact-type-btn" onclick="setContactType(this)"><div class="contact-type-title">Story tip or submission</div><div class="contact-type-sub">Pitches, corrections, tips</div></button>
+      <button class="contact-type-btn" onclick="setContactType(this)"><div class="contact-type-title">General reader enquiry</div><div class="contact-type-sub">Questions, feedback, travel info</div></button>
+    </div>
+    <div class="contact-form">
+      <div class="contact-form-title">Send us a message</div>
+      <div class="cf-row">
+        <div class="cf-field"><label class="cf-label">First name</label><input class="cf-input" type="text" placeholder="Your first name"></div>
+        <div class="cf-field"><label class="cf-label">Last name</label><input class="cf-input" type="text" placeholder="Your last name"></div>
+      </div>
+      <div class="cf-field"><label class="cf-label">Email address</label><input class="cf-input" type="email" placeholder="your@email.com"></div>
+      <div class="cf-field"><label class="cf-label">Organisation (if applicable)</label><input class="cf-input" type="text" placeholder="Tourism board, airline, university, media outlet…"></div>
+      <div class="cf-field"><label class="cf-label">Your message</label><textarea class="cf-textarea" placeholder="Tell us how we can help, or what you'd like to discuss. The more context you give, the faster we can get back to you."></textarea></div>
+      <button class="cf-submit" onclick="this.textContent='✓ Message sent — we will be in touch within 24 hours'">Send message</button>
+      <p class="cf-note">We respond to all enquiries within 24 hours.</p>
+    </div>
+  </div>
+</div>
+
+</main>
+<!-- FOOTER
+     AUDIT FIX: "Africa, In Full." tagline now prominent as brand statement, not only copyright line
+-->
+<footer class="footer">
+  <div class="foot-inner">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/logo_rex_clarke_adv.png"
+               alt="Rex Clarke Adventures"
+               onerror="this.remove()">
+        </div>
+        <!-- AUDIT FIX: tagline as brand identity statement in footer, not just copyright -->
+        <div class="foot-tagline-brand">Africa, In Full.</div>
+        <p class="foot-desc">Authoritative, concise, brand-led. Your guide to travel news, culture, and belonging across Africa's 54 nations — the stories, histories, landmarks, kingdoms, and communities the continent holds in extraordinary abundance.</p>
+        <div class="foot-socials">
+          <a href="https://www.facebook.com/RexClarkeAdventures" class="social" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://x.com/RCAdventures17" class="social" aria-label="X Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.instagram.com/rexclarkeadventures_/" class="social" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.linkedin.com/company/rex-clarke-adventures" class="social" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://www.youtube.com/@rexclarkeadventure/videos" class="social" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <div class="foot-col-lbl">Explore</div>
+        <ul class="foot-links">
+          <li><a href="/category/explore-africa/">Explore Africa</a></li>
+          <li><a href="/category/adventures/">Adventures</a></li>
+          <li><a href="/category/african-culture-traditions/">Culture & Heritage</a></li>
+          <li><a href="/destinations/">All Destinations</a></li>
+          <li><a href="/category/latest-news/">News & Insights</a></li>
+          <li><a href="/category/festivals-in-africa/">Festivals</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-col-lbl">Editorial</div>
+        <ul class="foot-links">
+          <li><a href="/category/adventures/travel-tips-for-nigeria/">Travel Tips</a></li>
+          <li><a href="/category/tourism-in-nigeria/ecotourism-in-nigeria/">Eco-Tourism</a></li>
+          <li><a href="/category/living-in-africa/food-in-nigeria/">Food & Culture</a></li>
+          <li><a href="/category/living-in-africa/">Lifestyle</a></li>
+          <li><a href="/category/latest-news/tourism-news/">Tourism News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-col-lbl">Company</div>
+        <ul class="foot-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="work-with-us.html">Work With Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- AUDIT FIX: tagline in copyright line too — correct position retained -->
+    <!-- SISTER BRAND ROW + ABOUT PLATFORM link -->
+    <div style="border-top:1px solid rgba(0,0,0,.12);padding-top:18px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <div style="font-size:11px;color:#000000;">
+        From <span style="color:#000000;font-weight:700;">Rex Clarke Global Ventures:</span>
+        <a href="https://omirenstyles.com/" style="color:#000000;font-weight:700;margin-left:8px;border-bottom:1px solid rgba(0,0,0,.3);transition:border-color .15s;">Omiren Styles</a>
+        <span style="color:#000000;margin:0 6px;">—</span>
+        <span style="color:#000000;">Fashion. Culture. Identity.</span>
+      </div>
+      <a href="about.html" style="font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#000000;border-bottom:1px solid rgba(0,0,0,.3);padding-bottom:1px;transition:color .15s;">About the Platform →</a>
+    </div>
+
+    <div class="foot-btm">
+      <span>Africa, In Full. © 2026 Rex Clarke Adventures. All Rights Reserved.</span>
+      <div>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="about.html">About</a>
+        <a href="work-with-us.html">Partnerships</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING PLAN YOUR TRIP CTA — mobile only -->
+<!-- FLOATING PLAN YOUR TRIP CTA — mobile only -->
+<div class="mob-float-cta" id="mobFloatCta">
+  <a href="trip-planner.html">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M12 5l7 7-7 7"/></svg>
+    Plan Your Trip
+  </a>
+</div>
+<script>
+/* ── NAV ── */
+function openNav()  { document.getElementById('mobNav').classList.add('open');    document.body.style.overflow='hidden'; }
+function closeNav() { document.getElementById('mobNav').classList.remove('open'); document.body.style.overflow=''; }
+
+/* ── GOOGLE TRANSLATE INIT ──
+   Called automatically by the Google script once it loads.
+   Creates the language selector inside #google_translate_element.
+   Languages: all major African + international languages.
+*/
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,es,pt,sw,zh-CN,fr,de,ar',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false,
+    multilanguagePage: true
+  }, 'google_translate_element');
+}
+
+/* ── TRANSLATE PANEL TOGGLE ── */
+function toggleTranslate() {
+  const btn   = document.getElementById('translateBtn');
+  const panel = document.getElementById('translatePanel');
+  const isOpen = panel.classList.contains('open');
+  panel.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+
+/* Close on outside click or Escape */
+document.addEventListener('click', function(e) {
+  const wrap = document.getElementById('translateWrap');
+  if (wrap && !wrap.contains(e.target)) {
+    document.getElementById('translatePanel').classList.remove('open');
+    document.getElementById('translateBtn').classList.remove('open');
+    document.getElementById('translateBtn').setAttribute('aria-expanded','false');
+  }
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.getElementById('translatePanel').classList.remove('open');
+    document.getElementById('translateBtn').classList.remove('open');
+    document.getElementById('translateBtn').setAttribute('aria-expanded','false');
+  }
+});
+
+/* ── SET LANGUAGE — uses Google Translate cookie method ── */
+function setLang(langCode, btn) {
+  /* Mark the active button */
+  document.querySelectorAll('.translate-lang-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  /* English = reset translation */
+  if (langCode === 'en') {
+    const iframe = document.querySelector('.goog-te-banner-frame');
+    if (iframe) iframe.contentDocument.getElementById('dismiss-button')?.click();
+    /* Remove the cookie and reload to restore English */
+    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + location.hostname + ';';
+    location.reload();
+    return;
+  }
+
+  /* Set the Google Translate cookie and reload */
+  const cookieVal = '/en/' + langCode;
+  document.cookie = 'googtrans=' + cookieVal + '; path=/';
+  document.cookie = 'googtrans=' + cookieVal + '; path=/; domain=.' + location.hostname;
+  location.reload();
+}
+
+/* On load — highlight active language from cookie */
+(function() {
+  const m = document.cookie.match(/googtrans=\/en\/([^;]+)/);
+  if (m) {
+    const code = m[1];
+    document.querySelectorAll('.translate-lang-btn').forEach(b => {
+      if (b.getAttribute('onclick')?.includes("'" + code + "'")) {
+        b.classList.add('active');
+      } else {
+        b.classList.remove('active');
+      }
+    });
+  }
+})();
+
+/* ── CAROUSEL ENGINE — PHOTO VERSION ── */
+const slides   = Array.from(document.querySelectorAll('.c-slide'));
+const dots     = Array.from(document.querySelectorAll('.c-dot'));
+const progress = document.getElementById('carouselProgress');
+const pauseBtn = document.getElementById('carouselPause');
+const counter  = document.getElementById('carouselCounter');
+const DURATION = 6000;
+const TOTAL = slides.length;
+let current    = 0;
+let timer      = null;
+let isPaused   = false;
+
+function goTo(index) {
+  if (index < 0) index = slides.length - 1;
+  if (index >= slides.length) index = 0;
+  slides[current].classList.remove('active');
+  dots[current].classList.remove('active');
+  const prev = current;
+  setTimeout(() => {}, 900);
+  current = index;
+  slides[current].classList.add('active');
+  dots[current].classList.add('active');
+  counter.textContent = (current + 1) + ' / ' + TOTAL;
+  resetProgress();
+}
+
+function resetProgress() {
+  progress.classList.remove('running');
+  progress.style.width = '0%';
+  void progress.offsetWidth;
+  if (!isPaused) {
+    progress.classList.add('running');
+    progress.style.width = '100%';
+  }
+}
+
+function startAuto() {
+  clearInterval(timer);
+  if (!isPaused) timer = setInterval(() => goTo(current + 1), DURATION);
+}
+
+function carouselMove(dir)   { clearInterval(timer); goTo(current + dir); startAuto(); }
+function carouselGoTo(index) { clearInterval(timer); goTo(index);          startAuto(); }
+
+function carouselTogglePause() {
+  isPaused = !isPaused;
+  pauseBtn.classList.toggle('paused', isPaused);
+  pauseBtn.setAttribute('aria-label', isPaused ? 'Play carousel' : 'Pause carousel');
+  if (isPaused) {
+    clearInterval(timer);
+    progress.classList.remove('running');
+  } else {
+    resetProgress();
+    startAuto();
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowLeft')  carouselMove(-1);
+  if (e.key === 'ArrowRight') carouselMove(1);
+  if (e.key === ' ')          { e.preventDefault(); carouselTogglePause(); }
+});
+
+/* ── SWIPE WITH VISUAL DRAG FEEDBACK (Fix 2) ── */
+let touchStartX = 0, touchStartY = 0, touchDeltaX = 0, isDragging = false;
+const carousel = document.getElementById('heroCarousel');
+const track = document.getElementById('carouselTrack');
+
+carousel.addEventListener('touchstart', e => {
+  touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+  touchDeltaX = 0;
+  isDragging = false;
+  clearInterval(timer);
+}, { passive: true });
+
+carousel.addEventListener('touchmove', e => {
+  const dx = e.touches[0].clientX - touchStartX;
+  const dy = e.touches[0].clientY - touchStartY;
+  if (!isDragging && Math.abs(dy) > Math.abs(dx)) return; // vertical scroll wins
+  isDragging = true;
+  touchDeltaX = dx;
+  /* Live drag: translate the active slide */
+  const activeSlide = document.querySelector('.c-slide.active');
+  if (activeSlide) activeSlide.style.transform = 'translateX(' + (dx * 0.35) + 'px)';
+}, { passive: true });
+
+carousel.addEventListener('touchend', e => {
+  /* Reset any live transform */
+  document.querySelectorAll('.c-slide').forEach(s => s.style.transform = '');
+  if (!isDragging) { startAuto(); return; }
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 44) {
+    carouselMove(diff > 0 ? 1 : -1);
+  } else {
+    startAuto();
+  }
+  isDragging = false;
+}, { passive: true });
+
+carousel.addEventListener('mouseenter', () => { if (!isPaused) { clearInterval(timer); progress.classList.remove('running'); } });
+carousel.addEventListener('mouseleave', () => { if (!isPaused) { resetProgress(); startAuto(); } });
+
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  isPaused = true;
+  pauseBtn.classList.add('paused');
+}
+
+/* Boot — slide 0 is already active in HTML, just start the timer */
+startAuto();
+resetProgress();
+
+/* ══ FIX 1 — Mobile nav accordion ══ */
+function openNav() {
+  document.getElementById('mobNav').classList.add('open');
+  document.getElementById('mobOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('mobNav').setAttribute('aria-hidden','false');
+}
+function closeNav() {
+  document.getElementById('mobNav').classList.remove('open');
+  document.getElementById('mobOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+  document.getElementById('mobNav').setAttribute('aria-hidden','true');
+}
+function mobToggle(btn) {
+  const isOpen = btn.classList.contains('open');
+  /* Close all others */
+  document.querySelectorAll('.mob-accordion-btn.open').forEach(b => {
+    b.classList.remove('open');
+    b.setAttribute('aria-expanded','false');
+    const sub = b.parentElement.querySelector('.mob-sub');
+    if (sub) sub.classList.remove('open');
+  });
+  if (!isOpen) {
+    btn.classList.add('open');
+    btn.setAttribute('aria-expanded','true');
+    const sub = btn.parentElement.querySelector('.mob-sub');
+    if (sub) sub.classList.add('open');
+  }
+}
+/* Escape key closes drawer */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeNav();
+});
+
+/* ══ FIX 3 — Destination modal ══ */
+let selectedDestUrl = 'regions.html';
+function openDestModal() {
+  document.getElementById('destModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeDestModal() {
+  document.getElementById('destModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function selectModalDest(el, url) {
+  document.querySelectorAll('.dest-modal-item').forEach(i => i.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedDestUrl = url;
+  /* Update the button text */
+  const name = el.querySelector('.dest-modal-name').textContent;
+  const flag = el.querySelector('.dest-modal-flag').textContent;
+  const btn = document.querySelector('.dest-mobile-btn');
+  if (btn) btn.innerHTML = '<span>' + flag + ' ' + name + '</span><span>✓</span>';
+  /* Auto-close after selection */
+  setTimeout(closeDestModal, 380);
+}
+/* Override destSearch for mobile */
+const _origDestSearch = window.destSearch;
+window.destSearch = function() {
+  if (window.innerWidth <= 640 && selectedDestUrl) {
+    window.location.href = selectedDestUrl;
+  } else if (_origDestSearch) {
+    _origDestSearch();
+  }
+};
+
+/* ══ FIX 5 — Hide floating CTA when mobile nav is open ══ */
+const floatCta = document.getElementById('mobFloatCta');
+const _origOpenNav = window.openNav;
+const _origCloseNav = window.closeNav;
+
+/* ══ FIX 6 — Footer accordion ══ */
+document.querySelectorAll('.foot-col-lbl').forEach(lbl => {
+  lbl.addEventListener('click', function() {
+    if (window.innerWidth > 480) return;
+    const links = this.nextElementSibling;
+    if (!links) return;
+    const isOpen = links.classList.contains('open');
+    /* Close all */
+    document.querySelectorAll('.foot-links').forEach(f => f.classList.remove('open'));
+    document.querySelectorAll('.foot-col-lbl').forEach(l => l.classList.remove('open'));
+    if (!isOpen) {
+      links.classList.add('open');
+      this.classList.add('open');
+    }
+  });
+});
+/* On desktop keep all footer links visible */
+function handleFooterResize() {
+  if (window.innerWidth > 480) {
+    document.querySelectorAll('.foot-links').forEach(f => f.style.display = '');
+  }
+}
+window.addEventListener('resize', handleFooterResize);
+
+/* ── CONTACT ENQUIRY TYPE SELECTOR ── */
+function selectEnquiry(el) {
+  document.querySelectorAll('.contact-type').forEach(t => t.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+/* ── RCA DESK SLIDER ── */
+(function() {
+  const eqSlides = Array.from(document.querySelectorAll('.eq-slide'));
+  const eqDots   = Array.from(document.querySelectorAll('.eq-dot'));
+  if (!eqSlides.length) return;
+  let eqCurrent = 0;
+  let eqTimer = null;
+
+  function eqGoToFn(index) {
+    eqSlides[eqCurrent].classList.remove('active');
+    eqDots[eqCurrent].classList.remove('active');
+    eqCurrent = (index + eqSlides.length) % eqSlides.length;
+    eqSlides[eqCurrent].classList.add('active');
+    eqDots[eqCurrent].classList.add('active');
+  }
+  window.eqGoTo = eqGoToFn;
+  eqTimer = setInterval(() => eqGoToFn(eqCurrent + 1), 5000);
+})();
+
+/* ── DESTINATION SEARCH ── */
+function destSearch() {
+  const selects = document.querySelectorAll('.dest-search-select');
+  let url = '';
+  selects.forEach(s => { if (s.value) url = s.value; });
+  if (url) window.location.href = url;
+  else window.location.href = 'regions.html';
+}
+/* Make selects navigate on change for quick UX */
+document.querySelectorAll('.dest-search-select').forEach(s => {
+  s.addEventListener('change', function() {
+    if (this.value) {
+      document.querySelector('.dest-search-btn').style.background = 'var(--green-dk)';
+    }
+  });
+});
+</script>
+
+<!-- GOOGLE TRANSLATE SCRIPT — loads the translation engine -->
+<!-- This is the official Google Translate widget script. It calls googleTranslateElementInit() once loaded. -->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+
+/* ── PAGE JS ── */
+/* ── CONTACT ENQUIRY TYPE SELECTOR ── */
+function selectEnquiry(el) {
+  document.querySelectorAll('.contact-type').forEach(t => t.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+/* ── RCA DESK SLIDER ── */
+(function() {
+  const eqSlides = Array.from(document.querySelectorAll('.eq-slide'));
+  const eqDots   = Array.from(document.querySelectorAll('.eq-dot'));
+  if (!eqSlides.length) return;
+  let eqCurrent = 0;
+  let eqTimer = null;
+
+  function eqGoToFn(index) {
+    eqSlides[eqCurrent].classList.remove('active');
+    eqDots[eqCurrent].classList.remove('active');
+    eqCurrent = (index + eqSlides.length) % eqSlides.length;
+    eqSlides[eqCurrent].classList.add('active');
+    eqDots[eqCurrent].classList.add('active');
+  }
+  window.eqGoTo = eqGoToFn;
+  eqTimer = setInterval(() => eqGoToFn(eqCurrent + 1), 5000);
+})();
+
+/* ── DESTINATION SEARCH ── */
+function destSearch() {
+  const selects = document.querySelectorAll('.dest-search-select');
+  let url = '';
+  selects.forEach(s => { if (s.value) url = s.value; });
+  if (url) window.location.href = url;
+  else window.location.href = 'regions.html';
+}
+/* Make selects navigate on change for quick UX */
+document.querySelectorAll('.dest-search-select').forEach(s => {
+  s.addEventListener('change', function() {
+    if (this.value) {
+      document.querySelector('.dest-search-btn').style.background = 'var(--green-dk)';
+    }
+  });
+});
+</script>
+
+<!-- GOOGLE TRANSLATE SCRIPT — loads the translation engine -->
+<!-- This is the official Google Translate widget script. It calls googleTranslateElementInit() once loaded. -->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

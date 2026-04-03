@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Editorial Team — Rex Clarke Adventures | Africa, In Full.</title>
-<meta name="description" content="Meet the RCA leadership team and contributing correspondents — the journalists and editors covering Africa across all 54 nations.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adventures Across Africa | Rex Clarke Adventures</title>
+<meta name="description" content="Safaris, trekking, river journeys, island escapes and signature adventure experiences across Africa's 54 nations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -923,56 +927,336 @@ body { top: 0 !important; }
   .dest-grid { grid-template-columns: repeat(2, 1fr); }
   .dest-photo-grid { grid-template-columns: 1fr; }
 }
+</style>
+<style>
+/* ── Article page styles (adventures) ── */
 
-/* ── PAGE STYLES ── */
-.page-hero { background: var(--green-deep); padding: 72px 24px 60px; }
-.page-hero-inner { max-width: var(--max); margin: 0 auto; }
-.page-hero-kicker { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); margin-bottom: 14px; }
-.page-hero-h { font-family: var(--ff-serif); font-size: clamp(30px,5vw,54px); font-weight: 800; color: var(--white); line-height: 1.12; letter-spacing: -.025em; margin-bottom: 20px; }
-.page-hero-h span { color: var(--gold); font-style: italic; }
-.page-hero-sub { font-size: 16px; color: rgba(255,255,255,.6); max-width: 640px; line-height: 1.75; font-weight: 300; }
+/* ── RESET & ROOT ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --green:     #1a6b38;
+  --green-dk:  #0f5c2e;
+  --green-deep:#082d16;
+  --green-lt:  #e8f2ec;
+  --green-md:  #a8ccb8;
+  --gold:      #F5C400;
+  --gold-dk:   #b8920a;
+  --gold-lt:   #fdf5cc;
+  --terra:     #c8793a;
+  --terra-dk:  #9a5520;
+  --terra-lt:  #f8ece0;
+  --white:     #ffffff;
+  --paper:     #f6f3ed;
+  --ink:       #1c1a14;
+  --ink2:      #3d3a2e;
+  --ink3:      #7a7668;
+  --bdr:       rgba(26,107,56,.10);
+  --bdr2:      rgba(26,107,56,.20);
+  --ff:        'Poppins', sans-serif;
+  --serif:     'Playfair Display', Georgia, serif;
+  --max:       1240px;
+  --col:       720px; /* article body max-width */
+}
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--ff); background: var(--white); color: var(--ink); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
 
-.team-wrap { max-width: var(--max); margin: 0 auto; padding: 64px 24px; }
-.team-intro { font-family: var(--ff-serif); font-size: 20px; color: var(--ink); line-height: 1.6; max-width: 780px; margin-bottom: 56px; padding-bottom: 40px; border-bottom: 2px solid var(--bdr); }
+/* ── READING PROGRESS BAR ── */
+.progress-bar {
+  position: fixed; top: 0; left: 0; height: 3px;
+  background: var(--terra); z-index: 1000; width: 0%;
+  transition: width .1s linear;
+}
 
-.team-section-label { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); margin-bottom: 8px; }
-.team-section-title { font-family: var(--ff-serif); font-size: 28px; font-weight: 800; color: var(--ink); margin-bottom: 32px; }
+/* ── MASTHEAD ── */
+.masthead { background: var(--white); position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 0 var(--bdr); }
+.mast-top { border-bottom: 1px solid var(--bdr); }
+.mast-top-inner { max-width: var(--max); margin: 0 auto; padding: 0 24px; height: 52px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.logo { display: flex; align-items: center; gap: 0; flex-shrink: 0; }
+.logo img { height: 34px; width: auto; }
+.mast-tagline { display: flex; align-items: center; gap: 12px; margin-left: 18px; flex-shrink: 0; }
+.mast-tagline-bar { width: 3px; height: 26px; background: var(--gold); border-radius: 2px; }
+.mast-tagline-text { font-family: var(--serif); font-size: 16px; font-weight: 700; font-style: italic; color: var(--ink); white-space: nowrap; }
+.mast-tagline-text .gold { color: var(--gold); }
+.mast-tagline-sub { font-size: 9px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--terra); margin-top: 2px; }
+.mast-utils { display: flex; align-items: center; gap: 8px; }
 
-.leadership-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-bottom: 64px; }
-.leader-card { background: var(--white); border: 1px solid var(--bdr); border-radius: 8px; overflow: hidden; transition: box-shadow .2s, transform .15s; }
-.leader-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,.09); transform: translateY(-3px); }
-.leader-card-top { background: var(--green); padding: 32px 24px; text-align: center; }
-.leader-avatar { width: 80px; height: 80px; border-radius: 50%; background: rgba(255,255,255,.15); border: 3px solid rgba(255,255,255,.3); margin: 0 auto 14px; display: flex; align-items: center; justify-content: center; font-family: var(--ff-serif); font-size: 26px; font-weight: 800; color: var(--white); overflow: hidden; }
-.leader-name { font-family: var(--ff-serif); font-size: 19px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
-.leader-role { font-size: 11px; font-weight: 700; color: var(--gold); letter-spacing: .06em; text-transform: uppercase; }
-.leader-card-body { padding: 22px 22px; }
-.leader-bio { font-size: 13px; font-weight: 300; color: var(--ink2); line-height: 1.72; }
+/* ── GOOGLE TRANSLATE WIDGET ── */
+.translate-wrap { position: relative; }
+.translate-btn { display: flex; align-items: center; gap: 5px; background: var(--paper); border: 1px solid var(--bdr2); border-radius: 4px; padding: 6px 10px; font-size: 12px; font-family: var(--ff); font-weight: 500; color: var(--ink2); cursor: pointer; transition: border-color .15s, color .15s, background .15s; white-space: nowrap; }
+.translate-btn:hover { border-color: var(--green); color: var(--green); }
+.translate-btn.open { border-color: var(--green); background: var(--green-lt); color: var(--green); }
+.translate-label { display: inline; }
+.translate-chevron { transition: transform .2s; opacity: .45; }
+.translate-btn.open .translate-chevron { transform: rotate(180deg); }
+.translate-panel { position: absolute; top: calc(100% + 8px); right: 0; background: var(--white); border: 1px solid var(--bdr2); border-top: 3px solid var(--green); border-radius: 4px; box-shadow: 0 8px 28px rgba(0,0,0,.10); min-width: 230px; z-index: 500; display: none; padding: 0 0 8px; }
+.translate-panel.open { display: block; }
+.translate-panel-head { display: flex; align-items: center; gap: 7px; padding: 12px 14px 10px; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink3); border-bottom: 1px solid var(--bdr); margin-bottom: 8px; }
+#google_translate_element { padding: 0 10px; }
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+.skiptranslate { display: none !important; }
+#google_translate_element select { width: 100%; border: 1px solid var(--bdr2); border-radius: 4px; padding: 8px 10px; font-size: 13px; font-family: var(--ff); color: var(--ink2); background: var(--white); cursor: pointer; outline: none; appearance: auto; transition: border-color .15s; }
+#google_translate_element select:focus, #google_translate_element select:hover { border-color: var(--green); }
+.translate-panel-note { font-size: 10px; color: var(--ink3); text-align: center; padding: 8px 14px 2px; }
+#google_translate_element .goog-logo-link { display: none !important; }
+#google_translate_element .goog-te-gadget span { display: none !important; }
+@media (max-width: 680px) { .translate-label { display: none; } .translate-btn { padding: 6px 8px; } .translate-panel { right: -40px; } }
+.btn-search { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; color: var(--ink3); border: 1px solid var(--bdr2); border-radius: 4px; padding: 6px 12px; cursor: pointer; transition: border-color .15s; }
+.btn-search:hover { border-color: var(--green); color: var(--green); }
+.btn-wwu { background: var(--green); color: var(--white); font-size: 12px; font-weight: 600; padding: 7px 16px; border-radius: 4px; transition: background .15s; white-space: nowrap; }
+.btn-wwu:hover { background: var(--green-dk); }
+.mast-nav-bar { background: var(--green); border-bottom: 3px solid var(--gold); }
+.mast-nav-inner { max-width: var(--max); margin: 0 auto; padding: 0 24px; height: 38px; display: flex; align-items: center; justify-content: space-between; }
+.nav { display: flex; list-style: none; height: 38px; align-items: center; }
+.nav > li > a { font-size: 12px; font-weight: 600; color: #ffffff; padding: 0 13px; height: 38px; display: flex; align-items: center; transition: color .15s; white-space: nowrap; }
+.nav > li > a:hover { color: var(--gold); }
+.nav > li.nav-gold > a { color: #ffffff; }
+.nav-plan { background: var(--gold); color: var(--ink); font-size: 11px; font-weight: 700; padding: 7px 16px; letter-spacing: .04em; text-transform: uppercase; transition: filter .15s; white-space: nowrap; }
+.nav-plan:hover { filter: brightness(1.06); }
+@media (max-width: 900px) { .mast-tagline-sub, .nav { display: none; } }
+@media (max-width: 640px) { .mast-tagline { display: none; } .btn-wwu { display: none; } }
 
-.correspondents-section { margin-bottom: 48px; }
-.correspondents-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
-.correspondent-card { background: var(--white); border: 1px solid var(--bdr); border-radius: 8px; padding: 22px; display: grid; grid-template-columns: 64px 1fr; gap: 18px; align-items: start; transition: border-color .15s, background .15s; }
-.correspondent-card:hover { border-color: var(--green); background: var(--green-lt); }
-.correspondent-avatar { width: 64px; height: 64px; border-radius: 50%; background: var(--green-lt); border: 2px solid var(--bdr2); display: flex; align-items: center; justify-content: center; font-family: var(--ff-serif); font-size: 18px; font-weight: 800; color: var(--green); flex-shrink: 0; }
-.correspondent-name { font-family: var(--ff-serif); font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 3px; }
-.correspondent-beat { font-size: 11px; font-weight: 700; color: var(--terra); letter-spacing: .04em; text-transform: uppercase; margin-bottom: 8px; }
-.correspondent-bio { font-size: 13px; font-weight: 300; color: var(--ink2); line-height: 1.65; margin-bottom: 10px; }
-.correspondent-links { display: flex; gap: 8px; }
-.correspondent-link { font-size: 11px; font-weight: 600; color: var(--green); border: 1px solid var(--bdr2); padding: 3px 10px; border-radius: 3px; transition: all .15s; }
-.correspondent-link:hover { background: var(--green); color: var(--white); border-color: var(--green); }
+/* ── BREADCRUMB ── */
+.breadcrumb-bar { background: var(--paper); border-bottom: 1px solid var(--bdr); }
+.breadcrumb { max-width: var(--max); margin: 0 auto; padding: 10px 24px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.breadcrumb a { font-size: 11px; color: var(--ink3); transition: color .15s; }
+.breadcrumb a:hover { color: var(--green); }
+.breadcrumb-sep { font-size: 11px; color: var(--bdr2); }
+.breadcrumb-current { font-size: 11px; color: var(--ink2); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 320px; }
 
-.join-team { background: var(--paper); border: 1px solid var(--bdr); border-radius: 8px; padding: 36px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-.join-team-text h3 { font-family: var(--ff-serif); font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
-.join-team-text p { font-size: 14px; color: var(--ink2); max-width: 520px; line-height: 1.7; }
-.join-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--green); color: var(--white); font-size: 13px; font-weight: 700; padding: 12px 24px; border-radius: 4px; white-space: nowrap; transition: background .15s; flex-shrink: 0; }
-.join-btn:hover { background: var(--green-dk); }
+/* ── PAGE LAYOUT ── */
+.page-wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 1fr 300px; gap: 48px; align-items: start; }
+@media (max-width: 960px) { .page-wrap { grid-template-columns: 1fr; } .sidebar { display: none; } }
 
-@media (max-width: 900px) { .leadership-grid { grid-template-columns: 1fr 1fr; } .correspondents-grid { grid-template-columns: 1fr; } .page-hero { padding: 48px 16px 40px; } .team-wrap { padding: 40px 16px; } }
-@media (max-width: 560px) { .leadership-grid { grid-template-columns: 1fr; } }
+/* ── ARTICLE ── */
+.article-col { padding: 36px 0 60px; min-width: 0; }
 
-@media (max-width: 960px) { body { padding-bottom: 64px; } }
+/* Category kicker */
+.art-cats { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.art-cat-tag { font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--terra); border: 1px solid var(--terra-lt); background: var(--terra-lt); padding: 3px 10px; border-radius: 2px; transition: background .15s; }
+.art-cat-tag:hover { background: var(--terra); color: var(--white); }
 
-@media (max-width: 960px) { body { padding-bottom: 64px; } }
-</style></head><body>
+/* Headline */
+.art-headline {
+  font-family: var(--serif);
+  font-size: clamp(24px, 3.5vw, 38px);
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -.02em;
+  color: var(--ink);
+  margin-bottom: 16px;
+  max-width: var(--col);
+}
+
+/* Meta strip */
+.art-meta { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 24px; padding-bottom: 20px; border-bottom: 2px solid var(--bdr); }
+.art-meta-author { display: flex; align-items: center; gap: 9px; }
+.art-meta-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--green-lt); border: 2px solid var(--bdr2); overflow: hidden; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: var(--green); }
+.art-meta-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.art-meta-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+.art-meta-role { font-size: 10px; color: var(--ink3); }
+.art-meta-divider { width: 1px; height: 28px; background: var(--bdr2); }
+.art-meta-item { font-size: 12px; color: var(--ink3); display: flex; align-items: center; gap: 5px; }
+.art-meta-item svg { color: var(--terra); flex-shrink: 0; }
+
+/* Social share strip */
+.art-share { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.share-label { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink3); }
+.share-btn { display: flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; padding: 5px 12px; border-radius: 3px; border: 1px solid var(--bdr2); color: var(--ink2); transition: all .15s; cursor: pointer; }
+.share-btn:hover { border-color: var(--green); color: var(--green); background: var(--green-lt); }
+.share-btn.twitter:hover { border-color: #1da1f2; color: #1da1f2; background: #e8f5fe; }
+.share-btn.facebook:hover { border-color: #1877f2; color: #1877f2; background: #e7f0fd; }
+.share-btn.linkedin:hover { border-color: #0a66c2; color: #0a66c2; background: #e8f0f8; }
+.share-btn.whatsapp:hover { border-color: #25d366; color: #25d366; background: #e8fdf0; }
+.share-copied { font-size: 11px; color: var(--green); font-weight: 600; display: none; }
+
+/* Hero image */
+.art-hero { position: relative; margin-bottom: 32px; border-radius: 4px; overflow: hidden; background: var(--paper); }
+.art-hero img { width: 100%; height: 420px; object-fit: cover; display: block; }
+.art-hero-caption { font-size: 11px; color: var(--ink3); padding: 8px 12px; background: var(--paper); border-top: 1px solid var(--bdr); line-height: 1.5; }
+
+/* Body prose */
+.art-body { max-width: var(--col); }
+.art-body p { font-size: 16px; font-weight: 300; line-height: 1.85; color: var(--ink2); margin-bottom: 22px; }
+.art-body p strong { font-weight: 600; color: var(--ink); }
+.art-body h2 { font-family: var(--serif); font-size: 22px; font-weight: 700; color: var(--ink); line-height: 1.3; margin: 38px 0 14px; padding-top: 8px; border-top: 2px solid var(--bdr); }
+.art-body h3 { font-family: var(--serif); font-size: 18px; font-weight: 700; color: var(--ink); line-height: 1.3; margin: 28px 0 10px; }
+.art-body a { color: var(--green); border-bottom: 1px solid var(--green-lt); transition: border-color .15s; }
+.art-body a:hover { border-color: var(--green); }
+.art-body ul, .art-body ol { margin: 0 0 22px 22px; }
+.art-body li { font-size: 16px; font-weight: 300; line-height: 1.85; color: var(--ink2); margin-bottom: 6px; }
+
+/* ── STAT CALLOUT BLOCKS ── (Guardian/FT pattern — data as design) */
+.stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 32px 0; }
+.stat-card { background: var(--green-deep); border-radius: 4px; padding: 20px 18px; text-align: center; }
+.stat-num { font-family: var(--serif); font-size: 34px; font-weight: 800; color: var(--gold); line-height: 1; margin-bottom: 6px; }
+.stat-label { font-size: 11px; font-weight: 500; color: rgba(255,255,255,.65); line-height: 1.4; }
+@media (max-width: 560px) { .stat-row { grid-template-columns: 1fr; } }
+
+/* ── PULL QUOTE ── (Monocle / NYT pattern) */
+.pull-quote {
+  border-left: 4px solid var(--gold);
+  padding: 22px 28px;
+  margin: 36px 0;
+  background: var(--gold-lt);
+  border-radius: 0 4px 4px 0;
+}
+.pull-quote p {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.55;
+  margin-bottom: 10px !important;
+}
+.pull-quote cite { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--terra); font-style: normal; }
+
+/* ── RELATED NEWS (inline) ── */
+.inline-related { background: var(--paper); border: 1px solid var(--bdr); border-left: 3px solid var(--green); border-radius: 0 4px 4px 0; padding: 16px 18px; margin: 28px 0; }
+.inline-related-label { font-size: 9px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); margin-bottom: 10px; }
+.inline-related-links { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+.inline-related-links li a { font-size: 13px; font-weight: 600; color: var(--ink); border-bottom: none; transition: color .15s; display: flex; align-items: flex-start; gap: 8px; }
+.inline-related-links li a::before { content: '→'; color: var(--green); flex-shrink: 0; margin-top: 1px; }
+.inline-related-links li a:hover { color: var(--green); }
+
+/* ── TAGS ── */
+.art-tags { margin: 32px 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.art-tags-label { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink3); }
+.art-tag { font-size: 11px; color: var(--ink2); border: 1px solid var(--bdr2); border-radius: 2px; padding: 4px 11px; transition: all .15s; }
+.art-tag:hover { background: var(--green-lt); border-color: var(--green); color: var(--green); }
+
+/* ── FAQ SECTION ── */
+.faq-section { border-top: 2px solid var(--bdr); padding-top: 32px; margin-top: 36px; max-width: var(--col); }
+.faq-heading { font-family: var(--serif); font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 20px; }
+.faq-item { border: 1px solid var(--bdr); border-radius: 4px; margin-bottom: 10px; overflow: hidden; }
+.faq-q { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; cursor: pointer; background: var(--white); transition: background .15s; }
+.faq-q:hover { background: var(--green-lt); }
+.faq-q-text { font-size: 14px; font-weight: 600; color: var(--ink); line-height: 1.4; }
+.faq-icon { width: 22px; height: 22px; border-radius: 50%; background: var(--green-lt); border: 1.5px solid var(--bdr2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all .2s; color: var(--green); font-size: 14px; font-weight: 700; }
+.faq-item.open .faq-icon { background: var(--green); color: var(--white); transform: rotate(45deg); }
+.faq-a { display: none; padding: 0 18px 16px; font-size: 14px; font-weight: 300; color: var(--ink2); line-height: 1.75; border-top: 1px solid var(--bdr); padding-top: 14px; }
+.faq-item.open .faq-a { display: block; }
+
+/* ── AUTHOR BIO CARD ── (Guardian / Context Travel pattern) */
+.author-card {
+  display: flex; gap: 20px; align-items: flex-start;
+  border: 1px solid var(--bdr);
+  border-top: 3px solid var(--green);
+  border-radius: 4px;
+  padding: 24px;
+  margin: 40px 0;
+  background: var(--paper);
+  max-width: var(--col);
+}
+.author-photo { width: 70px; height: 70px; border-radius: 50%; background: var(--green-lt); border: 3px solid var(--bdr2); overflow: hidden; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 24px; font-weight: 800; color: var(--green); }
+.author-photo img { width: 100%; height: 100%; object-fit: cover; }
+.author-info { flex: 1; }
+.author-name { font-family: var(--serif); font-size: 17px; font-weight: 700; color: var(--ink); margin-bottom: 2px; }
+.author-title { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--terra); margin-bottom: 8px; }
+.author-bio { font-size: 13px; font-weight: 300; color: var(--ink2); line-height: 1.7; margin-bottom: 12px; }
+.author-links { display: flex; gap: 8px; flex-wrap: wrap; }
+.author-link { font-size: 11px; font-weight: 600; color: var(--green); border: 1px solid var(--bdr2); padding: 4px 12px; border-radius: 3px; transition: all .15s; display: flex; align-items: center; gap: 5px; }
+.author-link:hover { background: var(--green); color: var(--white); border-color: var(--green); }
+@media (max-width: 520px) { .author-card { flex-direction: column; } }
+
+/* ── POST-ARTICLE CONVERSION ── (Black Tomato / Rough Guides pattern) */
+.art-conversion { margin: 40px 0; max-width: var(--col); }
+
+/* Newsletter capture */
+.nl-capture { background: var(--green-deep); border-radius: 6px; padding: 28px; margin-bottom: 16px; }
+.nl-kicker { font-size: 9px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.nl-head { font-family: var(--serif); font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 8px; line-height: 1.3; }
+.nl-sub { font-size: 13px; color: rgba(255,255,255,.55); margin-bottom: 18px; line-height: 1.6; }
+.nl-form { display: flex; gap: 8px; flex-wrap: wrap; }
+.nl-input { flex: 1; min-width: 180px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); border-radius: 4px; padding: 10px 14px; font-size: 13px; font-family: var(--ff); color: var(--white); outline: none; transition: border-color .15s; }
+.nl-input::placeholder { color: rgba(255,255,255,.4); }
+.nl-input:focus { border-color: var(--gold); }
+.nl-btn { background: var(--gold); color: var(--ink); border: none; border-radius: 4px; padding: 10px 22px; font-size: 13px; font-weight: 700; font-family: var(--ff); cursor: pointer; white-space: nowrap; transition: filter .15s; }
+.nl-btn:hover { filter: brightness(1.05); }
+.nl-note { font-size: 10px; color: rgba(255,255,255,.3); margin-top: 8px; }
+
+/* Plan your trip CTA */
+.trip-cta { background: var(--gold-lt); border: 1px solid rgba(200,150,0,.25); border-left: 4px solid var(--gold); border-radius: 0 4px 4px 0; padding: 20px 22px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.trip-cta-text { }
+.trip-cta-kicker { font-size: 9px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); margin-bottom: 4px; }
+.trip-cta-head { font-family: var(--serif); font-size: 17px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+.trip-cta-sub { font-size: 12px; color: var(--ink3); }
+.trip-cta-btn { background: var(--green); color: var(--white); font-size: 13px; font-weight: 700; padding: 11px 22px; border-radius: 4px; transition: background .15s; white-space: nowrap; flex-shrink: 0; }
+.trip-cta-btn:hover { background: var(--green-dk); }
+
+/* ── RELATED ARTICLES GRID ── (andBeyond / Rough Guides pattern) */
+.related-section { border-top: 2px solid var(--bdr); padding-top: 32px; margin-top: 40px; max-width: var(--col); }
+.related-heading { font-family: var(--serif); font-size: 20px; font-weight: 700; color: var(--ink); margin-bottom: 20px; }
+.related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.related-card { border: 1px solid var(--bdr); border-radius: 4px; overflow: hidden; transition: box-shadow .2s, transform .15s; }
+.related-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.09); transform: translateY(-2px); }
+.related-card-img { height: 120px; background: var(--paper); overflow: hidden; }
+.related-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 5s ease; }
+.related-card:hover .related-card-img img { transform: scale(1.04); }
+.related-card-body { padding: 12px; }
+.related-card-cat { font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--terra); margin-bottom: 5px; }
+.related-card-title { font-size: 13px; font-weight: 600; color: var(--ink); line-height: 1.4; }
+.related-card-title:hover { color: var(--green); }
+@media (max-width: 560px) { .related-grid { grid-template-columns: 1fr; } }
+
+/* ── SIDEBAR ── */
+.sidebar { padding: 36px 0 60px; position: sticky; top: 92px; }
+
+/* TOC */
+.toc { background: var(--paper); border: 1px solid var(--bdr); border-left: 3px solid var(--green); border-radius: 0 4px 4px 0; padding: 18px 18px; margin-bottom: 20px; }
+.toc-title { font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--terra); margin-bottom: 12px; }
+.toc-list { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+.toc-list a { font-size: 12px; color: var(--ink3); transition: color .15s; line-height: 1.45; display: block; padding: 3px 0; border-bottom: 1px solid transparent; }
+.toc-list a:hover { color: var(--green); }
+.toc-list a.active { color: var(--green); font-weight: 600; border-bottom-color: var(--green-lt); }
+
+/* Sidebar trending */
+.sidebar-section { margin-bottom: 24px; }
+.sidebar-label { font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--terra); border-bottom: 2px solid var(--green); padding-bottom: 8px; margin-bottom: 14px; }
+.sidebar-art { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--bdr); }
+.sidebar-art:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+.sidebar-thumb { width: 62px; height: 50px; border-radius: 3px; overflow: hidden; background: var(--paper); flex-shrink: 0; }
+.sidebar-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.sidebar-art-cat { font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--terra); margin-bottom: 3px; }
+.sidebar-art-title { font-size: 12px; font-weight: 600; color: var(--ink); line-height: 1.4; transition: color .15s; }
+.sidebar-art-title:hover { color: var(--green); }
+.sidebar-art-meta { font-size: 10px; color: var(--ink3); margin-top: 3px; }
+
+/* Sidebar newsletter */
+.sidebar-nl { background: var(--green-deep); border-radius: 4px; padding: 20px; }
+.sidebar-nl-kicker { font-size: 9px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.sidebar-nl-head { font-family: var(--serif); font-size: 16px; font-weight: 700; color: var(--white); margin-bottom: 6px; line-height: 1.3; }
+.sidebar-nl-sub { font-size: 11px; color: rgba(255,255,255,.5); margin-bottom: 14px; line-height: 1.6; }
+.sidebar-nl-input { width: 100%; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); border-radius: 4px; padding: 9px 12px; font-size: 12px; font-family: var(--ff); color: var(--white); outline: none; margin-bottom: 8px; }
+.sidebar-nl-input::placeholder { color: rgba(255,255,255,.4); }
+.sidebar-nl-btn { width: 100%; background: var(--gold); color: var(--ink); border: none; border-radius: 4px; padding: 10px; font-size: 12px; font-weight: 700; font-family: var(--ff); cursor: pointer; transition: filter .15s; }
+.sidebar-nl-btn:hover { filter: brightness(1.05); }
+
+/* ── FOOTER ── */
+.footer { background: var(--gold); padding: 44px 24px 20px; }
+.foot-inner { max-width: var(--max); margin: 0 auto; }
+.foot-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 36px; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid rgba(0,0,0,.15); }
+.foot-logo img { height: 34px; }
+.foot-tagline { font-family: var(--serif); font-size: 14px; font-style: italic; font-weight: 700; color: #000; margin-bottom: 8px; }
+.foot-desc { font-size: 12px; color: #000; line-height: 1.7; max-width: 240px; }
+.foot-col-lbl { font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #000; margin-bottom: 12px; }
+.foot-links { list-style: none; }
+.foot-links li { margin-bottom: 7px; }
+.foot-links a { font-size: 12px; color: #000; transition: font-weight .1s; }
+.foot-links a:hover { font-weight: 700; }
+.foot-btm { display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #000; flex-wrap: wrap; gap: 8px; }
+.foot-btm a { color: #000; margin-left: 14px; }
+.foot-btm a:hover { text-decoration: underline; }
+@media (max-width: 760px) { .foot-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .foot-grid { grid-template-columns: 1fr; } }
+
+</style>
+<body>
+
+
 <!-- BREAKING TICKER -->
 <div class="ticker">
   <div class="ticker-lbl">Breaking</div>
@@ -1092,7 +1376,7 @@ body { top: 0 !important; }
 
         <li><a href="index.html">Home</a></li>
         <li><a href="regions.html">Explore Africa</a></li>
-        <li><a href="adventures.html">Adventures</a></li>
+        <li class="active"><a href="adventures.html">Adventures</a></li>
         <li><a href="culture.html">Culture</a></li>
 
         <!-- AVIATION — standalone top-level link -->
@@ -1201,227 +1485,214 @@ body { top: 0 !important; }
 
 </div>
 
-<div class="mob-nav" id="mobNav" role="dialog" aria-label="Navigation menu">
-  <div class="mob-top">
-    <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/logo_rex_clarke_adv.png" alt="Rex Clarke Adventures" onerror="this.style.display='none'">
-    <button class="mob-close" onclick="closeNav()" aria-label="Close menu">✕</button>
-  </div>
-  <div class="mob-tagline-strip">
-    Africa, <span style="color:var(--gold);font-style:italic;margin-left:4px;">In Full.</span>
-    <span>54 Nations · Daily Editorial</span>
-  </div>
 
-  <ul class="mob-links">
-
-    <!-- Destinations — accordion -->
-    <li>
-      <button class="mob-accordion-btn gold-link" onclick="mobToggle(this)" aria-expanded="false">
-        Destinations
-        <span class="mob-accordion-chevron" aria-hidden="true">
-          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-      </button>
-      <ul class="mob-sub" role="list">
-        <li><a href="regions.html"><span class="mob-sub-text">West Africa<span class="mob-sub-meta">16 nations</span></span></a></li>
-        <li><a href="regions.html"><span class="mob-sub-text">East Africa<span class="mob-sub-meta">20 nations</span></span></a></li>
-        <li><a href="regions.html"><span class="mob-sub-text">North Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
-        <li><a href="regions.html"><span class="mob-sub-text">Central Africa<span class="mob-sub-meta">9 nations</span></span></a></li>
-        <li><a href="regions.html"><span class="mob-sub-text">Southern Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
-        <li><a href="regions.html"><span class="mob-sub-text">Islands<span class="mob-sub-meta">7 nations</span></span></a></li>
-      </ul>
-    </li>
-
-    <li><a href="index.html">Home</a></li>
-    <li><a href="regions.html">Explore Africa</a></li>
-    <li><a href="adventures.html">Adventures</a></li>
-    <li><a href="culture.html">Culture</a></li>
-
-    <!-- Aviation — standalone gold, FIX 4 -->
-    <li><a href="aviation.html" class="gold-link">Aviation</a></li>
-    <!-- Hospitality — standalone gold, FIX 4 -->
-    <li><a href="hospitality.html" class="gold-link">Hospitality</a></li>
-
-    <li><a href="festivals.html">Festivals</a></li>
-    <li><a href="news.html">News</a></li>
-
-    <!-- Discover — accordion -->
-    <li>
-      <button class="mob-accordion-btn" onclick="mobToggle(this)" aria-expanded="false">
-        Discover
-        <span class="mob-accordion-chevron" aria-hidden="true">
-          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-      </button>
-      <ul class="mob-sub" role="list">
-        <li><a href="omiren.html"><span class="mob-sub-text">Food</span></a></li>
-        <li><a href="trip-planner.html"><span class="mob-sub-text">Travel Tips</span></a></li>
-        <li><a href="omiren.html"><span class="mob-sub-text">Lifestyle</span></a></li>
-        <li><a href="regions.html"><span class="mob-sub-text">Eco-Tourism</span></a></li>
-      </ul>
-    </li>
-
-    <li><a href="#about" onclick="closeNav()">About the Platform</a></li>
-    <li><a href="#team" onclick="closeNav()">Editorial Team</a></li>
-    <li><a href="#work-with-us" onclick="closeNav()">Work With Us</a></li>
-    <li><a href="#contact" onclick="closeNav()">Contact</a></li>
-
-  </ul>
-
-  <!-- FIX 5 — Plan Your Trip CTA always visible in drawer -->
-  <a href="trip-planner.html" class="mob-plan-cta">Plan Your Trip →</a>
-
-</div>
-
-<div class="mob-nav" id="mobNav" role="dialog" aria-label="Navigation menu">
-  <div class="mob-top">
-    <img src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/logo_rex_clarke_adv.png" alt="Rex Clarke Adventures" onerror="this.style.display='none'">
-    <button class="mob-close" onclick="closeNav()" aria-label="Close menu">✕</button>
-  </div>
-  <div class="mob-tagline-strip">
-    Africa, <span style="color:var(--gold);font-style:italic;margin-left:4px;">In Full.</span>
-    <span>54 Nations · Daily Editorial</span>
-  </div>
-
-  <ul class="mob-links">
-
-    <!-- Destinations — accordion -->
-    <li>
-      <button class="mob-accordion-btn gold-link" onclick="mobToggle(this)" aria-expanded="false">
-        Destinations
-        <span class="mob-accordion-chevron" aria-hidden="true">
-          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-      </button>
-      <ul class="mob-sub" role="list">
-        <li><a href="regions.html"><span class="mob-sub-text">West Africa<span class="mob-sub-meta">16 nations</span></span></a></li>
-        <li><a href="regions.html"><span class="mob-sub-text">East Africa<span class="mob-sub-meta">20 nations</span></span></a></li>
-        <li><a href="regions.html"><span class="mob-sub-text">North Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
-        <li><a href="regions.html"><span class="mob-sub-text">Central Africa<span class="mob-sub-meta">9 nations</span></span></a></li>
-        <li><a href="regions.html"><span class="mob-sub-text">Southern Africa<span class="mob-sub-meta">6 nations</span></span></a></li>
-        <li><a href="regions.html"><span class="mob-sub-text">Islands<span class="mob-sub-meta">7 nations</span></span></a></li>
-      </ul>
-    </li>
-
-    <li><a href="index.html">Home</a></li>
-    <li><a href="regions.html">Explore Africa</a></li>
-    <li><a href="adventures.html">Adventures</a></li>
-    <li><a href="culture.html">Culture</a></li>
-
-    <!-- Aviation — standalone gold, FIX 4 -->
-    <li><a href="aviation.html" class="gold-link">Aviation</a></li>
-    <!-- Hospitality — standalone gold, FIX 4 -->
-    <li><a href="hospitality.html" class="gold-link">Hospitality</a></li>
-
-    <li><a href="festivals.html">Festivals</a></li>
-    <li><a href="news.html">News</a></li>
-
-    <!-- Discover — accordion -->
-    <li>
-      <button class="mob-accordion-btn" onclick="mobToggle(this)" aria-expanded="false">
-        Discover
-        <span class="mob-accordion-chevron" aria-hidden="true">
-          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-      </button>
-      <ul class="mob-sub" role="list">
-        <li><a href="omiren.html"><span class="mob-sub-text">Food</span></a></li>
-        <li><a href="trip-planner.html"><span class="mob-sub-text">Travel Tips</span></a></li>
-        <li><a href="omiren.html"><span class="mob-sub-text">Lifestyle</span></a></li>
-        <li><a href="regions.html"><span class="mob-sub-text">Eco-Tourism</span></a></li>
-      </ul>
-    </li>
-
-    <li><a href="#about" onclick="closeNav()">About the Platform</a></li>
-    <li><a href="#team" onclick="closeNav()">Editorial Team</a></li>
-    <li><a href="#work-with-us" onclick="closeNav()">Work With Us</a></li>
-    <li><a href="#contact" onclick="closeNav()">Contact</a></li>
-
-  </ul>
-
-  <!-- FIX 5 — Plan Your Trip CTA always visible in drawer -->
-  <a href="trip-planner.html" class="mob-plan-cta">Plan Your Trip →</a>
-
-</div>
-<main>
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <div class="page-hero-kicker">The people behind the platform</div>
-    <h1 class="page-hero-h">The RCA<br><span>Editorial Team</span></h1>
-    <p class="page-hero-sub">Rex Clarke Adventures is built by a team with roots across the continent and a shared commitment to telling Africa's stories with the depth, context, and cultural authority they deserve.</p>
+<!-- PAGE HERO — Adventures -->
+<div style="background:linear-gradient(135deg,#082d16 0%,#1a4a28 100%);padding:52px 24px 44px;border-bottom:3px solid var(--gold);">
+  <div style="max-width:var(--max);margin:0 auto;">
+    <div style="max-width:680px;">
+      <div style="font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Adventures · Africa</div>
+      <h1 style="font-family:var(--ff-serif);font-size:36px;font-weight:700;color:var(--white);letter-spacing:-.02em;line-height:1.2;margin-bottom:14px;">Adventures Across Africa</h1>
+      <p style="font-size:14px;font-weight:300;color:rgba(255,255,255,.65);max-width:540px;line-height:1.7;">Safaris, trekking, river journeys, island escapes, rail legs, and destination combinations across all 54 nations. Plan your next movement.</p>
+      <a href="trip-planner.html" style="display:inline-block;margin-top:20px;background:var(--gold);color:var(--ink);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:11px 24px;border-radius:4px;text-decoration:none;">Plan Your Trip →</a>
+    </div>
   </div>
 </div>
 
-<div class="team-wrap">
-  <p class="team-intro">Africa's story has long been told by people who do not know it from the inside. RCA was built to change that — staffed by journalists, editors, and correspondents whose connection to Africa is not professional distance but lived knowledge.</p>
 
-  <div class="team-section-label">Leadership</div>
-  <h2 class="team-section-title">Platform leadership</h2>
-  <div class="leadership-grid">
-    <div class="leader-card">
-      <div class="leader-card-top"><div class="leader-avatar">RC</div><div class="leader-name">Rex Clarke</div><div class="leader-role">Chief Executive Officer</div></div>
-      <div class="leader-card-body"><p class="leader-bio">Founder and editorial director of Rex Clarke Adventures and Rex Clarke Global Ventures Limited. Leads RCA's pan-African strategy, brand development, and content operations across all 54 nations. Conceived and commissioned the platform's heritage database initiative and the African Style Series on Omiren Styles.</p></div>
-    </div>
-    <div class="leader-card">
-      <div class="leader-card-top"><div class="leader-avatar">BB</div><div class="leader-name">Bukola Benjamin</div><div class="leader-role">Operations Manager</div></div>
-      <div class="leader-card-body"><p class="leader-bio">Oversees day-to-day platform operations, editorial workflow management, and production coordination across the RCA and Omiren Styles brands. Ensures editorial standards are maintained across all content verticals and publishing schedules are met.</p></div>
-    </div>
-    <div class="leader-card">
-      <div class="leader-card-top"><div class="leader-avatar">DR</div><div class="leader-name">Deborah Russell</div><div class="leader-role">Business Manager</div></div>
-      <div class="leader-card-body"><p class="leader-bio">Leads commercial strategy, partnership development, and business operations for Rex Clarke Global Ventures Limited. Manages institutional relationships with tourism boards, cultural organisations, and commercial partners across the pan-African editorial portfolio.</p></div>
-    </div>
-    <div class="leader-card">
-      <div class="leader-card-top"><div class="leader-avatar">AM</div><div class="leader-name">Adam Moses</div><div class="leader-role">Content Manager</div></div>
-      <div class="leader-card-body"><p class="leader-bio">Manages editorial output, content strategy, and publishing standards across all RCA editorial categories and regions. Coordinates the platform's 54-nation coverage plan and maintains editorial brief consistency across the contributor network.</p></div>
-    </div>
-    <div class="leader-card">
-      <div class="leader-card-top"><div class="leader-avatar">FO</div><div class="leader-name">Fathia Olasupo</div><div class="leader-role">Lifestyle Supervisor</div></div>
-      <div class="leader-card-body"><p class="leader-bio">Leads lifestyle and culture editorial coverage, ensuring authentic representation of African living, food, fashion, and urban culture across RCA's content verticals. Bridges editorial coverage between RCA and the Omiren Styles brand.</p></div>
-    </div>
-    <div class="leader-card">
-      <div class="leader-card-top"><div class="leader-avatar">RJ</div><div class="leader-name">Rukevwe JB</div><div class="leader-role">IT Manager</div></div>
-      <div class="leader-card-body"><p class="leader-bio">Manages digital infrastructure, platform technology, and the technical architecture underpinning both RCA and Omiren Styles. Oversees the development of the cultural heritage database and the platform's digital archiving infrastructure.</p></div>
-    </div>
+<!-- TRUST BAR -->
+<div class="trust">
+  <div class="trust-inner">
+    <div class="trust-item"><strong>54</strong> nations covered</div>
+    <span class="trust-sep">·</span>
+    <div class="trust-item">Published <strong>daily</strong></div>
+    <span class="trust-sep">·</span>
+    <div class="trust-item">Read in <strong>80+</strong> countries</div>
+    <span class="trust-sep">·</span>
+    <div class="trust-item">Cited in <strong>academic research</strong></div>
   </div>
+</div>
 
-  <div class="correspondents-section">
-    <div class="team-section-label">Editorial correspondents</div>
-    <h2 class="team-section-title">Contributing writers & journalists</h2>
-    <div class="correspondents-grid">
-      <div class="correspondent-card">
-        <div class="correspondent-avatar">FV</div>
+<!-- ABOVE-FOLD NEWSLETTER STRIP -->
+<div class="nl-strip">
+  <div class="nl-strip-inner">
+    <div class="nl-strip-text"><span>The Africa Dispatch</span> — weekly travel intelligence across 54 nations, in your inbox every Friday.</div>
+    <div class="nl-strip-form">
+      <input class="nl-strip-input" type="email" placeholder="Your email address" aria-label="Email address">
+      <button class="nl-strip-btn" onclick="this.textContent='✓ Subscribed!'">Subscribe free</button>
+    </div>
+    <div class="nl-strip-note">No spam · Unsubscribe anytime</div>
+  </div>
+</div>
+
+<div class="body-wrap">
+  <main>
+
+    <!-- FEATURED ADVENTURE -->
+    <div class="sec-head"><h2 class="sec-title">Featured Adventure</h2><a href="regions.html" class="sec-more">All Destinations →</a></div>
+    <a href="regions.html" class="featured">
+      <div class="feat-img dest-bg-1">
+        <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/03/bbc-kingdom-zambia-south-luangwa.jpg"
+             alt="Great Migration — Kenya and Tanzania"
+             onerror="this.parentElement.classList.add('dest-bg-1');this.style.display='none'">
+        <div class="feat-badge">Safari</div>
+      </div>
+      <div class="feat-body">
+        <div class="art-cat">East Africa · Wildlife · Safari</div>
+        <div class="feat-title">The Great Migration: Africa's Greatest Wildlife Spectacle Across Kenya and Tanzania</div>
+        <p class="feat-excerpt">Over 1.5 million wildebeest cross the Mara River each year in one of nature's most extraordinary events. RCA's essential guide to witnessing the spectacle — timing, camps, and what to expect on the ground.</p>
+        <div class="art-meta"><span class="author">RCA Adventures Desk</span><span class="dot">·</span><span>April 2026</span></div>
+      </div>
+    </a>
+
+    <!-- SAFARI & WILDLIFE -->
+    <div class="sec-head" style="margin-top:4px;"><h2 class="sec-title">Safari &amp; Wildlife</h2><a href="regions.html" class="sec-more">More →</a></div>
+    <div class="art-grid">
+      <a href="regions.html" class="art-card">
+        <div class="card-img dest-bg-1">
+          <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/03/dest-gorilla.jpg"
+               alt="Mountain gorilla trekking Uganda Bwindi"
+               onerror="this.parentElement.classList.add('dest-bg-1');this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <div class="card-cat">Uganda · Wildlife</div>
+          <div class="card-title">Gorilla Trekking in Bwindi Impenetrable Forest — Uganda's Greatest Wildlife Experience</div>
+          <div class="card-meta">Adventures Desk · April 2026</div>
+        </div>
+      </a>
+      <a href="regions.html" class="art-card">
+        <div class="card-img dest-bg-2">
+          <img src="https://rexclarkeadventures.com/wp-content/uploads/2026/03/dest-south-africa.jpg"
+               alt="Okavango Delta Botswana"
+               onerror="this.parentElement.classList.add('dest-bg-2');this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <div class="card-cat">Botswana · Delta</div>
+          <div class="card-title">The Okavango Delta: Canoe, Camp and Track Wildlife in the World's Largest Inland Delta</div>
+          <div class="card-meta">Adventures Desk · April 2026</div>
+        </div>
+      </a>
+      <a href="regions.html" class="art-card">
+        <div class="card-img dest-bg-3"></div>
+        <div class="card-body">
+          <div class="card-cat">Kenya · Conservation</div>
+          <div class="card-title">Maasai Mara: Beyond the Migration — Year-Round Wildlife, Culture and Conservation</div>
+          <div class="card-meta">Adventures Desk · March 2026</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- TREKKING & EXPEDITIONS -->
+    <div class="sec-head" style="margin-top:4px;"><h2 class="sec-title">Trekking &amp; Expeditions</h2><a href="regions.html" class="sec-more">More →</a></div>
+    <div class="art-list">
+      <a href="regions.html" class="list-item">
+        <div class="list-img dest-bg-4"></div>
         <div>
-          <div class="correspondent-name">Familugba Victor</div>
-          <div class="correspondent-beat">Tourism · Aviation · Policy</div>
-          <p class="correspondent-bio">Africa tourism correspondent covering destination policy, aviation intelligence, and travel industry developments across the continent. His reporting spans ministerial briefings, airport milestones, and the structural forces shaping intra-African travel. Work cited by tourism boards and industry analysts.</p>
-          <div class="correspondent-links">
-            <a href="team.html" class="correspondent-link">All articles</a>
-            <a href="https://x.com/RCAdventures17" class="correspondent-link">Follow</a>
-          </div>
+          <div class="list-cat">Tanzania · Summits</div>
+          <div class="list-title">Climbing Kilimanjaro: Which Route, What Gear, and How to Prepare for Africa's Highest Peak</div>
+          <div class="list-meta">Adventures Desk · 2 weeks ago</div>
+        </div>
+      </a>
+      <a href="regions.html" class="list-item">
+        <div class="list-img dest-bg-5"></div>
+        <div>
+          <div class="list-cat">Morocco · North Africa</div>
+          <div class="list-title">The High Atlas Traverse: Trekking Morocco's Mountain Heartland Village to Village</div>
+          <div class="list-meta">Adventures Desk · 3 weeks ago</div>
+        </div>
+      </a>
+      <a href="regions.html" class="list-item">
+        <div class="list-img dest-bg-1"></div>
+        <div>
+          <div class="list-cat">Ethiopia · Highlands</div>
+          <div class="list-title">Simien Mountains National Park: Trekking with Gelada Baboons and Ethiopian Wolves</div>
+          <div class="list-meta">Adventures Desk · 1 month ago</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- OCEAN & RIVER ADVENTURES -->
+    <div class="sec-head" style="margin-top:4px;"><h2 class="sec-title">Ocean &amp; River Adventures</h2><a href="regions.html" class="sec-more">More →</a></div>
+    <div class="art-list">
+      <a href="regions.html" class="list-item">
+        <div class="list-img dest-bg-3"></div>
+        <div>
+          <div class="list-cat">Zambia · Zimbabwe · River</div>
+          <div class="list-title">Rafting the Zambezi: Class V Rapids, Victoria Falls and the World's Greatest White-Water Run</div>
+          <div class="list-meta">Adventures Desk · 1 month ago</div>
+        </div>
+      </a>
+      <a href="regions.html" class="list-item">
+        <div class="list-img dest-bg-2"></div>
+        <div>
+          <div class="list-cat">Tanzania · Islands</div>
+          <div class="list-title">Zanzibar to Pemba: Island-Hopping, Diving and the Spice Route of East Africa</div>
+          <div class="list-meta">Adventures Desk · 5 weeks ago</div>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <aside class="sidebar">
+
+    <div class="widget">
+      <div class="widget-head">Trending</div>
+      <div class="trend-item"><div class="trend-num">1</div><div class="trend-title">Eswatini records 16.3% surge in tourist arrivals</div></div>
+      <div class="trend-item"><div class="trend-num">2</div><div class="trend-title">Cape Town Airport wins Africa's Best Airport — Skytrax 2026</div></div>
+      <div class="trend-item"><div class="trend-num">3</div><div class="trend-title">BBC 'Kingdom' puts Zambia's South Luangwa on the world map</div></div>
+      <div class="trend-item"><div class="trend-num">4</div><div class="trend-title">Ethiopia hosts Hospitality Hackathon 2026</div></div>
+      <div class="trend-item" style="border-bottom:none;"><div class="trend-num">5</div><div class="trend-title">69th UN Tourism Commission for Africa holds in Seychelles</div></div>
+    </div>
+
+    <div class="widget nl-widget">
+      <div class="widget-head">The Africa Dispatch</div>
+      <div class="nl-body">
+        <p>Weekly intelligence on travel, culture and adventure across 54 nations — every Friday, free.</p>
+        <input class="nl-input" type="email" placeholder="Your email address">
+        <button class="nl-btn" onclick="this.textContent='✓ Subscribed!'">Subscribe free</button>
+        <div class="nl-note">No spam. Unsubscribe anytime.</div>
+      </div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-head">Popular</div>
+      <div class="pop-item">
+        <div class="pop-img dest-bg-1"></div>
+        <div>
+          <div class="pop-title">Gorilla Trekking in Uganda — The Complete Guide</div>
+          <div class="pop-cat">East Africa · Wildlife</div>
         </div>
       </div>
-      <div class="correspondent-card">
-        <div class="correspondent-avatar">LV</div>
+      <div class="pop-item">
+        <div class="pop-img dest-bg-2"></div>
         <div>
-          <div class="correspondent-name">Leyira Virtue Barisuka</div>
-          <div class="correspondent-beat">Culture · Music · Heritage</div>
-          <p class="correspondent-bio">Culture and heritage correspondent covering African music, oral traditions, creative industries, and the cultural forces shaping the continent's identity. Covers the Afrobeats corridor, festival culture, and the intersection of African heritage with contemporary creative life.</p>
-          <div class="correspondent-links">
-            <a href="team.html" class="correspondent-link">All articles</a>
-          </div>
+          <div class="pop-title">The Great Migration: Best Time, Route and Camps</div>
+          <div class="pop-cat">Kenya · Tanzania · Safari</div>
+        </div>
+      </div>
+      <div class="pop-item" style="border-bottom:none;">
+        <div class="pop-img dest-bg-3"></div>
+        <div>
+          <div class="pop-title">Climbing Kilimanjaro: Routes, Gear and What to Expect</div>
+          <div class="pop-cat">Tanzania · Trekking</div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="join-team">
-    <div class="join-team-text">
-      <h3>Write for Rex Clarke Adventures</h3>
-      <p>We commission journalists, researchers, and cultural experts with genuine knowledge of African destinations, cultures, and industries. If that is you — send us your clips, your beat, and a pitch.</p>
+  </aside>
+</div>
+
+<!-- WORK WITH US STRIP -->
+<div class="work-strip">
+  <div class="work-inner">
+    <div>
+      <div class="work-h">Plan your Africa adventure with RCA</div>
+      <div class="work-sub">Expert editorial, destination guides and trip planning tools across 54 nations.</div>
     </div>
-    <a href="mailto:infos@rexclarkeadventures.com" class="join-btn">Send a pitch →</a>
+    <a href="trip-planner.html" class="work-cta">Plan Your Trip</a>
   </div>
 </div>
-</main>
+
 <!-- FOOTER
      AUDIT FIX: "Africa, In Full." tagline now prominent as brand statement, not only copyright line
 -->
@@ -1500,16 +1771,12 @@ body { top: 0 !important; }
   </div>
 </footer>
 
-<!-- FLOATING PLAN YOUR TRIP CTA — mobile only -->
-<!-- FLOATING PLAN YOUR TRIP CTA — mobile only -->
-<div class="mob-float-cta" id="mobFloatCta">
-  <a href="trip-planner.html">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M12 5l7 7-7 7"/></svg>
-    Plan Your Trip
-  </a>
-</div>
-<div class="mob-float-cta"><a href="trip-planner.html">Plan Your Trip →</a></div>
-<script>/* ── GOOGLE TRANSLATE INIT ──
+<script>
+/* ── NAV ── */
+function openNav()  { document.getElementById('mobNav').classList.add('open');    document.body.style.overflow='hidden'; }
+function closeNav() { document.getElementById('mobNav').classList.remove('open'); document.body.style.overflow=''; }
+
+/* ── GOOGLE TRANSLATE INIT ──
    Called automatically by the Google script once it loads.
    Creates the language selector inside #google_translate_element.
    Languages: all major African + international languages.
@@ -1590,6 +1857,117 @@ function setLang(langCode, btn) {
   }
 })();
 
+/* ── CAROUSEL ENGINE — PHOTO VERSION ── */
+const slides   = Array.from(document.querySelectorAll('.c-slide'));
+const dots     = Array.from(document.querySelectorAll('.c-dot'));
+const progress = document.getElementById('carouselProgress');
+const pauseBtn = document.getElementById('carouselPause');
+const counter  = document.getElementById('carouselCounter');
+const DURATION = 6000;
+const TOTAL = slides.length;
+let current    = 0;
+let timer      = null;
+let isPaused   = false;
+
+function goTo(index) {
+  if (index < 0) index = slides.length - 1;
+  if (index >= slides.length) index = 0;
+  slides[current].classList.remove('active');
+  dots[current].classList.remove('active');
+  const prev = current;
+  setTimeout(() => {}, 900);
+  current = index;
+  slides[current].classList.add('active');
+  dots[current].classList.add('active');
+  counter.textContent = (current + 1) + ' / ' + TOTAL;
+  resetProgress();
+}
+
+function resetProgress() {
+  progress.classList.remove('running');
+  progress.style.width = '0%';
+  void progress.offsetWidth;
+  if (!isPaused) {
+    progress.classList.add('running');
+    progress.style.width = '100%';
+  }
+}
+
+function startAuto() {
+  clearInterval(timer);
+  if (!isPaused) timer = setInterval(() => goTo(current + 1), DURATION);
+}
+
+function carouselMove(dir)   { clearInterval(timer); goTo(current + dir); startAuto(); }
+function carouselGoTo(index) { clearInterval(timer); goTo(index);          startAuto(); }
+
+function carouselTogglePause() {
+  isPaused = !isPaused;
+  pauseBtn.classList.toggle('paused', isPaused);
+  pauseBtn.setAttribute('aria-label', isPaused ? 'Play carousel' : 'Pause carousel');
+  if (isPaused) {
+    clearInterval(timer);
+    progress.classList.remove('running');
+  } else {
+    resetProgress();
+    startAuto();
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowLeft')  carouselMove(-1);
+  if (e.key === 'ArrowRight') carouselMove(1);
+  if (e.key === ' ')          { e.preventDefault(); carouselTogglePause(); }
+});
+
+/* ── SWIPE WITH VISUAL DRAG FEEDBACK (Fix 2) ── */
+let touchStartX = 0, touchStartY = 0, touchDeltaX = 0, isDragging = false;
+const carousel = document.getElementById('heroCarousel');
+const track = document.getElementById('carouselTrack');
+
+carousel.addEventListener('touchstart', e => {
+  touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+  touchDeltaX = 0;
+  isDragging = false;
+  clearInterval(timer);
+}, { passive: true });
+
+carousel.addEventListener('touchmove', e => {
+  const dx = e.touches[0].clientX - touchStartX;
+  const dy = e.touches[0].clientY - touchStartY;
+  if (!isDragging && Math.abs(dy) > Math.abs(dx)) return; // vertical scroll wins
+  isDragging = true;
+  touchDeltaX = dx;
+  /* Live drag: translate the active slide */
+  const activeSlide = document.querySelector('.c-slide.active');
+  if (activeSlide) activeSlide.style.transform = 'translateX(' + (dx * 0.35) + 'px)';
+}, { passive: true });
+
+carousel.addEventListener('touchend', e => {
+  /* Reset any live transform */
+  document.querySelectorAll('.c-slide').forEach(s => s.style.transform = '');
+  if (!isDragging) { startAuto(); return; }
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 44) {
+    carouselMove(diff > 0 ? 1 : -1);
+  } else {
+    startAuto();
+  }
+  isDragging = false;
+}, { passive: true });
+
+carousel.addEventListener('mouseenter', () => { if (!isPaused) { clearInterval(timer); progress.classList.remove('running'); } });
+carousel.addEventListener('mouseleave', () => { if (!isPaused) { resetProgress(); startAuto(); } });
+
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  isPaused = true;
+  pauseBtn.classList.add('paused');
+}
+
+/* Boot — slide 0 is already active in HTML, just start the timer */
+startAuto();
+resetProgress();
 
 /* ══ FIX 1 — Mobile nav accordion ══ */
 function openNav() {
@@ -1625,17 +2003,114 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeNav();
 });
 
+/* ══ FIX 3 — Destination modal ══ */
+let selectedDestUrl = 'regions.html';
+function openDestModal() {
+  document.getElementById('destModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeDestModal() {
+  document.getElementById('destModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function selectModalDest(el, url) {
+  document.querySelectorAll('.dest-modal-item').forEach(i => i.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedDestUrl = url;
+  /* Update the button text */
+  const name = el.querySelector('.dest-modal-name').textContent;
+  const flag = el.querySelector('.dest-modal-flag').textContent;
+  const btn = document.querySelector('.dest-mobile-btn');
+  if (btn) btn.innerHTML = '<span>' + flag + ' ' + name + '</span><span>✓</span>';
+  /* Auto-close after selection */
+  setTimeout(closeDestModal, 380);
+}
+/* Override destSearch for mobile */
+const _origDestSearch = window.destSearch;
+window.destSearch = function() {
+  if (window.innerWidth <= 640 && selectedDestUrl) {
+    window.location.href = selectedDestUrl;
+  } else if (_origDestSearch) {
+    _origDestSearch();
+  }
+};
 
+/* ══ FIX 5 — Hide floating CTA when mobile nav is open ══ */
+const floatCta = document.getElementById('mobFloatCta');
+const _origOpenNav = window.openNav;
+const _origCloseNav = window.closeNav;
+
+/* ══ FIX 6 — Footer accordion ══ */
 document.querySelectorAll('.foot-col-lbl').forEach(lbl => {
   lbl.addEventListener('click', function() {
     if (window.innerWidth > 480) return;
-    const links = this.nextElementSibling; if (!links) return;
+    const links = this.nextElementSibling;
+    if (!links) return;
     const isOpen = links.classList.contains('open');
+    /* Close all */
     document.querySelectorAll('.foot-links').forEach(f => f.classList.remove('open'));
     document.querySelectorAll('.foot-col-lbl').forEach(l => l.classList.remove('open'));
-    if (!isOpen) { links.classList.add('open'); this.classList.add('open'); }
+    if (!isOpen) {
+      links.classList.add('open');
+      this.classList.add('open');
+    }
+  });
+});
+/* On desktop keep all footer links visible */
+function handleFooterResize() {
+  if (window.innerWidth > 480) {
+    document.querySelectorAll('.foot-links').forEach(f => f.style.display = '');
+  }
+}
+window.addEventListener('resize', handleFooterResize);
+
+/* ── CONTACT ENQUIRY TYPE SELECTOR ── */
+function selectEnquiry(el) {
+  document.querySelectorAll('.contact-type').forEach(t => t.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+/* ── RCA DESK SLIDER ── */
+(function() {
+  const eqSlides = Array.from(document.querySelectorAll('.eq-slide'));
+  const eqDots   = Array.from(document.querySelectorAll('.eq-dot'));
+  if (!eqSlides.length) return;
+  let eqCurrent = 0;
+  let eqTimer = null;
+
+  function eqGoToFn(index) {
+    eqSlides[eqCurrent].classList.remove('active');
+    eqDots[eqCurrent].classList.remove('active');
+    eqCurrent = (index + eqSlides.length) % eqSlides.length;
+    eqSlides[eqCurrent].classList.add('active');
+    eqDots[eqCurrent].classList.add('active');
+  }
+  window.eqGoTo = eqGoToFn;
+  eqTimer = setInterval(() => eqGoToFn(eqCurrent + 1), 5000);
+})();
+
+/* ── DESTINATION SEARCH ── */
+function destSearch() {
+  const selects = document.querySelectorAll('.dest-search-select');
+  let url = '';
+  selects.forEach(s => { if (s.value) url = s.value; });
+  if (url) window.location.href = url;
+  else window.location.href = 'regions.html';
+}
+/* Make selects navigate on change for quick UX */
+document.querySelectorAll('.dest-search-select').forEach(s => {
+  s.addEventListener('change', function() {
+    if (this.value) {
+      document.querySelector('.dest-search-btn').style.background = 'var(--green-dk)';
+    }
   });
 });
 </script>
+
+<!-- GOOGLE TRANSLATE SCRIPT — loads the translation engine -->
+
+
+<!-- Google Translate widget loader -->
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</body></html>
+</body>
+</html>
