@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog | Rex Clarke Adventures</title>
+  <meta name="description" content="News, travel features, aviation, culture, festivals, hospitality and destination storytelling from Rex Clarke Adventures.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script src="site-router.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand-mark" href="index.html">
+          <span class="brand-emblem">R</span>
+          <span class="brand-copy"><small>Africa, In Full.</small><strong>Rex Clarke Adventures</strong></span>
+        </a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="blog.html" class="active">Blog</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="regions.html">Regions</a>
+          <a href="trip-planner.html">Trip Planner</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="hero">
+        <span class="hero-kicker">Editorial Hub</span>
+        <h1>All stories, one live blog home.</h1>
+        <p>This page is now the local blog landing page for the static site. News, aviation, adventures, culture, festivals and lifestyle links now resolve here so the GitHub version stays in sync.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#latest">Latest Stories</a>
+          <a class="btn btn-secondary" href="story.html?post=ghana-e-visa">Open a feature</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="stat-grid">
+          <div class="stat"><strong>16</strong><p>Featured stories mapped into the local static experience.</p></div>
+          <div class="stat"><strong>10</strong><p>Main editorial categories now route inside this repo.</p></div>
+          <div class="stat"><strong>54</strong><p>Nations covered across travel, culture, tourism and hospitality.</p></div>
+        </div>
+      </section>
+
+      <section class="section anchor-target" id="latest">
+        <div class="section-head">
+          <h2>Latest News</h2>
+          <p>These are the lead stories now powering your blog navigation and “news” clicks.</p>
+        </div>
+        <div class="card-grid">
+          <a class="card" href="article-eswatini.html">
+            <div class="card-media"><span>Africa Tourism News</span><span>🌍</span></div>
+            <div class="card-body">
+              <span class="eyebrow">Southern Africa</span>
+              <h3>Eswatini records a 16.3% surge in tourist arrivals</h3>
+              <p>Regional tourism demand accelerated, with Southern African travel corridors driving the strongest gains.</p>
+            </div>
+          </a>
+          <a class="card" href="story.html?post=ghana-e-visa">
+            <div class="card-media"><span>Border Policy</span><span>🛂</span></div>
+            <div class="card-body">
+              <span class="eyebrow">West Africa</span>
+              <h3>Ghana boosts tourism with a faster e-visa rollout</h3>
+              <p>A new digital visa pathway is framed as a tourism growth lever and a business travel unlock.</p>
+            </div>
+          </a>
+          <a class="card" href="story.html?post=un-tourism-seychelles">
+            <div class="card-media"><span>Policy Watch</span><span>🏝</span></div>
+            <div class="card-body">
+              <span class="eyebrow">African Islands</span>
+              <h3>UN Tourism leaders gather in Seychelles</h3>
+              <p>Commission talks focus on climate resilience, regional airlift and a stronger African visitor economy.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section anchor-target" id="aviation">
+        <div class="section-head">
+          <h2>Aviation</h2>
+          <p>Airport performance, route growth and the infrastructure stories behind African travel momentum.</p>
+        </div>
+        <div class="mini-grid">
+          <a class="panel" href="story.html?post=cape-town-airport">
+            <span class="eyebrow">South Africa</span>
+            <h3>Cape Town Airport keeps its crown</h3>
+            <p>Skytrax recognition reinforces Cape Town’s place as a premium gateway into the continent.</p>
+          </a>
+          <a class="panel" href="story.html?post=park-hyatt-johannesburg">
+            <span class="eyebrow">Hospitality + Airlift</span>
+            <h3>Luxury travel demand rises around Johannesburg</h3>
+            <p>Premium hospitality and improved access continue to reshape the city’s visitor profile.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section anchor-target" id="hospitality">
+        <div class="section-head">
+          <h2>Hospitality</h2>
+          <p>Hotels, resorts, destination brands and travel business stories.</p>
+        </div>
+        <div class="story-list">
+          <a class="story-tease" href="story.html?post=park-hyatt-johannesburg">
+            <span class="eyebrow">South Africa</span>
+            <h3>Park Hyatt Johannesburg lands on TIME’s radar</h3>
+            <p>The property’s design, positioning and neighbourhood context signal a deeper luxury shift in the market.</p>
+          </a>
+          <a class="story-tease" href="story.html?post=kuriftu-resorts">
+            <span class="eyebrow">Ethiopia</span>
+            <h3>Kuriftu Resorts expands Ethiopia’s tourism playbook</h3>
+            <p>A lifestyle-led hospitality strategy is helping package nature, leisure and domestic travel as one offer.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section anchor-target" id="explore-africa">
+        <div class="section-head">
+          <h2>Explore Africa</h2>
+          <p>Region guides, destination context and broader discovery-led stories.</p>
+        </div>
+        <div class="mini-grid">
+          <a class="panel" href="destinations.html">
+            <span class="eyebrow">54 Nations</span>
+            <h3>Destination index</h3>
+            <p>Browse the local destination hub by region and featured countries.</p>
+          </a>
+          <a class="panel" href="story.html?post=accra-city-guide">
+            <span class="eyebrow">Ghana</span>
+            <h3>Accra city guide</h3>
+            <p>Where to stay, eat and feel the rhythm of a city shaping modern West African travel.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section anchor-target" id="adventures">
+        <div class="section-head">
+          <h2>Adventures</h2>
+          <p>Safari circuits, active travel, conservation experiences and movement-led itineraries.</p>
+        </div>
+        <div class="card-grid">
+          <a class="card" href="story.html?post=best-adventures-africa">
+            <div class="card-media"><span>Adventure Guide</span><span>🦁</span></div>
+            <div class="card-body">
+              <span class="eyebrow">Pan-Africa</span>
+              <h3>Best adventures in Africa for 2026</h3>
+              <p>A practical editorial shortlist of high-impact travel experiences across the continent.</p>
+            </div>
+          </a>
+          <a class="card" href="story.html?post=eco-tourism-africa">
+            <div class="card-media"><span>Conservation</span><span>🌿</span></div>
+            <div class="card-body">
+              <span class="eyebrow">Eco-Tourism</span>
+              <h3>Nature reserves worth planning around</h3>
+              <p>Protected landscapes, community tourism and the itineraries where sustainability feels real.</p>
+            </div>
+          </a>
+          <a class="card" href="story.html?post=bbc-kingdom-zambia">
+            <div class="card-media"><span>Wildlife</span><span>📺</span></div>
+            <div class="card-body">
+              <span class="eyebrow">Zambia</span>
+              <h3>BBC’s “Kingdom” shines a light on South Luangwa</h3>
+              <p>A high-visibility documentary moment for one of Africa’s most rewarding safari landscapes.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section anchor-target" id="culture">
+        <div class="section-head">
+          <h2>Culture</h2>
+          <p>Identity, craft, diaspora memory, city life and the heritage systems that shape travel meaning.</p>
+        </div>
+        <div class="card-grid">
+          <a class="card" href="story.html?post=african-fabrics-identity">
+            <div class="card-media"><span>Identity</span><span>🧵</span></div>
+            <div class="card-body">
+              <span class="eyebrow">Pan-Africa</span>
+              <h3>Adire, Kente and Kitenge as visual language</h3>
+              <p>A look at how fabric traditions communicate place, pride and power across different contexts.</p>
+            </div>
+          </a>
+          <a class="card" href="story.html?post=mali-empire-legacy">
+            <div class="card-media"><span>History</span><span>🏛</span></div>
+            <div class="card-body">
+              <span class="eyebrow">West Africa</span>
+              <h3>The Mali Empire’s long shadow</h3>
+              <p>How one imperial network still shapes cultural imagination, scholarship and tourism narratives.</p>
+            </div>
+          </a>
+          <a class="card" href="story.html?post=ifa-diaspora">
+            <div class="card-media"><span>Diaspora</span><span>🔮</span></div>
+            <div class="card-body">
+              <span class="eyebrow">Nigeria</span>
+              <h3>Ifá from Ile-Ife to the Atlantic world</h3>
+              <p>A heritage story about continuity, ritual knowledge and transoceanic cultural survival.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section anchor-target" id="festivals">
+        <div class="section-head">
+          <h2>Festivals</h2>
+          <p>Celebration, ritual, fashion, performance and the cultural calendar travellers build trips around.</p>
+        </div>
+        <div class="mini-grid">
+          <div class="panel">
+            <span class="eyebrow">Seasonal Planning</span>
+            <h3>Festival stories live inside the blog now</h3>
+            <p>The local static site uses this section as the landing point for festival and heritage discovery. You can expand this later with standalone festival pages if you want a deeper archive.</p>
+          </div>
+          <a class="panel" href="story.html?post=trans-saharan-spice-trail">
+            <span class="eyebrow">Food Heritage</span>
+            <h3>The Trans-Saharan spice trail</h3>
+            <p>A culture-rich route linking markets, migration and taste from Kano to Morocco.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section anchor-target" id="food">
+        <div class="section-head">
+          <h2>Food</h2>
+          <p>Flavour as destination memory, from spice routes to city dining scenes.</p>
+        </div>
+        <div class="story-list">
+          <a class="story-tease" href="story.html?post=trans-saharan-spice-trail">
+            <span class="eyebrow">West Africa to North Africa</span>
+            <h3>The Trans-Saharan spice trail</h3>
+            <p>Trade, movement and culinary exchange laid down one of the continent’s most fascinating food corridors.</p>
+          </a>
+          <a class="story-tease" href="story.html?post=accra-city-guide">
+            <span class="eyebrow">City Guide</span>
+            <h3>Accra’s modern food scene</h3>
+            <p>A guide to where dining, nightlife and creative energy meet in Ghana’s capital.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section anchor-target" id="travel-tips">
+        <div class="section-head">
+          <h2>Travel Tips</h2>
+          <p>Planning logic, trip structure and practical advice surfaced from the editorial desk.</p>
+        </div>
+        <div class="panel">
+          <span class="eyebrow">Trip Planning</span>
+          <h3>Use the trip planner and destination hub together</h3>
+          <p>For this static build, travel tips are grouped into the planning flow. Start at <a href="trip-planner.html">Plan Your Trip</a>, then jump into <a href="destinations.html">Destinations</a> for country-specific inspiration.</p>
+        </div>
+      </section>
+
+      <section class="section anchor-target" id="lifestyle">
+        <div class="section-head">
+          <h2>Lifestyle</h2>
+          <p>Design, living culture, creative energy and the softer texture of everyday African life.</p>
+        </div>
+        <div class="mini-grid">
+          <a class="panel" href="omiren.html">
+            <span class="eyebrow">Sister Brand</span>
+            <h3>Omiren Styles</h3>
+            <p>Fashion, identity and design storytelling already live locally as a connected editorial destination.</p>
+          </a>
+          <a class="panel" href="story.html?post=african-fabrics-identity">
+            <span class="eyebrow">Style Culture</span>
+            <h3>Fabric identity as lifestyle language</h3>
+            <p>How textiles anchor modern African aesthetics in both travel storytelling and everyday expression.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section anchor-target" id="eco-tourism">
+        <div class="section-head">
+          <h2>Eco-Tourism</h2>
+          <p>Conservation, biodiversity and tourism models that work with nature instead of against it.</p>
+        </div>
+        <div class="story-list">
+          <a class="story-tease" href="story.html?post=eco-tourism-africa">
+            <span class="eyebrow">Pan-Africa</span>
+            <h3>Best nature reserves and conservation experiences</h3>
+            <p>A practical roundup of protected places where conservation and visitor experience reinforce each other.</p>
+          </a>
+          <a class="story-tease" href="story.html?post=congo-basin-report">
+            <span class="eyebrow">Central Africa</span>
+            <h3>Congo Basin report</h3>
+            <p>A closer look at forest pressure, climate stakes and why eco-tourism narratives matter here.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <span>Africa, In Full. Static edition for GitHub Pages.</span>
+        <span><a href="privacy-policy.html">Privacy Policy</a></span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

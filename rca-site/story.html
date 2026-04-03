@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Story | Rex Clarke Adventures</title>
+  <meta name="description" content="Local story page for the static Rex Clarke Adventures build.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script src="site-router.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand-mark" href="index.html">
+          <span class="brand-emblem">R</span>
+          <span class="brand-copy"><small>Africa, In Full.</small><strong>Rex Clarke Adventures</strong></span>
+        </a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="blog.html" class="active">Blog</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="regions.html">Regions</a>
+          <a href="trip-planner.html">Trip Planner</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <div class="story-shell">
+        <article>
+          <div class="story-cover" id="storyCover">✦</div>
+          <div class="story-meta" id="storyMeta"></div>
+          <h1 class="story-title" id="storyTitle">Story not found</h1>
+          <p class="lede" id="storyLede">The story you requested is not available yet in this static build.</p>
+          <div class="body-copy" id="storyBody"></div>
+        </article>
+
+        <aside class="story-aside">
+          <div class="panel">
+            <h3>More from RCA</h3>
+            <ul class="story-links">
+              <li><a href="article-eswatini.html">Eswatini tourism surge</a></li>
+              <li><a href="story.html?post=ghana-e-visa">Ghana e-visa tourism push</a></li>
+              <li><a href="story.html?post=bbc-kingdom-zambia">BBC “Kingdom” and South Luangwa</a></li>
+              <li><a href="story.html?post=african-fabrics-identity">African fabrics as identity</a></li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Navigate</h3>
+            <ul class="story-links">
+              <li><a href="blog.html#latest">Latest News</a></li>
+              <li><a href="blog.html#adventures">Adventures</a></li>
+              <li><a href="blog.html#culture">Culture</a></li>
+              <li><a href="destinations.html">Destination Hub</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <span>Static story page for mapped article routes.</span>
+        <span><a href="blog.html">Back to Blog</a></span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var stories = {
+        "cape-town-airport": { icon: "✈", category: "Aviation", region: "South Africa", author: "Oluwafemi Kehinde", date: "4 days ago", title: "Cape Town Airport wins Africa's Best Airport title for an 11th straight year", lede: "Cape Town International continues to outperform because the airport experience feels coherent from curbside to boarding gate.", body: ["The repeat win is more than a trophy headline. It signals that passenger trust, route quality and airport operations are lining up in a way that strengthens Cape Town's role as a tourism gateway.", "For travellers, the story is convenience and confidence. For the city, it is also a branding advantage that helps keep premium leisure and conference traffic flowing into the destination."] },
+        "park-hyatt-johannesburg": { icon: "🏨", category: "Hospitality", region: "South Africa", author: "RCA Editorial", date: "3 days ago", title: "Park Hyatt Johannesburg joins TIME's 2026 hospitality conversation", lede: "Luxury properties that feel rooted in place are becoming more important to African city tourism.", body: ["Johannesburg's hospitality story is shifting from pure business transit to design-led, experience-led urban stays. Recognition for Park Hyatt fits that broader repositioning.", "The result is useful beyond one hotel. It suggests a market where premium lodging, improved air access and neighborhood storytelling can reinforce one another."] },
+        "bbc-kingdom-zambia": { icon: "🦓", category: "Adventure", region: "Zambia", author: "Familugba Victor", date: "2 days ago", title: "BBC 'Kingdom' documentary puts Zambia's South Luangwa on the world map", lede: "Screen visibility still matters. A strong documentary can move a park from specialist knowledge into global travel imagination.", body: ["South Luangwa has long had credibility with safari insiders, but a documentary spotlight helps bridge the gap between expert reputation and mainstream curiosity.", "That matters for Zambia's wider positioning too. The country benefits when its wilderness assets are framed not as alternatives, but as first-choice experiences."] },
+        "ghana-e-visa": { icon: "🛂", category: "Policy", region: "Ghana", author: "RCA Editorial", date: "2 days ago", title: "Ghana boosts tourism with e-visa rollout and a sharper global push", lede: "The easier a destination is to enter, the easier it is to market with confidence.", body: ["Ghana's tourism proposition already combines heritage travel, creative-city appeal and strong diaspora resonance. A faster visa process removes one of the main pieces of friction around that offer.", "The strategic value is broad. Business events, family visits and culture-led tourism all benefit when access feels modern and predictable."] },
+        "ethiopia-hackathon": { icon: "💡", category: "Innovation", region: "Ethiopia", author: "RCA Editorial", date: "5 days ago", title: "Ethiopia hosts a hospitality hackathon focused on AI-powered tourism", lede: "Innovation is starting to show up not just in booking tools, but in how destinations think about visitor systems.", body: ["The hackathon story matters because it frames tourism as a design challenge. That means payments, service flow, discovery and guest information all become spaces for local problem-solving.", "For Ethiopia, it also complements the country's stronger narrative around heritage and nature by adding a forward-looking technology angle."] },
+        "un-tourism-seychelles": { icon: "🏝", category: "Policy", region: "African Islands", author: "RCA Editorial", date: "1 week ago", title: "UN Tourism Commission for Africa convenes in Seychelles", lede: "Island destinations often sit at the crossroads of climate pressure, premium travel demand and regional diplomacy.", body: ["Hosting the commission places Seychelles inside a larger conversation about airlift, sustainability, destination resilience and cross-border tourism cooperation.", "It is a reminder that tourism policy is not abstract. It shapes routes, hotel investment, conservation choices and the ease with which travellers move around the continent."] },
+        "best-adventures-africa": { icon: "🧭", category: "Adventure", region: "Pan-Africa", author: "Adebukola Benjamin", date: "15 hours ago", title: "Best adventures in Africa for 2026", lede: "The strongest itineraries balance spectacle with rhythm: not just what travellers do, but how the trip unfolds.", body: ["Africa's adventure mix is unusually wide, stretching from gorilla trekking and desert drives to urban heritage walks and island sailing routes.", "The best way to use a list like this is not to chase everything at once. It works better as a planning lens for matching season, budget and energy level to the right region."] },
+        "african-fabrics-identity": { icon: "🧵", category: "Culture", region: "Pan-Africa", author: "Leyira Virtue Barisuka", date: "1 month ago", title: "African fabrics as identity: Adire, Kente and Kitenge", lede: "Textiles are not decoration alone. They carry memory, hierarchy, ceremony and modern style codes all at once.", body: ["Comparing Adire, Kente and Kitenge reveals different design logics, production systems and social uses, but also a shared sense of cloth as cultural language.", "For travellers, fabric stories offer an unusually accessible entry point into heritage because they connect market life, design, ceremony and everyday dress."] },
+        "rabat-mice-tourism": { icon: "🏛", category: "Business Travel", region: "Morocco", author: "RCA Editorial", date: "1 week ago", title: "Rabat strengthens its case for MICE tourism", lede: "The meetings and events economy works best where infrastructure, hospitality and city identity all support one another.", body: ["Rabat's pitch is built on institutional gravity and cultural depth. That combination gives the city a more composed business-travel identity than destinations that rely only on convention space.", "Morocco benefits when more of its cities develop clear travel roles rather than leaning on a single destination narrative."] },
+        "congo-basin-report": { icon: "🌿", category: "Eco-Tourism", region: "Central Africa", author: "RCA Editorial", date: "1 week ago", title: "The Congo Basin report: why eco-tourism narratives matter", lede: "Environmental stories can feel distant until they are tied to livelihoods, place and travel choices.", body: ["The Congo Basin is often described as a climate asset, but it is also a tourism story about forests, species richness and the communities that live within that landscape.", "Better storytelling here can support a more careful tourism imagination, one that sees the region as valuable beyond extraction or crisis headlines."] },
+        "accra-city-guide": { icon: "🌆", category: "City Guide", region: "Ghana", author: "RCA Editorial", date: "6 days ago", title: "Accra city guide: where to stay, eat and feel the city's pace", lede: "Accra works best when travellers treat it as a living creative capital, not just a stopover.", body: ["The city's appeal sits in how quickly it moves between beachfront calm, nightlife energy, art spaces and food culture.", "A useful Accra itinerary mixes familiar landmarks with time for neighborhoods, design stores, music venues and long meals that reveal the city's social texture."] },
+        "mali-empire-legacy": { icon: "👑", category: "History", region: "West Africa", author: "Leyira Virtue Barisuka", date: "3 weeks ago", title: "The legacy of the Mali Empire still shapes West Africa", lede: "Imperial memory survives in trade narratives, scholarship, architecture and the way cultural prestige is still imagined today.", body: ["The Mali Empire remains one of the strongest historical frameworks for understanding West African influence, mobility and intellectual life.", "For cultural tourism, it offers a powerful bridge between past and present by linking scholarship, oral history and regional pride."] },
+        "ifa-diaspora": { icon: "🔮", category: "Diaspora", region: "Nigeria", author: "Leyira Virtue Barisuka", date: "2 months ago", title: "Ifa divination from Ile-Ife to Cuba and Brazil", lede: "Some of the most durable African cultural systems survived because they travelled, adapted and remained legible across oceans.", body: ["The Ifa story is about spiritual continuity, but it is also about translation, migration and the resilience of knowledge systems under pressure.", "That makes it a compelling cultural-travel subject: deeply rooted, internationally connected and still alive in contemporary practice."] },
+        "eco-tourism-africa": { icon: "🌱", category: "Eco-Tourism", region: "Pan-Africa", author: "RCA Editorial", date: "2 months ago", title: "Eco-tourism in Africa: reserves and conservation experiences worth knowing", lede: "Eco-tourism is strongest where the visitor model protects the asset that made the trip desirable in the first place.", body: ["Across Africa, the most interesting eco-tourism stories tie conservation to local participation, habitat recovery and lower-impact visitor design.", "This is not one destination's story. It is a continent-wide planning lens that affects where money flows and which places stay resilient."] },
+        "kuriftu-resorts": { icon: "🏞", category: "Hospitality", region: "Ethiopia", author: "RCA Editorial", date: "1 week ago", title: "Kuriftu Resorts expands Ethiopia's domestic tourism confidence", lede: "Resort development matters most when it creates a fuller leisure culture around a destination, not just more rooms.", body: ["Kuriftu's growth reflects a more layered Ethiopian travel economy where local leisure demand and international curiosity can reinforce one another.", "That kind of development broadens the market beyond a narrow set of heritage icons and creates more reasons to stay longer."] },
+        "aquamania-jungle-park": { icon: "💦", category: "Family Tourism", region: "Egypt", author: "Oluwafemi Kehinde", date: "14 hours ago", title: "Aquamania Jungle Park reframes Sharm El Sheikh for family travel", lede: "Family tourism grows when destinations diversify the reasons people stay beyond a single beach or resort format.", body: ["The aquapark story highlights how destinations refresh mature tourism markets by widening the product mix for different visitor types.", "In Egypt's case, it also shows how leisure infrastructure can support a broader tourism season and deeper in-destination spending."] },
+        "south-africa-forests": { icon: "🌲", category: "Sustainability", region: "South Africa", author: "Familugba Victor", date: "3 days ago", title: "South Africa's planted forests show how tourism and sustainability narratives can intersect", lede: "Forestry is not the first sector people think of when they think tourism, but landscape stewardship shapes destination value.", body: ["The story connects jobs, biodiversity support and rural enterprise, all of which influence how destinations are experienced and marketed.", "It is a useful reminder that travel storytelling gets stronger when it looks beyond front-stage attractions to the systems holding places together."] },
+        "trans-saharan-spice-trail": { icon: "🌶", category: "Food + Heritage", region: "West Africa to North Africa", author: "Leyira Virtue Barisuka", date: "2 months ago", title: "The Trans-Saharan spice trail from Kano to Morocco", lede: "Food routes often reveal older trade structures more vividly than political maps do.", body: ["The spice trail is a story of exchange: ingredients, ideas, merchant networks and culinary memory moving across the desert world.", "As a travel lens, it turns food into a map of connection, one that ties city markets to heritage narratives and long-distance movement."] }
+      };
+
+      var params = new URLSearchParams(window.location.search);
+      var key = params.get("post");
+      var story = stories[key] || { icon: "✦", category: "Editorial", region: "Rex Clarke Adventures", author: "RCA Editorial", date: "Static build", title: "This story is being prepared for the local site", lede: "The route is live now, and you can keep building the article archive from this shared template.", body: ["This static page acts as a reliable destination for links that previously pointed to the WordPress site.", "You can extend the story data object in this file anytime you want to add more complete article content."] };
+
+      document.title = story.title + " | Rex Clarke Adventures";
+      document.getElementById("storyCover").textContent = story.icon;
+      document.getElementById("storyTitle").textContent = story.title;
+      document.getElementById("storyLede").textContent = story.lede;
+      document.getElementById("storyMeta").innerHTML = "<span>" + story.category + "</span><span>" + story.region + "</span><span>" + story.author + "</span><span>" + story.date + "</span>";
+      document.getElementById("storyBody").innerHTML = story.body.map(function (paragraph) {
+        return "<p>" + paragraph + "</p>";
+      }).join("");
+    })();
+  </script>
+</body>
+</html>
